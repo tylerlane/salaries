@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- chartbeat -->
+    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="City Utilities Salaries database">
+    <meta name="author" content="Tyler Lane">
+
+    <title>City Utilities Salaries by News-Leader</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
+
+    <script type="text/javascript" src="js/jquery.js"> </script>
+    <!--<script type="text/javascript" src="js/jquery.dataTables.js"> </script>-->
+    <script type="text/javascript" src="//cdn.datatables.net/1.10.0/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"> </script>
+    <script type="text/javascript" src="js/dataTables.bootstrap.js"> </script>
+    <script type="text/javascript" src="js/dataTables.bootstrapPagination.js"> </script>
+
+    <!-- Add custom CSS here -->
+    <style>
+    body {
+        margin-top: 110px;
+    }
+    </style>
+
+
+
+    <script>
+		$(document).ready( function () {
+
+          $("#table").DataTable({
+            "pageLength": 100,
+            "sDom": "<'row'<'col-xs-6'T><'col-xs-6'f>r>t<'row'<'col-xs-6'i><'col-xs-6'p>>",
+            "sPaginationType": "bootstrap",
+            "lengthChange": false,
+            "order": [0,"asc"]
+
+          });
+           $('#table').on( 'page.dt', function () {
+                if( typeof( s ) != "undefined" )
+                {
+                    s.pageName = "Data - CU Salaries";
+                    s.t();
+                }
+            });
+    		});
+    </script>
+</head>
+
+<body>
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="cityutilities.html">City Utilities</a>
+                <p class="navbar-text">Watchdog Database by the News-Leader</p>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="top100.html">Top 100</a>
+                    </li>
+                    <li>
+                        <a href="greenecounty.html">Greene County</a>
+                    </li>
+                    <li>
+                        <a href="cityofsgf.html">City of Springfield</a>
+                    </li>
+                    <li class="active">
+                        <a href="cityutilities.html">City Utilities</a>
+                    </li>
+                    <li>
+                        <a href="msu.html">MSU</a>
+                    </li>
+                    <li>
+                        <a href="otc.html">OTC</a>
+                    </li>
+                    <li>
+                        <a href="sps.html">Springfield Public Schools</a>
+                    </li>
+                    <li>
+                        <a href="library.html">Library District</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div class="container">
+    <div class="page-header">
+        <h3>City Utilities Salaries
+            <small class="pull-right">By <a href="http://www.news-leader.com"><span class="glyphicon glyphicon-link"></span>News-Leader.com</a></small>
+        </h3>
+    </div>
+    
+    
+<div class="table-responsive">
+<div class="alert alert-info alert-dismissable visible-xs visible-sm">
+  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+  <strong>Heads Up!</strong> <span class="glyphicon glyphicon-phone"></span>Viewing this database on a mobile device may not show all of the data at first so be sure to scroll side-to-side
+</div>
+<table id="table" class="table table-striped table-bordered table-condensed table-hover" cellspacing="0" width="100%">
+  <thead>
+<tr><th style="width:20%">Name</th><th style="width:20%">Title</th><th width="20%">Status</th><th style="width:20%">2013 Compensation</th><th style="width:20%">2014 Hourly Wage</th></tr>
+</thead>
+<tbody>
+
+<tr><td>Abbott, Gregory</td><td>Manager-Inventory Control</td><td>Full-Time</td><td> $116,185.13 </td><td> $51.59 </td></tr>
+ <tr><td>Abernathy, Zachary</td><td>Engineering Designer Co-op</td><td>Part-Time</td><td> $565.29 </td><td> $10.28 </td></tr>
+ <tr><td>Acheson, Reada</td><td>CSR-1st 6 months</td><td>Full-Time</td><td> $3,537.45 </td><td> $15.22 </td></tr>
+ <tr><td>Adams, Daniel</td><td>Service Technician I-Thereaftr</td><td>Full-Time</td><td> $84,263.99 </td><td> $33.59 </td></tr>
+ <tr><td>Adams, Kevin</td><td>Laboratory Analyst III-GC</td><td>Full-Time</td><td> $72,959.25 </td><td> $34.80 </td></tr>
+ <tr><td>Adams, Lewis</td><td>Plant Custodian I-Thereafter</td><td>Full-Time</td><td> $34,494.43 </td><td> $16.87 </td></tr>
+ <tr><td>Aderhold, R.</td><td>Senior Laboratory Analyst</td><td>Full-Time</td><td> $90,961.52 </td><td> $40.40 </td></tr>
+ <tr><td>Agne, Casey</td><td>Water Sys Installer</td><td>Full-Time</td><td> $55,745.36 </td><td> $25.12 </td></tr>
+ <tr><td>Aldrich, Daniel</td><td>Sr Elec System Des-TA</td><td>Full-Time</td><td> $54,740.68 </td><td> $27.87 </td></tr>
+ <tr><td>Alexander, Joel</td><td>Manager-Communications</td><td>Full-Time</td><td> $92,689.30 </td><td> $43.18 </td></tr>
+ <tr><td>Allen, David</td><td>Line/Substation Inspector</td><td>Full-Time</td><td> $84,722.36 </td><td> $38.82 </td></tr>
+ <tr><td>Allen, John</td><td>Manager-Reliability Compliance</td><td>Full-Time</td><td> $98,513.40 </td><td> $46.19 </td></tr>
+ <tr><td>Allison, Clayton</td><td>Water Technician-Thereafter</td><td>Full-Time</td><td> $56,993.80 </td><td> $26.99 </td></tr>
+ <tr><td>Anderson, Jacob</td><td>Custodian-Thereafter</td><td>Full-Time</td><td> $34,655.77 </td><td> $16.58 </td></tr>
+ <tr><td>Anderson, James</td><td>Application Integrator</td><td>Full-Time</td><td> $94,684.09 </td><td> $42.92 </td></tr>
+ <tr><td>Anderson, Kyle</td><td>Senior Engineer-Electric Sys</td><td>Full-Time</td><td> $129,873.48 </td><td> $53.17 </td></tr>
+ <tr><td>Andrus, Howard</td><td>Group Leader-Svc Tech I</td><td>Full-Time</td><td> $87,322.70 </td><td> $36.68 </td></tr>
+ <tr><td>Arend, Eugene</td><td>Custodian-Thereafter</td><td>Full-Time</td><td> $35,005.77 </td><td> $16.58 </td></tr>
+ <tr><td>Arend, Lisa</td><td>Mailroom Tech-Thereafter</td><td>Full-Time</td><td> $32,004.84 </td><td> $15.52 </td></tr>
+ <tr><td>Armstrong, Pamela</td><td>Financial Analyst</td><td>Full-Time</td><td> $122,155.17 </td><td> $56.46 </td></tr>
+ <tr><td>Arnall, Thomas</td><td>Senior Engineer-Electric Sys</td><td>Full-Time</td><td> $89,814.23 </td><td> $44.81 </td></tr>
+ <tr><td>Arnold, Dustin</td><td>Group Leader</td><td>Full-Time</td><td> $83,992.02 </td><td> $33.17 </td></tr>
+ <tr><td>Arnone, Chad</td><td>CSR-Thereafter</td><td>Full-Time</td><td> $38,071.89 </td><td> $18.69 </td></tr>
+ <tr><td>Aug, Judy</td><td>Senior Internal Auditor</td><td>Full-Time</td><td> $98,677.73 </td><td> $45.29 </td></tr>
+ <tr><td>Austin, Amy</td><td>Assoc Gen Mgr-Administration</td><td>Full-Time</td><td> $205,469.80 </td><td> $89.88 </td></tr>
+ <tr><td>Ayres, Michael</td><td>Senior Network Engineer</td><td>Full-Time</td><td> $88,221.58 </td><td> $39.96 </td></tr>
+ <tr><td>Badami, Michael</td><td>Senior Engineer-Electric Sys</td><td>Full-Time</td><td> $85,440.17 </td><td> $44.61 </td></tr>
+ <tr><td>Baecht, Daniel</td><td>Elec, Inst, & Control Tech</td><td>Full-Time</td><td> $83,536.52 </td><td> $38.59 </td></tr>
+ <tr><td>Baguio, Marco</td><td>Senior Application Analyst</td><td>Full-Time</td><td> $21,925.00 </td><td> $37.98 </td></tr>
+ <tr><td>Bailey, Christopher</td><td>Supv-IT Network Services</td><td>Full-Time</td><td> $99,470.56 </td><td> $45.53 </td></tr>
+ <tr><td>Bailey, Jared</td><td>Custodian-Thereafter</td><td>Full-Time</td><td> $35,931.51 </td><td> $16.58 </td></tr>
+ <tr><td>Baker, Christopher</td><td>Material Tech-Thereafter</td><td>Full-Time</td><td> $48,341.00 </td><td> $25.31 </td></tr>
+ <tr><td>Baker, Jerry</td><td>Admin-Damage Prevention</td><td>Full-Time</td><td> $85,337.78 </td><td> $38.42 </td></tr>
+ <tr><td>Baker, Kevin</td><td>Service Technician I-Thereaftr</td><td>Full-Time</td><td> $67,035.16 </td><td> $33.59 </td></tr>
+ <tr><td>Baker, Seth</td><td>Electrician</td><td>Full-Time</td><td> $74,764.45 </td><td> $36.15 </td></tr>
+ <tr><td>Ballard, Scott</td><td>Water Sys Installer</td><td>Full-Time</td><td> $80,415.80 </td><td> $25.12 </td></tr>
+ <tr><td>Ballou, Carol</td><td>Dispatch Clerk-Thereafter (GF)</td><td>Full-Time</td><td> $47,040.49 </td><td> $23.16 </td></tr>
+ <tr><td>Barad, Alan</td><td>Application Integrator</td><td>Full-Time</td><td> $81,815.66 </td><td> $40.73 </td></tr>
+ <tr><td>Barber, Jamie</td><td>Asst Mgr-Oper Business Proc</td><td>Full-Time</td><td> $97,865.97 </td><td> $44.90 </td></tr>
+ <tr><td>Barlow, Freida</td><td>Sr CSR</td><td>Full-Time</td><td> $44,302.76 </td><td> $21.57 </td></tr>
+ <tr><td>Barnes, Tanya</td><td>Security Operations Specialist</td><td>Full-Time</td><td> $45,758.54 </td><td> $19.17 </td></tr>
+ <tr><td>Barrett, Michael</td><td>Supv-Power Station Maintenance</td><td>Full-Time</td><td> $96,326.90 </td><td> $45.15 </td></tr>
+ <tr><td>Barrett, Sharon</td><td>Bus Operator-2nd 6 mos</td><td>Full-Time</td><td> $34,279.58 </td><td> $15.82 </td></tr>
+ <tr><td>Barry, Annette</td><td>Damage Claims Coordinator</td><td>Full-Time</td><td> $46,796.94 </td><td> $20.20 </td></tr>
+ <tr><td>Bauer, John</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $48,234.60 </td><td> $21.76 </td></tr>
+ <tr><td>Baughman, Beverly</td><td>Senior Utility Counsel</td><td>Full-Time</td><td> $139,468.59 </td><td> $65.31 </td></tr>
+ <tr><td>Baumann, Marsha</td><td>Bus Operator-1st 6 mos</td><td>Full-Time</td><td> $13,856.28 </td><td> $13.32 </td></tr>
+ <tr><td>Baxter, Sherri</td><td>Office Administrator</td><td>Full-Time</td><td> $46,351.84 </td><td> $20.36 </td></tr>
+ <tr><td>Beahan, David</td><td>Master Mechanic</td><td>Full-Time</td><td> $72,190.63 </td><td> $34.98 </td></tr>
+ <tr><td>Beasley, Danny</td><td>Crew Leader/Troubleshooter</td><td>Full-Time</td><td> $118,831.61 </td><td> $38.82 </td></tr>
+ <tr><td>Beasley, Deborah</td><td>Field Scheduler-TA</td><td>Full-Time</td><td> $71,326.46 </td><td> $25.31 </td></tr>
+ <tr><td>Belk, Robert</td><td>Mgr-Power Generation Oper</td><td>Full-Time</td><td> $123,191.09 </td><td> $55.70 </td></tr>
+ <tr><td>Bell, George</td><td>Supervisor-Power Quality</td><td>Full-Time</td><td> $95,074.15 </td><td> $40.30 </td></tr>
+ <tr><td>Bell, Gregory</td><td>Maintenance Tech-2nd 6 mos ++</td><td>Full-Time</td><td> $67,634.63 </td><td> $26.10 </td></tr>
+ <tr><td>Benson, Leona</td><td>Material Coordinator (GF)</td><td>Full-Time</td><td> $59,998.48 </td><td> $27.96 </td></tr>
+ <tr><td>Bentley, Keith</td><td>Instrument Tech-Relief Operatr</td><td>Full-Time</td><td> $77,778.84 </td><td> $32.77 </td></tr>
+ <tr><td>Benton, Jeffrey</td><td>Gas System Installer</td><td>Full-Time</td><td> $60,188.62 </td><td> $26.35 </td></tr>
+ <tr><td>Berendzen, Brian</td><td>Electric Line Worker +</td><td>Full-Time</td><td> $28,888.23 </td><td> $35.96 </td></tr>
+ <tr><td>Bergmann, Stacy</td><td>Senior Eng-Natural Gas & Water</td><td>Full-Time</td><td> $90,652.89 </td><td> $43.25 </td></tr>
+ <tr><td>Berning, Jeffrey</td><td>Truck Driver</td><td>Full-Time</td><td> $58,722.75 </td><td> $25.25 </td></tr>
+ <tr><td>Berning, Pamela</td><td>Office Administrator</td><td>Full-Time</td><td> $45,661.86 </td><td> $20.62 </td></tr>
+ <tr><td>Bertholdi, Jeffrey</td><td>Mgr-IT Infrastructure</td><td>Full-Time</td><td> $132,747.32 </td><td> $59.18 </td></tr>
+ <tr><td>Beshears, Austin</td><td>Disbursement Analyst</td><td>Full-Time</td><td> $51,954.01 </td><td> $23.29 </td></tr>
+ <tr><td>Biehl, Brian</td><td>Senior Welder-Gas</td><td>Full-Time</td><td> $71,301.70 </td><td> $31.80 </td></tr>
+ <tr><td>Biellier, Bryan</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $41,500.43 </td><td> $21.76 </td></tr>
+ <tr><td>Bills, Jason</td><td>Master Journey Mechanic</td><td>Full-Time</td><td> $66,581.90 </td><td> $28.63 </td></tr>
+ <tr><td>Biring, Eric</td><td>Staff Accountant</td><td>Full-Time</td><td> $32,049.58 </td><td> $20.33 </td></tr>
+ <tr><td>Black, John</td><td>Assoc Gen Mgr-General Counsel</td><td>Full-Time</td><td> $222,249.17 </td><td> $103.79 </td></tr>
+ <tr><td>Blair, Thomas</td><td>Gen Supv-Contract Inspection</td><td>Full-Time</td><td> $106,778.41 </td><td> $47.43 </td></tr>
+ <tr><td>Blakey, Chad</td><td>Business Analyst</td><td>Full-Time</td><td> $58,049.40 </td><td> $26.71 </td></tr>
+ <tr><td>Blattert, Andrew</td><td>Desktop Support Specialist</td><td>Full-Time</td><td> $61,153.45 </td><td> $27.37 </td></tr>
+ <tr><td>Blehm, Steven</td><td>Master Mechanic</td><td>Full-Time</td><td> $72,345.10 </td><td> $34.98 </td></tr>
+ <tr><td>Blevins, Alvin</td><td>Master Journey Mechanic</td><td>Full-Time</td><td> $63,173.45 </td><td> $28.63 </td></tr>
+ <tr><td>Bodenhamer, Leonard</td><td>Master Mechanic</td><td>Full-Time</td><td> $72,308.95 </td><td> $34.98 </td></tr>
+ <tr><td>Boggs, Robert</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $62,416.69 </td><td> $30.50 </td></tr>
+ <tr><td>Boin, Megan</td><td>Accountant Co-op-Graduate</td><td>Part-Time</td><td> $17,910.30 </td><td> $14.61 </td></tr>
+ <tr><td>Boles, Kristin</td><td>Field Scheduler-2nd year</td><td>Full-Time</td><td> $58,822.41 </td><td> $23.83 </td></tr>
+ <tr><td>Bolin, Jeff</td><td>Supv-Contract Inspection</td><td>Full-Time</td><td> $91,845.59 </td><td> $34.80 </td></tr>
+ <tr><td>Bolin, Jimmy</td><td>Pressure Controller</td><td>Full-Time</td><td> $81,740.33 </td><td> $30.81 </td></tr>
+ <tr><td>Bolin, Ricky</td><td>Electric Line Crew Leader</td><td>Full-Time</td><td> $90,435.40 </td><td> $38.82 </td></tr>
+ <tr><td>Bolin, Thomas</td><td>Admin-Natural Gas Compliance</td><td>Full-Time</td><td> $87,438.57 </td><td> $38.92 </td></tr>
+ <tr><td>Bollinger, Kevin</td><td>Material Coordinator (GF)</td><td>Full-Time</td><td> $54,314.88 </td><td> $27.96 </td></tr>
+ <tr><td>Bond, Larry</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $70,551.53 </td><td> $21.76 </td></tr>
+ <tr><td>Bond, Melanie</td><td>GIS Technician-1st yr</td><td>Full-Time</td><td> $13,799.46 </td><td> $21.03 </td></tr>
+ <tr><td>Bookout, James</td><td>Meter Reader Rural</td><td>Full-Time</td><td> $52,709.38 </td><td> $27.20 </td></tr>
+ <tr><td>Boshears, Johnny</td><td>Engineer-Electric Systems</td><td>Full-Time</td><td> $95,964.33 </td><td> $43.47 </td></tr>
+ <tr><td>Bouse, Tommy</td><td>Geospatial Design/Proc Analyst</td><td>Full-Time</td><td> $64,405.18 </td><td> $29.58 </td></tr>
+ <tr><td>Bousman, Edward</td><td>Security Officer</td><td>Part-Time</td><td> $42,992.23 </td><td> $20.59 </td></tr>
+ <tr><td>Boutwell, Lloyd</td><td>Lakes Laborer-Thereafter</td><td>Full-Time</td><td> $48,182.28 </td><td> $22.52 </td></tr>
+ <tr><td>Box, Roger</td><td>Auxiliary Operator-Htr Floor</td><td>Full-Time</td><td> $79,453.29 </td><td> $32.28 </td></tr>
+ <tr><td>Boyd, Debra</td><td>CSR-Thereafter</td><td>Full-Time</td><td> $36,275.29 </td><td> $18.69 </td></tr>
+ <tr><td>Boyer, Mike</td><td>Manager-Field Services</td><td>Full-Time</td><td> $113,656.55 </td><td> $51.17 </td></tr>
+ <tr><td>Brackett, Sally</td><td>Occupational Nurse</td><td>Full-Time</td><td> $78,096.51 </td><td> $35.58 </td></tr>
+ <tr><td>Bradley, Mary</td><td>Office Administrator</td><td>Full-Time</td><td> $51,286.14 </td><td> $22.30 </td></tr>
+ <tr><td>Bradley, Roger</td><td>Master Journey Mechanic</td><td>Full-Time</td><td> $73,681.31 </td><td> $28.63 </td></tr>
+ <tr><td>Bradshaw, Jerry</td><td>Senior Engineer-Electric Sys</td><td>Full-Time</td><td> $106,684.67 </td><td> $52.13 </td></tr>
+ <tr><td>Bratt, Kristopher</td><td>Supv-Power Station Operations</td><td>Full-Time</td><td> $106,957.73 </td><td> $45.34 </td></tr>
+ <tr><td>Brawley, Brian</td><td>Senior Corrosion Tech +</td><td>Full-Time</td><td> $60,643.18 </td><td> $28.59 </td></tr>
+ <tr><td>Brechbuhler, Roy</td><td>Master Journey Mechanic</td><td>Full-Time</td><td> $67,422.68 </td><td> $28.63 </td></tr>
+ <tr><td>Breitenstein, William</td><td>Heavy Equipment Operator</td><td>Full-Time</td><td> $72,907.73 </td><td> $28.60 </td></tr>
+ <tr><td>Brewer, Todd</td><td>Assistant Manager-Laboratories</td><td>Full-Time</td><td> $104,839.98 </td><td> $52.03 </td></tr>
+ <tr><td>Brickey, James</td><td>Electric Line Crew Leader</td><td>Full-Time</td><td> $106,346.04 </td><td> $38.82 </td></tr>
+ <tr><td>Briddle, Tracy</td><td>Electric Line Worker +</td><td>Full-Time</td><td> $90,059.13 </td><td> $35.96 </td></tr>
+ <tr><td>Bridges, Benjamin</td><td>Sr Network Engineer-SpringNet</td><td>Full-Time</td><td> $98,179.43 </td><td> $43.65 </td></tr>
+ <tr><td>Bright, Alan</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $43,637.26 </td><td> $21.76 </td></tr>
+ <tr><td>Bright, H.</td><td>CSR-Thereafter</td><td>Full-Time</td><td> $38,969.53 </td><td> $18.69 </td></tr>
+ <tr><td>Bright, Nancy</td><td>Staff Assistant</td><td>Full-Time</td><td> $41,316.84 </td><td> $17.93 </td></tr>
+ <tr><td>Bright, Tammy</td><td>CSR-Next 12 months</td><td>Full-Time</td><td> $31,448.98 </td><td> $17.42 </td></tr>
+ <tr><td>Brinker, Andrew</td><td>Electric Meter Technician</td><td>Full-Time</td><td> $69,414.23 </td><td> $33.79 </td></tr>
+ <tr><td>Brockhoff, Steven</td><td>Crew Leader/Troubleshooter</td><td>Full-Time</td><td> $120,485.49 </td><td> $38.82 </td></tr>
+ <tr><td>Brogue, Roger</td><td>Asst Mgr-Wireless Systems</td><td>Full-Time</td><td> $101,135.58 </td><td> $44.21 </td></tr>
+ <tr><td>Brookhart, Ronald</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $45,506.01 </td><td> $21.76 </td></tr>
+ <tr><td>Brooks, Brandon</td><td>Staff Accountant</td><td>Full-Time</td><td> $50,433.37 </td><td> $22.76 </td></tr>
+ <tr><td>Brooks, Warren</td><td>Supv-Elect T & D Engineering</td><td>Full-Time</td><td> $105,260.34 </td><td> $47.63 </td></tr>
+ <tr><td>Brown, Bruce</td><td>Relief Operator</td><td>Full-Time</td><td> $41,661.53 </td><td> $32.32 </td></tr>
+ <tr><td>Brown, Charles</td><td>Meter Reader City-2nd 3 mos</td><td>Full-Time</td><td> $43,317.24 </td><td> $20.85 </td></tr>
+ <tr><td>Brown, David</td><td>Measurement  Tech</td><td>Full-Time</td><td> $60,795.54 </td><td> $29.48 </td></tr>
+ <tr><td>Brown, Dennis</td><td>Asst Manager-Field Services</td><td>Full-Time</td><td> $88,218.30 </td><td> $41.13 </td></tr>
+ <tr><td>Brown, Marissa</td><td>Accountant Co-op-Junior</td><td>Part-Time</td><td> $3,672.91 </td><td> $11.48 </td></tr>
+ <tr><td>Brown, Michael</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $65,072.90 </td><td> $21.76 </td></tr>
+ <tr><td>Brown, Michael</td><td>Geospatial Design/Proc Analyst</td><td>Full-Time</td><td> $50,416.74 </td><td> $29.58 </td></tr>
+ <tr><td>Brown, Richard</td><td>Master Designer-GIS +</td><td>Full-Time</td><td> $71,565.96 </td><td> $33.20 </td></tr>
+ <tr><td>Browning, Christopher</td><td>Heavy Equipment Operator</td><td>Full-Time</td><td> $64,796.32 </td><td> $28.60 </td></tr>
+ <tr><td>Bruns, Nathan</td><td>Sr Elec System Des-TA</td><td>Full-Time</td><td> $58,064.30 </td><td> $27.87 </td></tr>
+ <tr><td>Bryan, Corey</td><td>Custodian-3rd 6 months</td><td>Full-Time</td><td> $30,609.04 </td><td> $15.65 </td></tr>
+ <tr><td>Buerke, Robert</td><td>Key Accounts Manager</td><td>Full-Time</td><td> $84,469.18 </td><td> $39.88 </td></tr>
+ <tr><td>Burk, Earl</td><td>Asst Manager-Facility Systems</td><td>Full-Time</td><td> $96,041.98 </td><td> $46.75 </td></tr>
+ <tr><td>Burkhart, Daren</td><td>Senior Welder-Gas</td><td>Full-Time</td><td> $66,546.26 </td><td> $31.80 </td></tr>
+ <tr><td>Burks, Michael</td><td>Heavy Equipment Operator</td><td>Full-Time</td><td> $73,698.47 </td><td> $28.60 </td></tr>
+ <tr><td>Burks, Michael</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $68,318.42 </td><td> $30.50 </td></tr>
+ <tr><td>Burks, Tobi</td><td>CSR-Thereafter</td><td>Full-Time</td><td> $37,983.82 </td><td> $18.69 </td></tr>
+ <tr><td>Burnell, Stephen</td><td>Supv-Power Station Operations</td><td>Full-Time</td><td> $103,025.34 </td><td> $46.18 </td></tr>
+ <tr><td>Burroughs, Kim</td><td>Electric Line Crew Leader</td><td>Full-Time</td><td> $112,848.66 </td><td> $38.82 </td></tr>
+ <tr><td>Burroughs, Michael</td><td>Admin-Electric T&D Engineering</td><td>Full-Time</td><td> $95,270.11 </td><td> $42.84 </td></tr>
+ <tr><td>Butler, Bradley</td><td>Electric Line Worker +</td><td>Full-Time</td><td> $33,694.25 </td><td> $35.96 </td></tr>
+ <tr><td>Buyce, Michael</td><td>Senior Application Analyst</td><td>Full-Time</td><td> $69,966.86 </td><td> $34.36 </td></tr>
+ <tr><td>Byrd, Matthew</td><td>Employment Specialist</td><td>Full-Time</td><td> $66,684.55 </td><td> $29.22 </td></tr>
+ <tr><td>Caccioppo, George</td><td>Electric Line Worker +</td><td>Full-Time</td><td> $109,750.75 </td><td> $35.96 </td></tr>
+ <tr><td>Cafourek, Weston</td><td>Control Operator</td><td>Full-Time</td><td> $75,706.41 </td><td> $33.55 </td></tr>
+ <tr><td>Callahan, Raymond</td><td>Senior Systems Integrator</td><td>Full-Time</td><td> $116,984.51 </td><td> $53.95 </td></tr>
+ <tr><td>Callicott, Mitchell</td><td>Adm-SpringNet Underground Fac</td><td>Full-Time</td><td> $88,482.33 </td><td> $40.03 </td></tr>
+ <tr><td>Campbell, Bryan</td><td>Staff Accountant</td><td>Full-Time</td><td> $45,956.16 </td><td> $23.09 </td></tr>
+ <tr><td>Campbell, Jon</td><td>Admin-Property Acquisition</td><td>Full-Time</td><td> $108,214.21 </td><td> $47.72 </td></tr>
+ <tr><td>Campbell, Larry</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $67,394.55 </td><td> $30.50 </td></tr>
+ <tr><td>Cantrell, John</td><td>Electric Line Worker +</td><td>Full-Time</td><td> $81,169.42 </td><td> $35.96 </td></tr>
+ <tr><td>Cantrell, Travis</td><td>Equipment Operator</td><td>Full-Time</td><td> $59,112.78 </td><td> $28.59 </td></tr>
+ <tr><td>Capps, Gerald</td><td>Master Des-Nat Gas & Water +</td><td>Full-Time</td><td> $64,109.45 </td><td> $33.20 </td></tr>
+ <tr><td>Capps, Lori</td><td>Asst Mgr-Telecommunications</td><td>Full-Time</td><td> $101,866.29 </td><td> $46.63 </td></tr>
+ <tr><td>Carcamo, Karen</td><td>Meter Reader City-Thereafter</td><td>Full-Time</td><td> $47,018.86 </td><td> $24.92 </td></tr>
+ <tr><td>Carey, Jay</td><td>Bus Operator-1st 6 mos</td><td>Full-Time</td><td> $10,421.31 </td><td> $13.32 </td></tr>
+ <tr><td>Carleton, Robert</td><td>Risk Manager</td><td>Full-Time</td><td> $86,376.43 </td><td> $40.53 </td></tr>
+ <tr><td>Carlson, Holli</td><td>Sr CSR</td><td>Full-Time</td><td> $37,185.13 </td><td> $21.57 </td></tr>
+ <tr><td>Carpenter, Mary</td><td>IT Business Analyst I</td><td>Full-Time</td><td> $58,754.90 </td><td> $27.46 </td></tr>
+ <tr><td>Carpenter, Scott</td><td>Senior Control Operator</td><td>Full-Time</td><td> $96,487.50 </td><td> $38.85 </td></tr>
+ <tr><td>Carpenter, Sidney</td><td>Supv-Power Station Maintenance</td><td>Full-Time</td><td> $116,240.60 </td><td> $50.71 </td></tr>
+ <tr><td>Carr, Arnold</td><td>Equipment Operator</td><td>Full-Time</td><td> $62,636.01 </td><td> $28.59 </td></tr>
+ <tr><td>Carron, Mark</td><td>Senior Engineer-Electric Sys</td><td>Full-Time</td><td> $116,099.19 </td><td> $52.93 </td></tr>
+ <tr><td>Carsey, Adam</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $65,876.81 </td><td> $30.50 </td></tr>
+ <tr><td>Carter, Tom</td><td>Lakes Laborer-Thereafter</td><td>Full-Time</td><td> $44,247.90 </td><td> $22.52 </td></tr>
+ <tr><td>Carter, Tracy</td><td>Senior Control Operator</td><td>Full-Time</td><td> $90,744.92 </td><td> $38.85 </td></tr>
+ <tr><td>Casey, Joshua</td><td>Purchasing Coord-TA</td><td>Full-Time</td><td> $38,715.87 </td><td> $18.96 </td></tr>
+ <tr><td>Chainey, Timothy</td><td>Loader Operator-P.P.C.H.</td><td>Full-Time</td><td> $72,395.28 </td><td> $31.83 </td></tr>
+ <tr><td>Chisholm, Robert</td><td>Electric Line Crew Leader</td><td>Full-Time</td><td> $85,888.81 </td><td> $38.82 </td></tr>
+ <tr><td>Choate, Brent</td><td>Elec Line Worker-App-3rd Year</td><td>Full-Time</td><td> $64,106.52 </td><td> $30.56 </td></tr>
+ <tr><td>Christell, Todd</td><td>Mgr-SpringNet Netwk Arch/Suppt</td><td>Full-Time</td><td> $114,669.13 </td><td> $54.49 </td></tr>
+ <tr><td>Church, Matthew</td><td>Master Journey Mechanic</td><td>Full-Time</td><td> $69,388.26 </td><td> $28.63 </td></tr>
+ <tr><td>Clark, Frances</td><td>Fleet Mgmt Coord-TA</td><td>Full-Time</td><td> $39,255.08 </td><td> $18.96 </td></tr>
+ <tr><td>Clark, Jason</td><td>Sr. Water Technician</td><td>Full-Time</td><td> $57,270.30 </td><td> $28.60 </td></tr>
+ <tr><td>Clay, Cheryl</td><td>ET&D Department Administrator</td><td>Full-Time</td><td> $53,394.24 </td><td> $23.40 </td></tr>
+ <tr><td>Clay, Matthew</td><td>Electric Line Crew Leader</td><td>Full-Time</td><td> $87,034.03 </td><td> $38.82 </td></tr>
+ <tr><td>Claypool, Charles</td><td>Water Technician-Thereafter</td><td>Full-Time</td><td> $60,482.27 </td><td> $26.99 </td></tr>
+ <tr><td>Clayton, Carl</td><td>Plant Custodian I-Thereafter</td><td>Full-Time</td><td> $36,005.15 </td><td> $16.87 </td></tr>
+ <tr><td>Clifford, John</td><td>Material Tech-Thereafter</td><td>Full-Time</td><td> $50,914.07 </td><td> $25.31 </td></tr>
+ <tr><td>Clonts, Jeremy</td><td>Supervisor-Electric T & D</td><td>Full-Time</td><td> $109,119.72 </td><td> $46.57 </td></tr>
+ <tr><td>Cochran, Michael</td><td>Water Sys Installer</td><td>Full-Time</td><td> $55,606.94 </td><td> $25.12 </td></tr>
+ <tr><td>Cochran, Richard</td><td>Engineer-Electric Systems</td><td>Full-Time</td><td> $10,221.30 </td><td> $41.26 </td></tr>
+ <tr><td>Cole, Jesse</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $70,531.62 </td><td> $30.50 </td></tr>
+ <tr><td>Collier, Paul</td><td>Contract Mgr-Electric Supply</td><td>Full-Time</td><td> $92,783.67 </td><td> $42.43 </td></tr>
+ <tr><td>Coltrin, Walter</td><td>Master Mechanic</td><td>Full-Time</td><td> $72,966.33 </td><td> $34.98 </td></tr>
+ <tr><td>Combs, Wesley</td><td>Supervisor-Electric T & D</td><td>Full-Time</td><td> $103,788.72 </td><td> $42.65 </td></tr>
+ <tr><td>Comstock, Lance</td><td>App Elec Meter Tech-1st 6 mos</td><td>Full-Time</td><td> $55,688.27 </td><td> $23.66 </td></tr>
+ <tr><td>Comstock, Lisa</td><td>Sr CSR</td><td>Full-Time</td><td> $42,598.50 </td><td> $21.57 </td></tr>
+ <tr><td>Conrad, Charlotte</td><td>Service Technician I-Thereaftr</td><td>Full-Time</td><td> $70,931.39 </td><td> $33.59 </td></tr>
+ <tr><td>Conyers, Richard</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $74,705.39 </td><td> $30.50 </td></tr>
+ <tr><td>Conyers, Thomas</td><td>Supervisor-Meter Reading</td><td>Full-Time</td><td> $66,704.09 </td><td> $30.79 </td></tr>
+ <tr><td>Coram, Timothy</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $42,891.73 </td><td> $21.76 </td></tr>
+ <tr><td>Cornell, John</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $47,268.56 </td><td> $21.76 </td></tr>
+ <tr><td>Cotter, Ernest</td><td>Supv-Power Station Maintenance</td><td>Full-Time</td><td> $108,597.95 </td><td> $49.19 </td></tr>
+ <tr><td>Cox, Larry</td><td>Financial Analyst</td><td>Full-Time</td><td> $83,668.84 </td><td> $36.85 </td></tr>
+ <tr><td>Cox, Randy</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $67,599.93 </td><td> $30.50 </td></tr>
+ <tr><td>Cozad, Travis</td><td>Journey Mechanic ++</td><td>Full-Time</td><td> $52,331.55 </td><td> $25.73 </td></tr>
+ <tr><td>Craft, Kathryn</td><td>Supervisor-Financial Reporting</td><td>Full-Time</td><td> $88,763.91 </td><td> $43.47 </td></tr>
+ <tr><td>Crawford, Carol</td><td>Supervisor-Purchasing</td><td>Full-Time</td><td> $99,169.61 </td><td> $44.51 </td></tr>
+ <tr><td>Crawford, Kimberly</td><td>Supv-IT Desktop Support</td><td>Full-Time</td><td> $71,226.36 </td><td> $34.28 </td></tr>
+ <tr><td>Crawford, Matthew</td><td>Desktop Support Specialist</td><td>Full-Time</td><td> $68,315.81 </td><td> $31.59 </td></tr>
+ <tr><td>Crevier, Terry</td><td>Electric Line Worker +</td><td>Full-Time</td><td> $114,013.25 </td><td> $35.96 </td></tr>
+ <tr><td>Crews, Ted</td><td>Material Tech-Thereafter</td><td>Full-Time</td><td> $53,121.55 </td><td> $25.31 </td></tr>
+ <tr><td>Cronin, Richard</td><td>HVAC Technician-Thereafter</td><td>Full-Time</td><td> $82,018.39 </td><td> $36.83 </td></tr>
+ <tr><td>Cross, Jerry</td><td>Water Plant Operator</td><td>Full-Time</td><td> $79,302.06 </td><td> $32.58 </td></tr>
+ <tr><td>Crowe, Stuart</td><td>Material Coordinator (GF)</td><td>Full-Time</td><td> $55,523.09 </td><td> $27.96 </td></tr>
+ <tr><td>Crowson, Craig</td><td>Elec Tech/Elec Tech Crew Ldr</td><td>Full-Time</td><td> $90,010.35 </td><td> $40.77 </td></tr>
+ <tr><td>Crumpley, Teri</td><td>Office Administrator</td><td>Full-Time</td><td> $40,570.31 </td><td> $21.17 </td></tr>
+ <tr><td>Curbow, Donna</td><td>Administrator-Human Resources</td><td>Full-Time</td><td> $77,623.57 </td><td> $34.53 </td></tr>
+ <tr><td>Curtis, Jessica</td><td>Plant Custodian I-1st 6 mos</td><td>Full-Time</td><td> $9,101.81 </td><td> $15.49 </td></tr>
+ <tr><td>Cutler, David</td><td>Auxiliary Operator-Htr Floor</td><td>Full-Time</td><td> $76,110.21 </td><td> $32.28 </td></tr>
+ <tr><td>Cyr, John</td><td>CSR-1st 6 months</td><td>Full-Time</td><td> $3,532.44 </td><td> $15.22 </td></tr>
+ <tr><td>Daigle, Will</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $75,205.58 </td><td> $30.50 </td></tr>
+ <tr><td>Daily, Donna</td><td>Staff Assistant</td><td>Full-Time</td><td> $43,452.73 </td><td> $19.31 </td></tr>
+ <tr><td>Dalaviras, Kerri</td><td>Internal Auditor</td><td>Full-Time</td><td> $67,511.08 </td><td> $32.41 </td></tr>
+ <tr><td>Dalla Rosa, Christopher</td><td>Custodian-2nd 6 months</td><td>Full-Time</td><td> $16,564.08 </td><td> $14.98 </td></tr>
+ <tr><td>Dame, Jamie</td><td>Admin-Financial Reporting</td><td>Full-Time</td><td> $60,122.90 </td><td> $33.47 </td></tr>
+ <tr><td>Daniel, Michael</td><td>Equipment Operator</td><td>Full-Time</td><td> $55,098.18 </td><td> $28.59 </td></tr>
+ <tr><td>Davidson, Jonathan</td><td>Supv-Power Station Operations</td><td>Full-Time</td><td> $101,445.17 </td><td> $45.67 </td></tr>
+ <tr><td>Davis, Benjamin</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $70,544.62 </td><td> $21.76 </td></tr>
+ <tr><td>Davis, Diane</td><td>CSR-Thereafter</td><td>Full-Time</td><td> $38,874.75 </td><td> $18.69 </td></tr>
+ <tr><td>Davis, James</td><td>Custodian-Thereafter</td><td>Full-Time</td><td> $32,892.89 </td><td> $16.58 </td></tr>
+ <tr><td>Davis, Tommy</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $36,978.76 </td><td> $21.76 </td></tr>
+ <tr><td>Dawson, Margaret</td><td>Telecommunications Coordinator</td><td>Full-Time</td><td> $53,224.12 </td><td> $23.23 </td></tr>
+ <tr><td>Day, Don</td><td>Electrician</td><td>Full-Time</td><td> $75,695.06 </td><td> $36.15 </td></tr>
+ <tr><td>Dearing, Timothy</td><td>Master Journey Mechanic</td><td>Full-Time</td><td> $69,124.20 </td><td> $28.63 </td></tr>
+ <tr><td>Delasandro, Patrick</td><td>Water Plant Operator</td><td>Full-Time</td><td> $69,783.07 </td><td> $32.58 </td></tr>
+ <tr><td>DeLong, Lonnie</td><td>Master Mechanic</td><td>Full-Time</td><td> $78,604.48 </td><td> $34.98 </td></tr>
+ <tr><td>Deragowski, Sandy</td><td>Supervisor-Office Services</td><td>Full-Time</td><td> $63,175.70 </td><td> $30.47 </td></tr>
+ <tr><td>Derossett, William</td><td>Carpenter Crew Leader</td><td>Full-Time</td><td> $57,167.53 </td><td> $28.14 </td></tr>
+ <tr><td>Deshpande, Prasanna</td><td>Master Database Administrator</td><td>Full-Time</td><td> $117,978.87 </td><td> $54.83 </td></tr>
+ <tr><td>Dick, Jack</td><td>Power System Tech-Thereafter</td><td>Full-Time</td><td> $76,640.33 </td><td> $36.15 </td></tr>
+ <tr><td>Dierking, Patricia</td><td>Dir-Comm/Community Relations</td><td>Full-Time</td><td> $108,956.40 </td><td> $53.90 </td></tr>
+ <tr><td>Dishman, Linda</td><td>Electric Supply Fuels Admin</td><td>Full-Time</td><td> $56,201.76 </td><td> $23.65 </td></tr>
+ <tr><td>Dittmar, Dustin</td><td>Water Technician-Thereafter</td><td>Full-Time</td><td> $52,976.32 </td><td> $26.99 </td></tr>
+ <tr><td>Dlouhy, Shawn</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $49,801.43 </td><td> $21.76 </td></tr>
+ <tr><td>Dodd, James</td><td>Electric Line Worker +</td><td>Full-Time</td><td> $99,684.61 </td><td> $35.96 </td></tr>
+ <tr><td>Dody, Kevin</td><td>Manager-Human Resources</td><td>Full-Time</td><td> $104,848.90 </td><td> $45.96 </td></tr>
+ <tr><td>Donnelly, Timothy</td><td>Service Technician I-Thereaftr</td><td>Full-Time</td><td> $75,068.20 </td><td> $33.59 </td></tr>
+ <tr><td>Dopp, Jamie</td><td>Mgr-Community Relations</td><td>Full-Time</td><td> $21,490.72 </td><td> $32.29 </td></tr>
+ <tr><td>Dorrell, Emelda</td><td>Supervisor-Customer Services</td><td>Full-Time</td><td> $64,556.74 </td><td> $29.92 </td></tr>
+ <tr><td>Dowdy, May</td><td>Security Operations Specialist</td><td>Full-Time</td><td> $46,686.81 </td><td> $19.39 </td></tr>
+ <tr><td>Dowler, Wesley</td><td>Env Analyst Co-op-Graduate</td><td>Part-Time</td><td> $2,907.06 </td><td> $14.61 </td></tr>
+ <tr><td>Driskell, Gail</td><td>Senior Buyer</td><td>Full-Time</td><td> $91,324.01 </td><td> $42.39 </td></tr>
+ <tr><td>Dryden, Robert</td><td>Supv-Power Station Operations</td><td>Full-Time</td><td> $104,849.94 </td><td> $45.75 </td></tr>
+ <tr><td>Duckworth, Alan</td><td>Maint Mechanic-Cert Welder</td><td>Full-Time</td><td> $73,548.30 </td><td> $34.56 </td></tr>
+ <tr><td>Duckworth, Randall</td><td>Senior Welder-Gas</td><td>Full-Time</td><td> $67,970.44 </td><td> $31.80 </td></tr>
+ <tr><td>Dudley, Mitchell</td><td>Pressure Technician</td><td>Full-Time</td><td> $67,351.44 </td><td> $29.80 </td></tr>
+ <tr><td>Duenow, Elliot</td><td>Engineering Tech Co-op</td><td>Part-Time</td><td> $11,493.32 </td><td> $10.28 </td></tr>
+ <tr><td>Duffield, Milton</td><td>Crew Leader/Troubleshooter</td><td>Full-Time</td><td> $120,601.37 </td><td> $38.82 </td></tr>
+ <tr><td>Duncan, Coy</td><td>Service Technician I-Thereaftr</td><td>Full-Time</td><td> $82,654.39 </td><td> $33.59 </td></tr>
+ <tr><td>Dunn, Eric</td><td>Equipment Operator</td><td>Full-Time</td><td> $54,920.11 </td><td> $28.59 </td></tr>
+ <tr><td>Durham, Richard</td><td>Meter Reader City-Thereafter</td><td>Full-Time</td><td> $56,496.10 </td><td> $24.92 </td></tr>
+ <tr><td>Eady, Randy</td><td>Electric Line Worker +</td><td>Full-Time</td><td> $97,461.47 </td><td> $35.96 </td></tr>
+ <tr><td>Eakin, Jason</td><td>CSR-Thereafter</td><td>Full-Time</td><td> $38,284.70 </td><td> $18.69 </td></tr>
+ <tr><td>Eakins, Johnny</td><td>Prog Admin-Energy Mgmt/Cons</td><td>Full-Time</td><td> $67,635.76 </td><td> $31.21 </td></tr>
+ <tr><td>Eastwood, Mark</td><td>Mgr-Balancing Auth/Trans Oper</td><td>Full-Time</td><td> $101,995.91 </td><td> $45.43 </td></tr>
+ <tr><td>Eaton, Gregory</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $47,565.91 </td><td> $21.76 </td></tr>
+ <tr><td>Eaton, Raymond</td><td>Supv-Power Station Operations</td><td>Full-Time</td><td> $97,670.81 </td><td> $42.40 </td></tr>
+ <tr><td>Echols, Philip</td><td>Instrument Tech-Relief Operatr</td><td>Full-Time</td><td> $72,975.84 </td><td> $32.77 </td></tr>
+ <tr><td>Eden, Tyler</td><td>Gas System Installer</td><td>Full-Time</td><td> $57,346.52 </td><td> $26.35 </td></tr>
+ <tr><td>Eidson, Mary</td><td>Sr CSR</td><td>Full-Time</td><td> $44,655.59 </td><td> $21.57 </td></tr>
+ <tr><td>Elliott, Marty</td><td>Gas Leak Investigator</td><td>Full-Time</td><td> $64,806.17 </td><td> $28.59 </td></tr>
+ <tr><td>Ellis, Max</td><td>Dir-Financial Tech/Training</td><td>Full-Time</td><td> $130,372.82 </td><td> $57.78 </td></tr>
+ <tr><td>Ellison, Jeff</td><td>Sr Process Control Analyst</td><td>Full-Time</td><td> $82,902.83 </td><td> $36.81 </td></tr>
+ <tr><td>Elsaesser, Pamela</td><td>Dir-Fin Reporting/Comptroller</td><td>Full-Time</td><td> $136,309.96 </td><td> $61.12 </td></tr>
+ <tr><td>Enlow, Henry</td><td>Application Integrator</td><td>Full-Time</td><td> $89,316.32 </td><td> $40.67 </td></tr>
+ <tr><td>Erwin, Deborah</td><td>Bus Operator-2nd/3rd Years</td><td>Full-Time</td><td> $33,274.12 </td><td> $18.34 </td></tr>
+ <tr><td>Estes, Marilyn</td><td>CSR-Thereafter</td><td>Full-Time</td><td> $36,005.16 </td><td> $18.69 </td></tr>
+ <tr><td>Evans, Bill</td><td>Equipment Operator</td><td>Full-Time</td><td> $61,459.50 </td><td> $28.59 </td></tr>
+ <tr><td>Evans, Russell</td><td>Power System Tech-Thereafter</td><td>Full-Time</td><td> $78,156.76 </td><td> $36.15 </td></tr>
+ <tr><td>Everett, Jeremy</td><td>CSR-Thereafter</td><td>Full-Time</td><td> $37,425.58 </td><td> $18.69 </td></tr>
+ <tr><td>Evers, Gary</td><td>Elec, Inst, & Control Tech</td><td>Full-Time</td><td> $82,047.92 </td><td> $38.59 </td></tr>
+ <tr><td>Ewy, Matthew</td><td>Application Integrator</td><td>Full-Time</td><td> $87,406.52 </td><td> $40.30 </td></tr>
+ <tr><td>Farmer, Jimmy</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $63,566.92 </td><td> $30.50 </td></tr>
+ <tr><td>Faucett, Deborah</td><td>Meter Reader Special Read</td><td>Full-Time</td><td> $58,941.37 </td><td> $27.82 </td></tr>
+ <tr><td>Feemster, Ferguson</td><td>Director-Electric Supply</td><td>Full-Time</td><td> $164,825.42 </td><td> $75.37 </td></tr>
+ <tr><td>Felkner, David</td><td>Senior Engineer-Power Station</td><td>Full-Time</td><td> $111,967.72 </td><td> $53.58 </td></tr>
+ <tr><td>Fels, Gregory</td><td>Security Officer</td><td>Part-Time</td><td> $8,429.36 </td><td> $15.55 </td></tr>
+ <tr><td>Ferguson, Terrence</td><td>Appl Analyst Co-op-Senior</td><td>Part-Time</td><td> $2,316.46 </td><td> $12.52 </td></tr>
+ <tr><td>Fernau-Dunn, Theresa</td><td>Office Administrator</td><td>Full-Time</td><td> $47,503.10 </td><td> $20.82 </td></tr>
+ <tr><td>Fielden, Steven</td><td>Water Technician-Thereafter</td><td>Full-Time</td><td> $57,399.45 </td><td> $26.99 </td></tr>
+ <tr><td>Finch, Michael</td><td>Assoc Gen Mgr-CFO</td><td>Full-Time</td><td> $193,561.52 </td><td> $89.92 </td></tr>
+ <tr><td>Fisher, Jared</td><td>Equipment Operator</td><td>Full-Time</td><td> $59,730.97 </td><td> $28.59 </td></tr>
+ <tr><td>Fletcher, Cody</td><td>Gas System Installer</td><td>Full-Time</td><td> $54,688.11 </td><td> $26.35 </td></tr>
+ <tr><td>Floyd, Gavin</td><td>Sr Eng Tech-Cross Conn-TA</td><td>Full-Time</td><td> $49,287.98 </td><td> $28.05 </td></tr>
+ <tr><td>Floyd, Steven</td><td>Asst Mgr-Nat Gas/Water Oper</td><td>Full-Time</td><td> $142,311.05 </td><td> $63.24 </td></tr>
+ <tr><td>Forbis, Michael</td><td>Meter Reader City-2nd 3 mos</td><td>Full-Time</td><td> $46,288.56 </td><td> $20.85 </td></tr>
+ <tr><td>Ford, James</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $68,417.20 </td><td> $30.50 </td></tr>
+ <tr><td>Forrester, Bethany</td><td>Engineer-Natural Gas & Water</td><td>Full-Time</td><td> $39,019.75 </td><td> $30.39 </td></tr>
+ <tr><td>Fortson, Aaron</td><td>Supervisor-Accounts Payable</td><td>Full-Time</td><td> $17,248.96 </td><td> $32.29 </td></tr>
+ <tr><td>Foster, Andrew</td><td>Application Integrator</td><td>Full-Time</td><td> $91,204.51 </td><td> $44.27 </td></tr>
+ <tr><td>Foster, Anthony</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $64,465.73 </td><td> $30.50 </td></tr>
+ <tr><td>Foster, James</td><td>Electric Line Crew Leader</td><td>Full-Time</td><td> $112,011.75 </td><td> $38.82 </td></tr>
+ <tr><td>Fowler, Parker</td><td>Sr Elec System Des-TA</td><td>Full-Time</td><td> $61,259.84 </td><td> $27.87 </td></tr>
+ <tr><td>Fox, John</td><td>Senior Database Administrator</td><td>Full-Time</td><td> $115,446.22 </td><td> $50.28 </td></tr>
+ <tr><td>Fraley, David</td><td>Director-Environmental Affairs</td><td>Full-Time</td><td> $164,911.98 </td><td> $74.93 </td></tr>
+ <tr><td>Fraley, LaDonna</td><td>CSR-Thereafter</td><td>Full-Time</td><td> $34,282.63 </td><td> $18.69 </td></tr>
+ <tr><td>Francis, Johnesha</td><td>Accountant Co-op-Senior</td><td>Part-Time</td><td> $5,027.35 </td><td> $12.52 </td></tr>
+ <tr><td>Franke, Walter</td><td>Energy Mgmt System Specialist</td><td>Full-Time</td><td> $81,073.84 </td><td> $35.69 </td></tr>
+ <tr><td>Franklin, Russell</td><td>Meter Mechanic</td><td>Full-Time</td><td> $51,469.67 </td><td> $26.54 </td></tr>
+ <tr><td>Freelove-Hicks, Kelley</td><td>IT Business Analyst I</td><td>Full-Time</td><td> $58,970.00 </td><td> $27.52 </td></tr>
+ <tr><td>Freeman, Derwin</td><td>Asst Mgr-IT Infrastructure</td><td>Full-Time</td><td> $106,633.37 </td><td> $52.79 </td></tr>
+ <tr><td>Freeman, Jeffery</td><td>Electric Line Crew Leader</td><td>Full-Time</td><td> $106,772.67 </td><td> $38.82 </td></tr>
+ <tr><td>Friend, Teresa</td><td>Customer Services Trainer</td><td>Full-Time</td><td> $39,602.96 </td><td> $21.60 </td></tr>
+ <tr><td>Fritts, Kathleen</td><td>Assoc Gen Mgr-IT/Transp</td><td>Full-Time</td><td> $203,867.27 </td><td> $88.58 </td></tr>
+ <tr><td>Fuelts, Eric</td><td>Desktop Support Specialist</td><td>Full-Time</td><td> $33,274.12 </td><td> $27.70 </td></tr>
+ <tr><td>Fuller, Michael</td><td>Supv-Physical Security Oper</td><td>Full-Time</td><td> $36,005.16 </td><td> $28.18 </td></tr>
+ <tr><td>Fulton, Scott</td><td>Bus Operator-2nd/3rd Years</td><td>Full-Time</td><td> $61,459.50 </td><td> $18.34 </td></tr>
+ <tr><td>Gabriel, H</td><td>Pressure Technician</td><td>Full-Time</td><td> $78,156.76 </td><td> $29.80 </td></tr>
+ <tr><td>Gafford, Travis</td><td>Supv-Power Station Operations</td><td>Full-Time</td><td> $37,425.58 </td><td> $46.09 </td></tr>
+ <tr><td>Gallion, Diane</td><td>Transit Grants Analyst</td><td>Full-Time</td><td> $82,047.92 </td><td> $33.49 </td></tr>
+ <tr><td>Gann, Bruce</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $87,406.52 </td><td> $30.50 </td></tr>
+ <tr><td>Gann, John</td><td>Electric Line Crew Leader</td><td>Full-Time</td><td> $63,566.92 </td><td> $38.82 </td></tr>
+ <tr><td>Gardenhire, Adam</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $58,941.37 </td><td> $30.50 </td></tr>
+ <tr><td>Gardner, Everett</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $164,825.42 </td><td> $21.76 </td></tr>
+ <tr><td>Gardner, Richard</td><td>Buyer</td><td>Full-Time</td><td> $111,967.72 </td><td> $24.66 </td></tr>
+ <tr><td>Gardner, Thresa</td><td>Field Scheduler-2nd year</td><td>Full-Time</td><td> $8,429.36 </td><td> $23.83 </td></tr>
+ <tr><td>Garnett, Randall</td><td>Power System Oper/Dispatcher</td><td>Full-Time</td><td> $2,316.46 </td><td> $37.08 </td></tr>
+ <tr><td>Garoutte, Michael</td><td>Admin-Water Engineering</td><td>Full-Time</td><td> $47,503.10 </td><td> $38.68 </td></tr>
+ <tr><td>Garoutte, Sharon</td><td>Application Integrator</td><td>Full-Time</td><td> $57,399.45 </td><td> $41.29 </td></tr>
+ <tr><td>Garrett, Jessica</td><td>Data Migration Co-op-Graduate</td><td>Part-Time</td><td> $193,561.52 </td><td> $10.85 </td></tr>
+ <tr><td>Garrison, Carolyn</td><td>Staff Accountant</td><td>Full-Time</td><td> $59,730.97 </td><td> $22.76 </td></tr>
+ <tr><td>Garrison, Jeremiah</td><td>Equipment Operator</td><td>Full-Time</td><td> $54,688.11 </td><td> $28.59 </td></tr>
+ <tr><td>Gates, William</td><td>Meter Reader City-Thereafter</td><td>Full-Time</td><td> $49,287.98 </td><td> $24.92 </td></tr>
+ <tr><td>Gauldin, Austin</td><td>Equipment Operator</td><td>Full-Time</td><td> $142,311.05 </td><td> $28.59 </td></tr>
+ <tr><td>Gavel, Duan</td><td>Sr Elec System Des-TA</td><td>Full-Time</td><td> $46,288.56 </td><td> $27.87 </td></tr>
+ <tr><td>Ghan, Gary</td><td>Heavy Equipment Operator</td><td>Full-Time</td><td> $68,417.20 </td><td> $28.60 </td></tr>
+ <tr><td>Gibson, Gary</td><td>Director-Distribution</td><td>Full-Time</td><td> $39,019.75 </td><td> $88.11 </td></tr>
+ <tr><td>Gibson, Todd</td><td>Master Designer-Substations +</td><td>Full-Time</td><td> $17,248.96 </td><td> $36.15 </td></tr>
+ <tr><td>Gideon, Debbie</td><td>Administrator-Human Resources</td><td>Full-Time</td><td> $91,204.51 </td><td> $35.36 </td></tr>
+ <tr><td>Giggy, Scott</td><td>Electric Line Worker +</td><td>Full-Time</td><td> $64,465.73 </td><td> $35.96 </td></tr>
+ <tr><td>Gimlin, David</td><td>Supv-Power Station Operations</td><td>Full-Time</td><td> $112,011.75 </td><td> $45.28 </td></tr>
+ <tr><td>Givler, Troy</td><td>Material Tech-Thereafter</td><td>Full-Time</td><td> $61,259.84 </td><td> $25.31 </td></tr>
+ <tr><td>Gleghorn, Debra</td><td>Data Coordinator-Thereafter</td><td>Full-Time</td><td> $115,446.22 </td><td> $16.79 </td></tr>
+ <tr><td>Godfrey, John</td><td>Master Journey Mechanic</td><td>Full-Time</td><td> $164,911.98 </td><td> $28.63 </td></tr>
+ <tr><td>Godfrey, Melinda</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $34,282.63 </td><td> $21.76 </td></tr>
+ <tr><td>Goings, Jason</td><td>Meter Reader City-Thereafter</td><td>Full-Time</td><td> $5,027.35 </td><td> $24.92 </td></tr>
+ <tr><td>Gold, Nathan</td><td>Truck Driver</td><td>Full-Time</td><td> $81,073.84 </td><td> $25.25 </td></tr>
+ <tr><td>Golden, James</td><td>Elec, Inst, & Control Tech</td><td>Full-Time</td><td> $51,469.67 </td><td> $38.59 </td></tr>
+ <tr><td>Goodall, Christopher</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $58,970.00 </td><td> $30.50 </td></tr>
+ <tr><td>Gordon-Chumbley, Penny</td><td>Supv-IT Business Analysts</td><td>Full-Time</td><td> $106,633.37 </td><td> $37.47 </td></tr>
+ <tr><td>Gore, Steven</td><td>Director-Customer Operations</td><td>Full-Time</td><td> $106,772.67 </td><td> $59.77 </td></tr>
+ <tr><td>Gormley, Gordon</td><td>Supervisor-Bus Services</td><td>Full-Time</td><td> $39,602.96 </td><td> $30.05 </td></tr>
+ <tr><td>Gott, Sharon</td><td>Assistant to the General Mgr</td><td>Full-Time</td><td> $203,867.27 </td><td> $26.63 </td></tr>
+ <tr><td>Graef, Robert</td><td>Sr Elect Comm Tech-Wireless</td><td>Full-Time</td><td> $62,090.15 </td><td> $37.93 </td></tr>
+ <tr><td>Graham, Marc</td><td>Service Technician I-Thereaftr</td><td>Full-Time</td><td> $80,190.56 </td><td> $33.59 </td></tr>
+ <tr><td>Graham, Patrick</td><td>Elec Tech/Elec Tech Crew Ldr</td><td>Full-Time</td><td> $74,202.66 </td><td> $40.77 </td></tr>
+ <tr><td>Grant, Gary</td><td>Measurement  Tech</td><td>Full-Time</td><td> $85,557.60 </td><td> $29.48 </td></tr>
+ <tr><td>Green, Robert</td><td>Heavy Equipment Operator</td><td>Full-Time</td><td> $62,145.73 </td><td> $28.60 </td></tr>
+ <tr><td>Greene, Mark</td><td>Water Technician-Thereafter</td><td>Full-Time</td><td> $64,568.44 </td><td> $26.99 </td></tr>
+ <tr><td>Griggs, James</td><td>Supv-Power Station Maintenance</td><td>Full-Time</td><td> $59,868.54 </td><td> $44.65 </td></tr>
+ <tr><td>Grube, Larry</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $94,869.16 </td><td> $21.76 </td></tr>
+ <tr><td>Gruener, Jennifer</td><td>Information Security Analyst</td><td>Full-Time</td><td> $43,571.88 </td><td> $39.61 </td></tr>
+ <tr><td>Grzanka, Anna</td><td>Printing Serv Tech-TA</td><td>Full-Time</td><td> $79,555.35 </td><td> $23.65 </td></tr>
+ <tr><td>Guiler, Robert</td><td>Senior Engineer-Electric Sys</td><td>Full-Time</td><td> $48,824.97 </td><td> $46.79 </td></tr>
+ <tr><td>Gum, Van</td><td>Instrument Control Tech/Oper</td><td>Full-Time</td><td> $106,318.45 </td><td> $35.61 </td></tr>
+ <tr><td>Gumucio, Reynaldo</td><td>Senior Laboratory Analyst</td><td>Full-Time</td><td> $72,751.38 </td><td> $40.97 </td></tr>
+ <tr><td>Gunzenhauser, Scott</td><td>Forester</td><td>Full-Time</td><td> $93,456.59 </td><td> $33.43 </td></tr>
+ <tr><td>Haden, Mark</td><td>Senior Engineer-Power Station</td><td>Full-Time</td><td> $75,791.09 </td><td> $45.70 </td></tr>
+ <tr><td>Hadsall, Jack</td><td>Dir-Risk Mgmt Projects (P/T)</td><td>Part-Time</td><td> $94,074.08 </td><td> $71.61 </td></tr>
+ <tr><td>Haffecke, William</td><td>Asst Manager-Electric T & D</td><td>Full-Time</td><td> $4,010.38 </td><td> $71.71 </td></tr>
+ <tr><td>Hale, Ashley</td><td>Accountant Co-op-Junior</td><td>Part-Time</td><td> $153,179.89 </td><td> $11.48 </td></tr>
+ <tr><td>Hale, Kenneth</td><td>Sr. Planner</td><td>Full-Time</td><td> $9,784.94 </td><td> $56.46 </td></tr>
+ <tr><td>Haling, Sean</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $127,955.20 </td><td> $30.50 </td></tr>
+ <tr><td>Hall, Curt</td><td>Equipment Operator</td><td>Full-Time</td><td> $64,383.66 </td><td> $28.59 </td></tr>
+ <tr><td>Haller, Christopher</td><td>Manager-Facilities Management</td><td>Full-Time</td><td> $57,605.68 </td><td> $60.69 </td></tr>
+ <tr><td>Halley, Glen</td><td>Senior Engineer-Electric Sys</td><td>Full-Time</td><td> $130,097.08 </td><td> $46.87 </td></tr>
+ <tr><td>Hamlin, Cheryl</td><td>Mgr-Utility Rec/Benchmarking</td><td>Full-Time</td><td> $109,069.29 </td><td> $50.65 </td></tr>
+ <tr><td>Hamra, Sam</td><td>Lead Custodian II-Thereaftr</td><td>Full-Time</td><td> $108,115.21 </td><td> $21.08 </td></tr>
+ <tr><td>Hanchey, Michael</td><td>Asst Mgr-Water Construction</td><td>Full-Time</td><td> $44,338.75 </td><td> $60.39 </td></tr>
+ <tr><td>Hannah, Bradley</td><td>Water Sys Installer</td><td>Full-Time</td><td> $136,063.42 </td><td> $25.12 </td></tr>
+ <tr><td>Hansen, Dennis</td><td>Supv-Natural Gas Construction</td><td>Full-Time</td><td> $58,415.74 </td><td> $35.72 </td></tr>
+ <tr><td>Hardison, Jeffrey</td><td>Electric Line Worker +</td><td>Full-Time</td><td> $89,575.69 </td><td> $35.96 </td></tr>
+ <tr><td>Hardy, Bryan</td><td>Application Integrator</td><td>Full-Time</td><td> $88,378.79 </td><td> $39.82 </td></tr>
+ <tr><td>Hardy, Michael</td><td>CSR-Thereafter</td><td>Full-Time</td><td> $80,876.04 </td><td> $18.69 </td></tr>
+ <tr><td>Hardy, Timothy</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $35,314.46 </td><td> $30.50 </td></tr>
+ <tr><td>Harness, Michael</td><td>Utility Carpenter-Thereafter</td><td>Full-Time</td><td> $70,139.63 </td><td> $26.24 </td></tr>
+ <tr><td>Harralson, Curtis</td><td>Supv-Nat Gas Pressure Control</td><td>Full-Time</td><td> $46,304.41 </td><td> $36.71 </td></tr>
+ <tr><td>Harrington, Joe</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $82,524.12 </td><td> $30.50 </td></tr>
+ <tr><td>Harris, Edwin</td><td>Service Technician I-Thereaftr</td><td>Full-Time</td><td> $68,680.13 </td><td> $33.59 </td></tr>
+ <tr><td>Harris, John</td><td>Asst Mgr-Geospatial Des/Proc</td><td>Full-Time</td><td> $64,438.62 </td><td> $49.50 </td></tr>
+ <tr><td>Harrison, Jennifer</td><td>Office Administrator</td><td>Full-Time</td><td> $105,074.90 </td><td> $21.45 </td></tr>
+ <tr><td>Hart, Gary</td><td>Power System Oper/Dispatcher</td><td>Full-Time</td><td> $47,595.27 </td><td> $40.46 </td></tr>
+ <tr><td>Hart, Robert</td><td>Auxiliary Operator</td><td>Full-Time</td><td> $71,452.41 </td><td> $31.33 </td></tr>
+ <tr><td>Hart, Sherry</td><td>Office Administrator</td><td>Full-Time</td><td> $45,689.26 </td><td> $20.56 </td></tr>
+ <tr><td>Hartman, Keith</td><td>Bus Operator-2nd/3rd Years</td><td>Full-Time</td><td> $38,810.52 </td><td> $18.34 </td></tr>
+ <tr><td>Hawkins, Brendan</td><td>Supervisor-Electric T & D</td><td>Full-Time</td><td> $100,711.45 </td><td> $46.57 </td></tr>
+ <tr><td>Hawkins, Bryan</td><td>Sr Eng Tech-PP-TA</td><td>Full-Time</td><td> $56,085.05 </td><td> $27.87 </td></tr>
+ <tr><td>Hawkins, Derek</td><td>Utility Carpenter-Thereafter</td><td>Full-Time</td><td> $48,589.23 </td><td> $26.24 </td></tr>
+ <tr><td>Hawkins, Michael</td><td>Elec, Inst, & Control Tech</td><td>Full-Time</td><td> $74,500.46 </td><td> $38.59 </td></tr>
+ <tr><td>Haynes, Casey</td><td>Supv-Natural Gas & Water Eng</td><td>Full-Time</td><td> $103,566.27 </td><td> $49.99 </td></tr>
+ <tr><td>Heckenbach, Eric</td><td>Energy Mgmt System Coordinator</td><td>Full-Time</td><td> $95,603.97 </td><td> $41.36 </td></tr>
+ <tr><td>Hedgpeth, Chance</td><td>Water Sys Inst-2nd 6 mos</td><td>Full-Time</td><td> $3,905.08 </td><td> $21.72 </td></tr>
+ <tr><td>Hedrick, Daniel</td><td>Mgr-Environmental Compliance</td><td>Full-Time</td><td> $105,498.87 </td><td> $52.39 </td></tr>
+ <tr><td>Heinzler, Hallie</td><td>Operations Co-op</td><td>Part-Time</td><td> $12,315.75 </td><td> $9.03 </td></tr>
+ <tr><td>Hemingway, Jamie</td><td>Equipment Operator</td><td>Full-Time</td><td> $70,519.77 </td><td> $28.59 </td></tr>
+ <tr><td>Hemphill, Derek</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $62,243.53 </td><td> $30.50 </td></tr>
+ <tr><td>Hensley, Matthew</td><td>Supv-Natural Gas Measurement</td><td>Full-Time</td><td> $78,604.73 </td><td> $35.12 </td></tr>
+ <tr><td>Herring, Terry</td><td>Lead Custodian II-Thereaftr</td><td>Full-Time</td><td> $44,508.05 </td><td> $21.08 </td></tr>
+ <tr><td>Herron, Jimmy</td><td>Sr CSR</td><td>Full-Time</td><td> $44,144.00 </td><td> $21.57 </td></tr>
+ <tr><td>Heslip, Karen</td><td>Staff Assistant</td><td>Full-Time</td><td> $45,452.67 </td><td> $21.01 </td></tr>
+ <tr><td>Highley, Byron</td><td>Maintenance Tech-Thereafter</td><td>Full-Time</td><td> $68,934.54 </td><td> $31.59 </td></tr>
+ <tr><td>Hightower, Andrew</td><td>Power System Oper/Dispatcher</td><td>Full-Time</td><td> $84,350.43 </td><td> $37.81 </td></tr>
+ <tr><td>Hill, Chris</td><td>Manager-Operations Technology</td><td>Full-Time</td><td> $115,046.28 </td><td> $55.39 </td></tr>
+ <tr><td>Hill, Jennifer</td><td>CSR-Thereafter</td><td>Full-Time</td><td> $29,673.67 </td><td> $18.69 </td></tr>
+ <tr><td>Hinds, Brett</td><td>Material Tech-Thereafter</td><td>Full-Time</td><td> $47,782.55 </td><td> $25.31 </td></tr>
+ <tr><td>Hinds, David</td><td>Elec Line Worker-App-2nd Year</td><td>Full-Time</td><td> $65,426.30 </td><td> $28.76 </td></tr>
+ <tr><td>Hines, Chuck</td><td>Custodian-Thereafter</td><td>Full-Time</td><td> $36,842.01 </td><td> $16.58 </td></tr>
+ <tr><td>Hintz, Daniel</td><td>Master Mechanic</td><td>Full-Time</td><td> $70,858.65 </td><td> $34.98 </td></tr>
+ <tr><td>Hobbs, David</td><td>Supervisor-Electric T & D</td><td>Full-Time</td><td> $104,234.39 </td><td> $42.65 </td></tr>
+ <tr><td>Hocklander, Travis</td><td>Sr Elect Comm Tech-Network</td><td>Full-Time</td><td> $91,487.11 </td><td> $37.93 </td></tr>
+ <tr><td>Hodges, Natalie</td><td>Grp Ldr-Graphic Des-Thereafter</td><td>Full-Time</td><td> $63,595.70 </td><td> $30.09 </td></tr>
+ <tr><td>Hoff, Thomas</td><td>Control Operator</td><td>Full-Time</td><td> $87,853.04 </td><td> $33.55 </td></tr>
+ <tr><td>Holcomb, Joseph</td><td>IT Business Analyst I</td><td>Full-Time</td><td> $50,295.45 </td><td> $26.31 </td></tr>
+ <tr><td>Holden, John</td><td>Security Operations Specialist</td><td>Full-Time</td><td> $42,125.44 </td><td> $17.85 </td></tr>
+ <tr><td>Holder, James</td><td>Master Journey Mechanic</td><td>Full-Time</td><td> $67,245.94 </td><td> $28.63 </td></tr>
+ <tr><td>Hollandsworth, Melanie</td><td>Application Integrator</td><td>Full-Time</td><td> $100,663.78 </td><td> $44.02 </td></tr>
+ <tr><td>Holt, Steven</td><td>Gen Supv-Nat Gas Construction</td><td>Full-Time</td><td> $102,540.67 </td><td> $44.88 </td></tr>
+ <tr><td>Holzkamper, Stacy</td><td>Sr Elect Comm Tech-Network</td><td>Full-Time</td><td> $91,199.32 </td><td> $37.93 </td></tr>
+ <tr><td>Hood, Clay</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $47,301.29 </td><td> $21.76 </td></tr>
+ <tr><td>Hooper, Patrice</td><td>Meter Reader City-Thereafter</td><td>Full-Time</td><td> $51,174.31 </td><td> $24.92 </td></tr>
+ <tr><td>Horne, Shaun</td><td>CSR-Thereafter</td><td>Full-Time</td><td> $36,999.17 </td><td> $18.69 </td></tr>
+ <tr><td>Hoskins, Kirk</td><td>Utility Carpenter-Thereafter</td><td>Full-Time</td><td> $52,822.60 </td><td> $26.24 </td></tr>
+ <tr><td>Houska, Debra</td><td>Sr Leak Surveyor-TA</td><td>Full-Time</td><td> $59,369.20 </td><td> $28.32 </td></tr>
+ <tr><td>Housley, Rhonda</td><td>Administrator-Human Resources</td><td>Full-Time</td><td> $81,417.50 </td><td> $36.81 </td></tr>
+ <tr><td>Howard, Gary</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $45,897.84 </td><td> $21.76 </td></tr>
+ <tr><td>Hubbard, Mark</td><td>Natural Gas Safety Specialist</td><td>Part-Time</td><td> $75,134.75 </td><td> $29.05 </td></tr>
+ <tr><td>Hull, Donald</td><td>Supv-Contract Inspection</td><td>Full-Time</td><td> $94,168.54 </td><td> $38.30 </td></tr>
+ <tr><td>Hummel, Daniel</td><td>Internal Auditing Co-op-Senior</td><td>Part-Time</td><td> $1,139.46 </td><td> $12.52 </td></tr>
+ <tr><td>Hunt, Diana</td><td>Administrator-Human Resources</td><td>Full-Time</td><td> $80,855.31 </td><td> $35.22 </td></tr>
+ <tr><td>Hurley, Edward</td><td>Truck Driver</td><td>Full-Time</td><td> $54,110.59 </td><td> $25.25 </td></tr>
+ <tr><td>Huson, Chelsea</td><td>CSR-1st 6 months</td><td>Full-Time</td><td> $3,531.88 </td><td> $15.22 </td></tr>
+ <tr><td>Iler, Bradley</td><td>Supv-Natural Gas Construction</td><td>Full-Time</td><td> $87,029.42 </td><td> $36.54 </td></tr>
+ <tr><td>Ingerson, Jonathan</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $64,630.23 </td><td> $30.50 </td></tr>
+ <tr><td>Ipock, D</td><td>Senior Engineer-Electric Sys</td><td>Full-Time</td><td> $121,352.72 </td><td> $52.62 </td></tr>
+ <tr><td>Ives, Brandon</td><td>Application Analyst</td><td>Full-Time</td><td> $66,522.12 </td><td> $30.00 </td></tr>
+ <tr><td>Jackson, Randall</td><td>Service Technician I-Thereaftr</td><td>Full-Time</td><td> $75,185.54 </td><td> $33.59 </td></tr>
+ <tr><td>Jackson, William</td><td>Gas Sys Instal-Water Tool Tech</td><td>Full-Time</td><td> $60,106.63 </td><td> $28.59 </td></tr>
+ <tr><td>Jacober, Jason</td><td>Elec, Inst, & Control Tech</td><td>Full-Time</td><td> $82,693.62 </td><td> $38.59 </td></tr>
+ <tr><td>Jacobs, Bill</td><td>Electric Line Worker +</td><td>Full-Time</td><td> $94,323.35 </td><td> $35.96 </td></tr>
+ <tr><td>Jacobs, Jeffrey</td><td>Field Scheduler-2nd year</td><td>Full-Time</td><td> $47,662.10 </td><td> $23.83 </td></tr>
+ <tr><td>Jacobsen, David</td><td>Senior Engineer-Electric Sys</td><td>Full-Time</td><td> $129,424.22 </td><td> $55.02 </td></tr>
+ <tr><td>James, Amanda</td><td>Employment Specialist</td><td>Full-Time</td><td> $55,713.60 </td><td> $27.94 </td></tr>
+ <tr><td>James, Tammy</td><td>Administrator-Human Resources</td><td>Full-Time</td><td> $73,353.58 </td><td> $36.50 </td></tr>
+ <tr><td>Jankowski, Donna</td><td>Bus Operator-2nd/3rd Years</td><td>Full-Time</td><td> $41,242.15 </td><td> $18.34 </td></tr>
+ <tr><td>Jarvis, Teresa</td><td>ET&D Department Administrator</td><td>Full-Time</td><td> $53,311.37 </td><td> $24.16 </td></tr>
+ <tr><td>Jean, Terry</td><td>Crew Leader/Troubleshooter</td><td>Full-Time</td><td> $111,545.14 </td><td> $38.82 </td></tr>
+ <tr><td>Jeffreys, Tyler</td><td>Sr Nat Gas & Water Des-TA</td><td>Full-Time</td><td> $59,712.85 </td><td> $27.87 </td></tr>
+ <tr><td>Jenkins, Desta</td><td>Dispatch Clerk-Thereafter (GF)</td><td>Full-Time</td><td> $43,278.14 </td><td> $23.16 </td></tr>
+ <tr><td>Jenkins, Janet</td><td>CSR-Thereafter</td><td>Full-Time</td><td> $38,949.72 </td><td> $18.69 </td></tr>
+ <tr><td>Jenkins, Phillip</td><td>Service Technician I-1st 6 mos</td><td>Full-Time</td><td> $58,406.62 </td><td> $28.42 </td></tr>
+ <tr><td>Johnson, David</td><td>Crew Leader/Troubleshooter</td><td>Full-Time</td><td> $111,141.54 </td><td> $38.82 </td></tr>
+ <tr><td>Johnson, Doyle</td><td>Supervisor-Custodians</td><td>Full-Time</td><td> $55,682.26 </td><td> $23.82 </td></tr>
+ <tr><td>Johnson, Frederick</td><td>Supv-Power Station Operations</td><td>Full-Time</td><td> $108,192.38 </td><td> $45.67 </td></tr>
+ <tr><td>Johnson, Gregory</td><td>Loader Operator-P.P.C.H.</td><td>Full-Time</td><td> $75,261.79 </td><td> $31.83 </td></tr>
+ <tr><td>Johnson, Herman</td><td>Supv-Contract Inspection</td><td>Full-Time</td><td> $97,599.02 </td><td> $36.83 </td></tr>
+ <tr><td>Johnson, James</td><td>Crew Leader/Troubleshooter</td><td>Full-Time</td><td> $120,399.35 </td><td> $38.82 </td></tr>
+ <tr><td>Johnson, Jeffrey</td><td>Supv-Power Station Maintenance</td><td>Full-Time</td><td> $95,616.12 </td><td> $45.54 </td></tr>
+ <tr><td>Johnson, Jeremy</td><td>Electrician</td><td>Full-Time</td><td> $68,643.08 </td><td> $36.15 </td></tr>
+ <tr><td>Johnson, Jimmy</td><td>Maintenance Tech-Thereafter</td><td>Full-Time</td><td> $72,872.69 </td><td> $31.59 </td></tr>
+ <tr><td>Johnson, Joe</td><td>Senior Database Administrator</td><td>Full-Time</td><td> $101,761.01 </td><td> $46.93 </td></tr>
+ <tr><td>Johnson, Randy</td><td>Lakes Laborer-Thereafter</td><td>Full-Time</td><td> $48,898.20 </td><td> $22.52 </td></tr>
+ <tr><td>Johnson, Robert</td><td>Supv-Power Station Maintenance</td><td>Full-Time</td><td> $114,494.84 </td><td> $48.83 </td></tr>
+ <tr><td>Johnson, Ronald</td><td>Supervisor-Materials</td><td>Full-Time</td><td> $78,507.59 </td><td> $35.26 </td></tr>
+ <tr><td>Johnson, Timothy</td><td>Electric Line Worker +</td><td>Full-Time</td><td> $99,468.77 </td><td> $35.96 </td></tr>
+ <tr><td>Johnson, Timothy</td><td>Network Engineer-IT</td><td>Full-Time</td><td> $79,259.36 </td><td> $36.54 </td></tr>
+ <tr><td>Jones, Alan</td><td>Sr Process Control Analyst</td><td>Full-Time</td><td> $76,338.63 </td><td> $34.91 </td></tr>
+ <tr><td>Jones, Benjamin</td><td>Manager-Economic Development</td><td>Full-Time</td><td> $100,469.89 </td><td> $45.72 </td></tr>
+ <tr><td>Jones, Bradley</td><td>Water Leak Investigator</td><td>Full-Time</td><td> $57,673.72 </td><td> $27.45 </td></tr>
+ <tr><td>Jones, Christopher</td><td>Director-Transit</td><td>Full-Time</td><td> $151,004.70 </td><td> $69.90 </td></tr>
+ <tr><td>Jones, Cody</td><td>Elec, Inst, & Control Tech</td><td>Full-Time</td><td> $93,281.88 </td><td> $38.59 </td></tr>
+ <tr><td>Jones, Dustin</td><td>Electric Line Worker +</td><td>Full-Time</td><td> $92,337.40 </td><td> $35.96 </td></tr>
+ <tr><td>Jones, Eric</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $46,840.39 </td><td> $21.76 </td></tr>
+ <tr><td>Jones, Gayla</td><td>Assistant to the Board</td><td>Full-Time</td><td> $48,764.18 </td><td> $23.48 </td></tr>
+ <tr><td>Jones, Jason</td><td>Power System Oper/Dispatcher</td><td>Full-Time</td><td> $97,001.31 </td><td> $39.08 </td></tr>
+ <tr><td>Jones, LaRae</td><td>Application Integrator</td><td>Full-Time</td><td> $91,999.68 </td><td> $43.36 </td></tr>
+ <tr><td>Jones, Larry</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $60,498.51 </td><td> $21.76 </td></tr>
+ <tr><td>Jones, Timothy</td><td>Prover Technician</td><td>Full-Time</td><td> $55,693.35 </td><td> $26.89 </td></tr>
+ <tr><td>Jordan, Carol</td><td>Office Administrator</td><td>Full-Time</td><td> $43,584.23 </td><td> $21.63 </td></tr>
+ <tr><td>Jordan, Lee</td><td>Supv-Leakage Con/Cathodic Prot</td><td>Full-Time</td><td> $83,603.35 </td><td> $36.80 </td></tr>
+ <tr><td>Jordan, Nacona</td><td>Elec Tech/Elec Tech Crew Ldr</td><td>Full-Time</td><td> $84,549.51 </td><td> $40.77 </td></tr>
+ <tr><td>Joy, Adam</td><td>Supv-Contract Inspection</td><td>Full-Time</td><td> $73,819.12 </td><td> $33.59 </td></tr>
+ <tr><td>Joyce, Jeremy</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $69,832.72 </td><td> $30.50 </td></tr>
+ <tr><td>Justice, Donald</td><td>Group Leader-Power System Tech</td><td>Full-Time</td><td> $77,459.52 </td><td> $38.39 </td></tr>
+ <tr><td>Kail, David</td><td>Manager-Purchasing</td><td>Full-Time</td><td> $135,553.83 </td><td> $59.43 </td></tr>
+ <tr><td>Kamykowski, Barbara</td><td>Desktop Support Specialist</td><td>Full-Time</td><td> $66,985.61 </td><td> $31.03 </td></tr>
+ <tr><td>Kandlbinder, David</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $69,928.83 </td><td> $30.50 </td></tr>
+ <tr><td>Kastner, Matthew</td><td>Mgr-Power Generation Oper</td><td>Full-Time</td><td> $125,266.87 </td><td> $55.90 </td></tr>
+ <tr><td>Kauffman, Marc</td><td>Meter Reader City-2nd 3 mos</td><td>Full-Time</td><td> $43,083.73 </td><td> $20.85 </td></tr>
+ <tr><td>Kelley, Chad</td><td>Power System Tech-Thereafter</td><td>Full-Time</td><td> $76,803.47 </td><td> $36.15 </td></tr>
+ <tr><td>Kelly, Vonita</td><td>Sr CSR</td><td>Full-Time</td><td> $45,697.97 </td><td> $21.57 </td></tr>
+ <tr><td>Kemm, Stephen</td><td>Auxiliary Operator</td><td>Full-Time</td><td> $75,416.01 </td><td> $31.33 </td></tr>
+ <tr><td>Kennard, Jerry</td><td>Administrator-IT Support</td><td>Full-Time</td><td> $69,616.85 </td><td> $31.88 </td></tr>
+ <tr><td>Kennedy, David</td><td>Elec, Inst, & Control Tech</td><td>Full-Time</td><td> $77,557.92 </td><td> $38.59 </td></tr>
+ <tr><td>Kennedy, Floyd</td><td>Electrician Crew Leader</td><td>Full-Time</td><td> $85,757.00 </td><td> $38.71 </td></tr>
+ <tr><td>Kensinger, John</td><td>Bus Operator-1st 6 mos</td><td>Full-Time</td><td> $11,355.48 </td><td> $13.32 </td></tr>
+ <tr><td>Kenyon, Kelley</td><td>CSR-Thereafter</td><td>Full-Time</td><td> $35,064.25 </td><td> $18.69 </td></tr>
+ <tr><td>Kepley, Amy</td><td>Meter Reader City-Thereafter</td><td>Full-Time</td><td> $51,970.17 </td><td> $24.92 </td></tr>
+ <tr><td>Kepley, Michael</td><td>Manager-Financial Technology</td><td>Full-Time</td><td> $103,535.18 </td><td> $50.30 </td></tr>
+ <tr><td>Kern, Craig</td><td>Senior Engineer-Water Systems</td><td>Full-Time</td><td> $83,464.69 </td><td> $40.61 </td></tr>
+ <tr><td>Key, Samuel</td><td>Electrician</td><td>Full-Time</td><td> $73,882.28 </td><td> $36.15 </td></tr>
+ <tr><td>Kilburn, Carol</td><td>Records Management Analyst</td><td>Full-Time</td><td> $46,691.11 </td><td> $20.56 </td></tr>
+ <tr><td>Kincannon, Kathleen</td><td>Environmental Analyst</td><td>Full-Time</td><td> $48,909.78 </td><td> $25.83 </td></tr>
+ <tr><td>King, Garry</td><td>Service Technician I-Thereaftr</td><td>Full-Time</td><td> $74,608.78 </td><td> $33.59 </td></tr>
+ <tr><td>Kinser, James</td><td>Supervisor-Purchasing</td><td>Full-Time</td><td> $73,696.17 </td><td> $36.87 </td></tr>
+ <tr><td>Kirby, Charles</td><td>General Supv-T & D Operations</td><td>Full-Time</td><td> $127,756.66 </td><td> $60.04 </td></tr>
+ <tr><td>Kirchhoefer, Paul</td><td>Journey Mechanic ++</td><td>Full-Time</td><td> $46,087.51 </td><td> $25.73 </td></tr>
+ <tr><td>Kiser, David</td><td>Water Leak Investigator</td><td>Full-Time</td><td> $66,660.77 </td><td> $27.45 </td></tr>
+ <tr><td>Kiser, Joe</td><td>Truck Driver</td><td>Full-Time</td><td> $63,406.13 </td><td> $25.25 </td></tr>
+ <tr><td>Kittrell, Deborah</td><td>Material Coordinator (GF)</td><td>Full-Time</td><td> $57,595.57 </td><td> $27.96 </td></tr>
+ <tr><td>Kleeman, Gary</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $72,945.92 </td><td> $30.50 </td></tr>
+ <tr><td>Knapp, David</td><td>Gas System Installer II</td><td>Full-Time</td><td> $69,228.91 </td><td> $28.59 </td></tr>
+ <tr><td>Knottek, Jeffrey</td><td>Dir-Trans Planning/Compliance</td><td>Full-Time</td><td> $135,041.35 </td><td> $61.94 </td></tr>
+ <tr><td>Kocian, Donald</td><td>Manager-Telecommunications</td><td>Full-Time</td><td> $139,793.05 </td><td> $62.24 </td></tr>
+ <tr><td>Kolb, Jerry</td><td>Manager-Scheduling</td><td>Full-Time</td><td> $96,247.46 </td><td> $44.75 </td></tr>
+ <tr><td>Koliwaske, Francis</td><td>Master Journey Mechanic</td><td>Full-Time</td><td> $63,817.52 </td><td> $28.63 </td></tr>
+ <tr><td>Kraft, Kevin</td><td>Laboratory Technician PP</td><td>Full-Time</td><td> $83,572.18 </td><td> $35.34 </td></tr>
+ <tr><td>Kral, Diana</td><td>Meter Reader Rural</td><td>Full-Time</td><td> $54,620.07 </td><td> $27.20 </td></tr>
+ <tr><td>Krawitz, Stephen</td><td>Auxiliary Operator-Htr Floor</td><td>Full-Time</td><td> $79,344.09 </td><td> $32.28 </td></tr>
+ <tr><td>Kreider, Deborah</td><td>Director-Human Resources</td><td>Full-Time</td><td> $123,092.79 </td><td> $58.27 </td></tr>
+ <tr><td>Kristek, Jason</td><td>CSR-Thereafter</td><td>Full-Time</td><td> $30,248.41 </td><td> $18.69 </td></tr>
+ <tr><td>Kubik, Keith</td><td>Electric Line Worker +</td><td>Full-Time</td><td> $98,807.53 </td><td> $35.96 </td></tr>
+ <tr><td>Kusnier, Jon</td><td>Auxiliary Operator</td><td>Full-Time</td><td> $78,393.32 </td><td> $31.33 </td></tr>
+ <tr><td>Kyle, Kimber</td><td>Business Analyst</td><td>Full-Time</td><td> $80,496.54 </td><td> $35.90 </td></tr>
+ <tr><td>LaBarge, Layne</td><td>Asst Manager-Human Resources</td><td>Full-Time</td><td> $80,959.42 </td><td> $40.84 </td></tr>
+ <tr><td>Lafferty, Linda</td><td>Sr Eng Tech-Cross Conn-TA</td><td>Full-Time</td><td> $58,248.41 </td><td> $28.05 </td></tr>
+ <tr><td>Lair, Tammy</td><td>Computer Operator II</td><td>Full-Time</td><td> $45,841.57 </td><td> $21.29 </td></tr>
+ <tr><td>Lamb, Ricky</td><td>Control Operator</td><td>Full-Time</td><td> $84,567.54 </td><td> $33.55 </td></tr>
+ <tr><td>Lamb, Robert</td><td>Supervisor-Water Distribution</td><td>Full-Time</td><td> $81,983.76 </td><td> $34.08 </td></tr>
+ <tr><td>Lambeth, James</td><td>Material Tech-Thereafter</td><td>Full-Time</td><td> $56,952.78 </td><td> $25.31 </td></tr>
+ <tr><td>Landon, Justin</td><td>Field Scheduler-1st 6 months</td><td>Full-Time</td><td> $37,549.04 </td><td> $20.86 </td></tr>
+ <tr><td>Lane, David</td><td>Supervisor-Bus Services</td><td>Full-Time</td><td> $56,345.98 </td><td> $28.15 </td></tr>
+ <tr><td>Lansdown, Jimmy</td><td>Master Journey Mechanic</td><td>Full-Time</td><td> $62,904.67 </td><td> $28.63 </td></tr>
+ <tr><td>Larson, Robert</td><td>Utility Worker-Thereafter</td><td>Full-Time</td><td> $41,107.86 </td><td> $19.69 </td></tr>
+ <tr><td>LaRue, Colter</td><td>Water Technician-1st 6 mos</td><td>Full-Time</td><td> $56,882.49 </td><td> $25.23 </td></tr>
+ <tr><td>Lashmet, Robert</td><td>Telecomm Analyst</td><td>Full-Time</td><td> $84,857.64 </td><td> $37.90 </td></tr>
+ <tr><td>Lassley, Jeremy</td><td>Water Sys Installer</td><td>Full-Time</td><td> $57,432.47 </td><td> $25.12 </td></tr>
+ <tr><td>Latimer, Lana</td><td>Sr CSR</td><td>Full-Time</td><td> $43,930.33 </td><td> $21.57 </td></tr>
+ <tr><td>Laurie, Kelly</td><td>Mgr-Application Dev & Support</td><td>Full-Time</td><td> $130,669.39 </td><td> $61.19 </td></tr>
+ <tr><td>Lawson, David</td><td>Grp Ldr-Printing Serv-TA</td><td>Full-Time</td><td> $62,660.51 </td><td> $30.09 </td></tr>
+ <tr><td>Lee, Ryan</td><td>Material Tech-Thereafter</td><td>Full-Time</td><td> $52,604.73 </td><td> $25.31 </td></tr>
+ <tr><td>Lems, Jonathan</td><td>Water Sys Inst-2nd 6 mos</td><td>Full-Time</td><td> $4,872.13 </td><td> $21.72 </td></tr>
+ <tr><td>Leslie, Chris</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $45,790.41 </td><td> $21.76 </td></tr>
+ <tr><td>Lettington, Jeff</td><td>Laboratory Technician PP</td><td>Full-Time</td><td> $79,417.25 </td><td> $35.34 </td></tr>
+ <tr><td>Lewis, Leslie</td><td>Meter Reader City-Thereafter</td><td>Full-Time</td><td> $48,539.71 </td><td> $24.92 </td></tr>
+ <tr><td>Lewis, Mark</td><td>IT Network Services Integrator</td><td>Full-Time</td><td> $120,358.49 </td><td> $53.77 </td></tr>
+ <tr><td>Lillard, Jessica</td><td>Field Scheduler-TA</td><td>Full-Time</td><td> $70,792.29 </td><td> $25.31 </td></tr>
+ <tr><td>Lilly, Arleigh</td><td>Senior Application Analyst</td><td>Full-Time</td><td> $76,520.93 </td><td> $34.91 </td></tr>
+ <tr><td>Linderman, Timothy</td><td>Pressure Technician</td><td>Full-Time</td><td> $67,810.03 </td><td> $29.80 </td></tr>
+ <tr><td>Lindsey, Russell</td><td>Engineer-Electric Systems</td><td>Full-Time</td><td> $8,446.24 </td><td> $41.26 </td></tr>
+ <tr><td>Lindsey, Scottie</td><td>Instrument Technician</td><td>Full-Time</td><td> $69,832.98 </td><td> $32.77 </td></tr>
+ <tr><td>Linville, Callie</td><td>Staff Assistant</td><td>Part-Time</td><td> $23,691.65 </td><td> $19.33 </td></tr>
+ <tr><td>Logan, Joseph</td><td>Master Des-Power Station +</td><td>Full-Time</td><td> $72,043.08 </td><td> $36.15 </td></tr>
+ <tr><td>Logan, Mark</td><td>Senior Eng-Natural Gas & Water</td><td>Full-Time</td><td> $88,781.36 </td><td> $43.80 </td></tr>
+ <tr><td>Lohkamp, Michael</td><td>Supv-Power Station Operations</td><td>Full-Time</td><td> $122,557.57 </td><td> $48.85 </td></tr>
+ <tr><td>Lohrbach, Jay</td><td>Mgr-Power Gen Tech/Compl</td><td>Full-Time</td><td> $122,364.64 </td><td> $55.81 </td></tr>
+ <tr><td>Long, George</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $66,198.89 </td><td> $30.50 </td></tr>
+ <tr><td>Long, Justin</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $49,171.72 </td><td> $21.76 </td></tr>
+ <tr><td>Lorenz, Christopher</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $63,623.55 </td><td> $30.50 </td></tr>
+ <tr><td>Loughery, Sarah</td><td>Meter Reader City-Thereafter</td><td>Full-Time</td><td> $53,537.85 </td><td> $24.92 </td></tr>
+ <tr><td>Love, Rickie</td><td>Gas Leak Investigator</td><td>Full-Time</td><td> $59,979.99 </td><td> $28.59 </td></tr>
+ <tr><td>Lowe, Kevin</td><td>Asst Mgr-Design/Construction</td><td>Full-Time</td><td> $103,146.27 </td><td> $50.84 </td></tr>
+ <tr><td>Lueckenotto, Cindy</td><td>Network Engineer-IT</td><td>Full-Time</td><td> $90,843.88 </td><td> $40.84 </td></tr>
+ <tr><td>Lynn, Kathy</td><td>Transit Coord-TA</td><td>Full-Time</td><td> $35,673.28 </td><td> $18.96 </td></tr>
+ <tr><td>Machnicki, Renita</td><td>Application Integrator</td><td>Full-Time</td><td> $85,684.21 </td><td> $40.98 </td></tr>
+ <tr><td>Magerkurth, Larry</td><td>Water Plant Operator</td><td>Full-Time</td><td> $77,602.29 </td><td> $32.58 </td></tr>
+ <tr><td>Malam, Stacie</td><td>Meter Reader City-Thereafter</td><td>Full-Time</td><td> $51,878.38 </td><td> $24.92 </td></tr>
+ <tr><td>Mallow, Danny</td><td>Senior Database Administrator</td><td>Full-Time</td><td> $102,936.24 </td><td> $46.94 </td></tr>
+ <tr><td>Manczuk, Marc</td><td>Supervisor-Water Distribution</td><td>Full-Time</td><td> $106,603.04 </td><td> $39.89 </td></tr>
+ <tr><td>Mann, Troy</td><td>Elect Comm Tech-Network-T.A.</td><td>Full-Time</td><td> $83,154.37 </td><td> $36.83 </td></tr>
+ <tr><td>Marler, Jeffrey</td><td>CSR-1st 6 months</td><td>Full-Time</td><td> $3,425.62 </td><td> $15.22 </td></tr>
+ <tr><td>Marsh, Chad</td><td>Supv-Network Operations Center</td><td>Full-Time</td><td> $90,385.06 </td><td> $40.24 </td></tr>
+ <tr><td>Marshall, Bradley</td><td>Supv-Contract Inspection</td><td>Full-Time</td><td> $87,367.67 </td><td> $37.40 </td></tr>
+ <tr><td>Marshall, Cody</td><td>Senior Eng-Natural Gas & Water</td><td>Full-Time</td><td> $73,125.58 </td><td> $39.90 </td></tr>
+ <tr><td>Marshall, James</td><td>Gen Supv-Water Construction</td><td>Full-Time</td><td> $98,690.36 </td><td> $43.21 </td></tr>
+ <tr><td>Marshall, Samantha</td><td>Laboratory Asst Co-op-Bachelor</td><td>Part-Time</td><td> $7,965.30 </td><td> $9.03 </td></tr>
+ <tr><td>Martella, David</td><td>Sr Elect Comm Tech-Voice</td><td>Full-Time</td><td> $82,563.21 </td><td> $37.93 </td></tr>
+ <tr><td>Martin, James</td><td>Service Technician I-Thereaftr</td><td>Full-Time</td><td> $67,447.40 </td><td> $33.59 </td></tr>
+ <tr><td>Martin, Kathryn</td><td>Env Analyst Co-op-Graduate</td><td>Part-Time</td><td> $2,804.81 </td><td> $14.61 </td></tr>
+ <tr><td>Mastroianni, Matthew</td><td>Senior Control Operator</td><td>Full-Time</td><td> $99,606.81 </td><td> $38.85 </td></tr>
+ <tr><td>Matlock, Jeffrey</td><td>Electrician Crew Leader</td><td>Full-Time</td><td> $82,906.86 </td><td> $38.71 </td></tr>
+ <tr><td>Matney, Lindsey</td><td>CSR-Next 12 months</td><td>Full-Time</td><td> $31,854.78 </td><td> $17.42 </td></tr>
+ <tr><td>Mattingly, Alissa</td><td>GIS Technician-1st yr</td><td>Full-Time</td><td> $39,368.48 </td><td> $21.03 </td></tr>
+ <tr><td>Mattox, Jimmy</td><td>Senior Control Operator</td><td>Full-Time</td><td> $97,285.12 </td><td> $38.85 </td></tr>
+ <tr><td>Mayes, Douglas</td><td>Desktop Support Specialist</td><td>Full-Time</td><td> $66,944.02 </td><td> $31.02 </td></tr>
+ <tr><td>McCall, Rex</td><td>Associate General Counsel</td><td>Full-Time</td><td> $163,361.70 </td><td> $75.75 </td></tr>
+ <tr><td>McClanahan, Jacob</td><td>Asst Mgr-IT Infrastructure</td><td>Full-Time</td><td> $101,870.95 </td><td> $51.83 </td></tr>
+ <tr><td>McClanahan, Marsha</td><td>Proj Admin-Energy Mgmt/Cons</td><td>Full-Time</td><td> $77,278.96 </td><td> $34.94 </td></tr>
+ <tr><td>McClure, Arthur</td><td>Director-Public Policy/Gov Rel</td><td>Full-Time</td><td> $100,913.73 </td><td> $49.50 </td></tr>
+ <tr><td>McClure, Gina</td><td>Mgr-Forecasting/Bus Unit Rep</td><td>Full-Time</td><td> $119,517.14 </td><td> $52.67 </td></tr>
+ <tr><td>McCormack, Timothy</td><td>Electrician</td><td>Full-Time</td><td> $79,122.68 </td><td> $36.15 </td></tr>
+ <tr><td>McCormick, Daphne</td><td>Bus Operator-2nd/3rd Years</td><td>Full-Time</td><td> $40,182.46 </td><td> $18.34 </td></tr>
+ <tr><td>McCoy, Terry</td><td>Senior Control Operator</td><td>Full-Time</td><td> $87,620.74 </td><td> $38.85 </td></tr>
+ <tr><td>McCrickard, Ray</td><td>Gas Leak Investigator</td><td>Full-Time</td><td> $64,729.92 </td><td> $28.59 </td></tr>
+ <tr><td>McCroskey, Mark</td><td>Elec, Inst, & Control Tech</td><td>Full-Time</td><td> $79,585.53 </td><td> $38.59 </td></tr>
+ <tr><td>McCulloch, Paul</td><td>Master Journey Mechanic</td><td>Full-Time</td><td> $73,221.94 </td><td> $28.63 </td></tr>
+ <tr><td>McCullom, John</td><td>Custodian-Thereafter</td><td>Full-Time</td><td> $36,403.36 </td><td> $16.58 </td></tr>
+ <tr><td>McDaris, Wesley</td><td>Equipment Operator</td><td>Full-Time</td><td> $61,473.71 </td><td> $28.59 </td></tr>
+ <tr><td>McElhany, Janice</td><td>Office Administrator</td><td>Full-Time</td><td> $40,403.78 </td><td> $19.97 </td></tr>
+ <tr><td>McGehee, Donald</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $66,404.67 </td><td> $30.50 </td></tr>
+ <tr><td>McGillen, James</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $47,078.21 </td><td> $21.76 </td></tr>
+ <tr><td>McGinnis, Eric</td><td>Water Sys Installer</td><td>Full-Time</td><td> $56,969.65 </td><td> $25.12 </td></tr>
+ <tr><td>McKinney, Brent</td><td>Manager-Electric T & D</td><td>Full-Time</td><td> $177,312.56 </td><td> $82.19 </td></tr>
+ <tr><td>McKnight, Terry</td><td>Supervisor-Water Distribution</td><td>Full-Time</td><td> $85,969.12 </td><td> $34.88 </td></tr>
+ <tr><td>McLaughlin, Adam</td><td>CSR-Thereafter</td><td>Full-Time</td><td> $36,051.15 </td><td> $18.69 </td></tr>
+ <tr><td>McLemore, Clark</td><td>Nat Gas & Water Des-1st yr</td><td>Full-Time</td><td> $34,524.99 </td><td> $21.03 </td></tr>
+ <tr><td>McManus, Patrick</td><td>Supv-Gas Tech Serv/Peaking Plt</td><td>Full-Time</td><td> $97,875.54 </td><td> $43.43 </td></tr>
+ <tr><td>McMillin, Michelle</td><td>Info Coord-Transit Thereafter</td><td>Full-Time</td><td> $43,211.86 </td><td> $21.23 </td></tr>
+ <tr><td>McPhail, Brenda</td><td>Meter Reader City-Thereafter</td><td>Full-Time</td><td> $54,297.47 </td><td> $24.92 </td></tr>
+ <tr><td>Meads, Stephen</td><td>Master Lead Mechanic</td><td>Full-Time</td><td> $77,218.26 </td><td> $30.17 </td></tr>
+ <tr><td>Merriman, Gerald</td><td>Electric Line Crew Leader</td><td>Full-Time</td><td> $108,298.94 </td><td> $38.82 </td></tr>
+ <tr><td>Metzelthin, Krystal</td><td>Occupational Nurse</td><td>Full-Time</td><td> $100,223.84 </td><td> $44.17 </td></tr>
+ <tr><td>Meyer, David</td><td>Mgr-Damage Prev/System Claims</td><td>Full-Time</td><td> $106,860.98 </td><td> $45.67 </td></tr>
+ <tr><td>Meyers, Sandy</td><td>Director-Risk Management</td><td>Full-Time</td><td> $128,978.86 </td><td> $60.13 </td></tr>
+ <tr><td>Michael, Terri</td><td>Office Administrator</td><td>Full-Time</td><td> $52,683.44 </td><td> $22.33 </td></tr>
+ <tr><td>Miekley, Dwayne</td><td>Supv-Water Treat Maintenance</td><td>Full-Time</td><td> $98,049.59 </td><td> $43.40 </td></tr>
+ <tr><td>Miller, Scott</td><td>General Manager</td><td>Full-Time</td><td> $351,467.61 </td><td> $161.09 </td></tr>
+ <tr><td>Mills, Brenda</td><td>CSR-Thereafter</td><td>Full-Time</td><td> $36,401.08 </td><td> $18.69 </td></tr>
+ <tr><td>Minton, David</td><td>Meter Reader City-Thereafter</td><td>Full-Time</td><td> $53,977.33 </td><td> $24.92 </td></tr>
+ <tr><td>Mitchell, Hillary</td><td>Laboratory Asst Co-op-Bachelor</td><td>Part-Time</td><td> $3,380.18 </td><td> $9.03 </td></tr>
+ <tr><td>Mitchell, Robert</td><td>Group Leader</td><td>Full-Time</td><td> $76,012.57 </td><td> $33.17 </td></tr>
+ <tr><td>Moe, Dorothea</td><td>Bus Operator-2nd 6 mos</td><td>Full-Time</td><td> $23,319.97 </td><td> $15.82 </td></tr>
+ <tr><td>Monday, Patricia</td><td>Business Analyst</td><td>Full-Time</td><td> $72,599.26 </td><td> $33.51 </td></tr>
+ <tr><td>Monohon, Lorri</td><td>Records Management Analyst</td><td>Full-Time</td><td> $41,368.10 </td><td> $20.01 </td></tr>
+ <tr><td>Moody, Joan</td><td>Sr GIS Technician-1st yr +</td><td>Full-Time</td><td> $50,167.93 </td><td> $24.98 </td></tr>
+ <tr><td>Mooney, Duffy</td><td>Senior Eng-Natural Gas & Water</td><td>Full-Time</td><td> $57,993.44 </td><td> $42.59 </td></tr>
+ <tr><td>Moore, Elston</td><td>Master Mechanic</td><td>Full-Time</td><td> $77,012.09 </td><td> $34.98 </td></tr>
+ <tr><td>Moore, Russell</td><td>Power System Trainer</td><td>Full-Time</td><td> $74,390.27 </td><td> $33.26 </td></tr>
+ <tr><td>Morris, Carl</td><td>Measurement  Tech</td><td>Full-Time</td><td> $63,281.32 </td><td> $29.48 </td></tr>
+ <tr><td>Morrison, Mark</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $49,171.91 </td><td> $21.76 </td></tr>
+ <tr><td>Moseley, Frederick</td><td>Administrator-SpringNet</td><td>Full-Time</td><td> $83,125.71 </td><td> $40.46 </td></tr>
+ <tr><td>Mosier, Kenneth</td><td>Auxiliary Operator</td><td>Full-Time</td><td> $75,008.32 </td><td> $31.33 </td></tr>
+ <tr><td>Mowell, Lesa</td><td>CSR-Thereafter</td><td>Full-Time</td><td> $38,453.22 </td><td> $18.69 </td></tr>
+ <tr><td>Mueller, Tanner</td><td>Engineering Tech Co-op</td><td>Part-Time</td><td> $6,788.59 </td><td> $10.28 </td></tr>
+ <tr><td>Mullens, Timothy</td><td>Sr Nat Gas & Water Des-TA</td><td>Full-Time</td><td> $58,210.67 </td><td> $27.87 </td></tr>
+ <tr><td>Muniz, Ben</td><td>Senior Engineer-Electric Sys</td><td>Full-Time</td><td> $96,832.65 </td><td> $48.21 </td></tr>
+ <tr><td>Murdaugh, Sherri</td><td>Manager-Human Resources</td><td>Full-Time</td><td> $107,646.41 </td><td> $50.19 </td></tr>
+ <tr><td>Murray, Diane</td><td>Bus Operator-1st 6 mos</td><td>Full-Time</td><td> $11,233.58 </td><td> $13.32 </td></tr>
+ <tr><td>Murren, Todd</td><td>Director-SpringNet</td><td>Full-Time</td><td> $155,513.60 </td><td> $69.95 </td></tr>
+ <tr><td>Nakano, Jacob</td><td>Sr Nat Gas & Water Des-TA</td><td>Full-Time</td><td> $57,405.22 </td><td> $27.87 </td></tr>
+ <tr><td>Napolitano, Joseph</td><td>Water Technician-Thereafter</td><td>Full-Time</td><td> $53,457.34 </td><td> $26.99 </td></tr>
+ <tr><td>Naylor, David</td><td>Meter Reader Rural</td><td>Full-Time</td><td> $55,723.29 </td><td> $27.20 </td></tr>
+ <tr><td>Neely, Russell</td><td>Auxiliary Operator</td><td>Full-Time</td><td> $77,308.83 </td><td> $31.33 </td></tr>
+ <tr><td>Neely, Tim</td><td>Supv-Water Treatment Oper</td><td>Full-Time</td><td> $103,726.59 </td><td> $44.42 </td></tr>
+ <tr><td>Neff, Robert</td><td>Service Technician I-Thereaftr</td><td>Full-Time</td><td> $79,419.13 </td><td> $33.59 </td></tr>
+ <tr><td>Nehl, Joseph</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $56,592.18 </td><td> $21.76 </td></tr>
+ <tr><td>Nelson, David</td><td>Mgr-Power Generation Maint</td><td>Full-Time</td><td> $113,753.29 </td><td> $52.01 </td></tr>
+ <tr><td>Nelson, Harry</td><td>Service Technician I-Thereaftr</td><td>Full-Time</td><td> $77,485.02 </td><td> $33.59 </td></tr>
+ <tr><td>Nelson, Kenneth</td><td>Service Technician I-Thereaftr</td><td>Full-Time</td><td> $72,202.77 </td><td> $33.59 </td></tr>
+ <tr><td>Nelson, Pamela</td><td>Manager-Developer Services</td><td>Full-Time</td><td> $115,387.80 </td><td> $53.17 </td></tr>
+ <tr><td>Nelson, Stephen</td><td>Supv-Facilities Serv/Surveying</td><td>Full-Time</td><td> $63,230.55 </td><td> $30.41 </td></tr>
+ <tr><td>Nelson, Wandalene</td><td>Lead Custodian II-Thereaftr</td><td>Full-Time</td><td> $49,459.13 </td><td> $21.08 </td></tr>
+ <tr><td>Newell, Douglas</td><td>Elect Comm Tech-Ntwrk-3rd 6 mo</td><td>Full-Time</td><td> $83,593.76 </td><td> $33.79 </td></tr>
+ <tr><td>Newland, Susan</td><td>Computer Operator II</td><td>Full-Time</td><td> $41,089.13 </td><td> $18.43 </td></tr>
+ <tr><td>Newton, Amy</td><td>Manager-Production Fuels</td><td>Full-Time</td><td> $78,432.53 </td><td> $39.34 </td></tr>
+ <tr><td>Nichols, Bill</td><td>Pressure Technician</td><td>Full-Time</td><td> $68,494.92 </td><td> $29.80 </td></tr>
+ <tr><td>Niebes, David</td><td>Supv-Contract Inspection</td><td>Full-Time</td><td> $105,407.74 </td><td> $41.10 </td></tr>
+ <tr><td>Noble, Aaron</td><td>Sr Nat Gas & Water Des-1st yr+</td><td>Full-Time</td><td> $50,536.30 </td><td> $24.98 </td></tr>
+ <tr><td>Noel, Mark</td><td>Senior Network Engineer</td><td>Full-Time</td><td> $82,811.68 </td><td> $40.17 </td></tr>
+ <tr><td>Norman, Matthew</td><td>Electric Line Worker +</td><td>Full-Time</td><td> $85,708.38 </td><td> $35.96 </td></tr>
+ <tr><td>Norman, Tara</td><td>Meter Reader City-Thereafter</td><td>Full-Time</td><td> $52,327.48 </td><td> $24.92 </td></tr>
+ <tr><td>Oatman, Kimberly</td><td>Sr Leak Surveyor-TA</td><td>Full-Time</td><td> $58,776.38 </td><td> $28.32 </td></tr>
+ <tr><td>Oberlander, Christopher</td><td>Supervisor-Electric T & D</td><td>Full-Time</td><td> $116,029.69 </td><td> $42.17 </td></tr>
+ <tr><td>O'Connor, Stephanie</td><td>Mgr-IT Support/Network Serv</td><td>Full-Time</td><td> $130,948.00 </td><td> $60.26 </td></tr>
+ <tr><td>O'Dell, Tracy</td><td>Human Resources Coordinator</td><td>Full-Time</td><td> $63,083.96 </td><td> $28.67 </td></tr>
+ <tr><td>Offutt, Jimmy</td><td>Maintenance Tech-Thereafter</td><td>Full-Time</td><td> $71,636.43 </td><td> $31.59 </td></tr>
+ <tr><td>Ohmstede, Terry</td><td>Director-Planning and Projects</td><td>Full-Time</td><td> $182,907.68 </td><td> $81.64 </td></tr>
+ <tr><td>Okumu, James</td><td>Senior Engineer-Water Systems</td><td>Full-Time</td><td> $78,604.33 </td><td> $36.94 </td></tr>
+ <tr><td>Olson, Ronnie</td><td>Supv-Contract Inspection</td><td>Full-Time</td><td> $99,604.43 </td><td> $37.40 </td></tr>
+ <tr><td>O'Neal, James</td><td>Quality Control Manager</td><td>Full-Time</td><td> $87,130.32 </td><td> $39.57 </td></tr>
+ <tr><td>O'Neal, William</td><td>Maint Mechanic-Cert Welder</td><td>Full-Time</td><td> $76,917.37 </td><td> $34.56 </td></tr>
+ <tr><td>Osborn, Michael</td><td>Supervisor-Materials</td><td>Full-Time</td><td> $90,939.82 </td><td> $41.43 </td></tr>
+ <tr><td>Otten, Stephen</td><td>Master Mechanic</td><td>Full-Time</td><td> $70,451.89 </td><td> $34.98 </td></tr>
+ <tr><td>Owens, Chad</td><td>Asst Mgr-Natural Gas/Water Eng</td><td>Full-Time</td><td> $110,719.32 </td><td> $53.54 </td></tr>
+ <tr><td>Owens, Jack</td><td>Elec Tech/Elec Tech Crew Ldr</td><td>Full-Time</td><td> $86,065.33 </td><td> $40.77 </td></tr>
+ <tr><td>Owens, Justin</td><td>Auxiliary Operator</td><td>Full-Time</td><td> $73,303.60 </td><td> $31.33 </td></tr>
+ <tr><td>Owsley, Benjamin</td><td>Master Journey Mechanic</td><td>Full-Time</td><td> $68,767.36 </td><td> $28.63 </td></tr>
+ <tr><td>Painter, Wendell</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $74,699.47 </td><td> $30.50 </td></tr>
+ <tr><td>Pamperien, Gregory</td><td>Meter Reader Rural</td><td>Full-Time</td><td> $57,180.55 </td><td> $27.20 </td></tr>
+ <tr><td>Parham, Scott</td><td>Water Leak Investigator</td><td>Full-Time</td><td> $73,251.14 </td><td> $27.45 </td></tr>
+ <tr><td>Parkison, Jeffrey</td><td>Supervisor-Forecasting</td><td>Full-Time</td><td> $75,634.02 </td><td> $37.50 </td></tr>
+ <tr><td>Patison, Connie</td><td>Dispatch Clerk-Thereafter (GF)</td><td>Full-Time</td><td> $47,777.37 </td><td> $23.16 </td></tr>
+ <tr><td>Patterson, Todd</td><td>Manager-Fleet Management</td><td>Full-Time</td><td> $93,118.51 </td><td> $43.50 </td></tr>
+ <tr><td>Patton, Lori</td><td>Meter Reader City-Thereafter</td><td>Full-Time</td><td> $51,904.41 </td><td> $24.92 </td></tr>
+ <tr><td>Paxson, Wade</td><td>Water Sys Installer</td><td>Full-Time</td><td> $54,088.19 </td><td> $25.12 </td></tr>
+ <tr><td>Payne, Melissa</td><td>Supervisor-Facilities Services</td><td>Full-Time</td><td> $75,065.75 </td><td> $36.13 </td></tr>
+ <tr><td>Pearson, Donna</td><td>Gen Supv-Water Operations</td><td>Full-Time</td><td> $113,596.17 </td><td> $49.91 </td></tr>
+ <tr><td>Peebles, Eric</td><td>Water Sys Inst-2nd Year</td><td>Full-Time</td><td> $48,167.10 </td><td> $23.24 </td></tr>
+ <tr><td>Peltz, Joe</td><td>Master Des-Nat Gas & Water +</td><td>Full-Time</td><td> $66,235.91 </td><td> $33.20 </td></tr>
+ <tr><td>Pena, Efrain</td><td>Application Integrator</td><td>Full-Time</td><td> $89,927.05 </td><td> $40.60 </td></tr>
+ <tr><td>Pendergrass, Christopher</td><td>Custodian-Thereafter</td><td>Full-Time</td><td> $36,573.96 </td><td> $16.58 </td></tr>
+ <tr><td>Pendleton, Robert</td><td>Sr Elect Comm Tech-Wireless</td><td>Full-Time</td><td> $76,595.15 </td><td> $37.93 </td></tr>
+ <tr><td>Pering, Douglas</td><td>Pressure Controller</td><td>Full-Time</td><td> $84,799.84 </td><td> $30.81 </td></tr>
+ <tr><td>Perryman, Jerry</td><td>Supervisor-Fleet Management</td><td>Full-Time</td><td> $63,031.42 </td><td> $38.37 </td></tr>
+ <tr><td>Peryer, Lonny</td><td>Sr Elect Comm Tech-Network</td><td>Full-Time</td><td> $103,719.30 </td><td> $37.93 </td></tr>
+ <tr><td>Peters, Matthew</td><td>Senior Application Analyst</td><td>Full-Time</td><td> $34,422.24 </td><td> $34.19 </td></tr>
+ <tr><td>Peters, Nicole</td><td>Graphic Designer-Thereafter</td><td>Full-Time</td><td> $49,498.79 </td><td> $24.74 </td></tr>
+ <tr><td>Peterson, Jennifer</td><td>Supervisor-Geospatial Data</td><td>Full-Time</td><td> $70,155.57 </td><td> $35.22 </td></tr>
+ <tr><td>Phillips, Leonard</td><td>Mgr-Natural Gas/Water Distr</td><td>Full-Time</td><td> $150,416.55 </td><td> $69.29 </td></tr>
+ <tr><td>Pierce, Arnold</td><td>Service Technician I-Thereaftr</td><td>Full-Time</td><td> $74,991.30 </td><td> $33.59 </td></tr>
+ <tr><td>Pierson, Karen</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $48,411.55 </td><td> $21.76 </td></tr>
+ <tr><td>Pilarski, Daniel</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $41,271.75 </td><td> $21.76 </td></tr>
+ <tr><td>Pinegar, Daniel</td><td>Elec, Inst, & Control Tech</td><td>Full-Time</td><td> $84,059.17 </td><td> $38.59 </td></tr>
+ <tr><td>Pinegar, Donna</td><td>Sr CSR</td><td>Full-Time</td><td> $44,546.41 </td><td> $21.57 </td></tr>
+ <tr><td>Plunkett, Randy</td><td>Meter Reader City-Thereafter</td><td>Full-Time</td><td> $48,570.98 </td><td> $24.92 </td></tr>
+ <tr><td>Poage, James</td><td>Supv-Power Station Operations</td><td>Full-Time</td><td> $116,480.37 </td><td> $45.59 </td></tr>
+ <tr><td>Pojar, Ronald</td><td>Journey Body Technician</td><td>Full-Time</td><td> $65,911.71 </td><td> $28.63 </td></tr>
+ <tr><td>Polocoser, Albert</td><td>Engineering Tech Co-op</td><td>Part-Time</td><td> $11,619.30 </td><td> $10.28 </td></tr>
+ <tr><td>Porter, Calvin</td><td>Sr Network Engineer-SpringNet</td><td>Full-Time</td><td> $101,861.27 </td><td> $43.97 </td></tr>
+ <tr><td>Porter, William</td><td>Truck Driver</td><td>Full-Time</td><td> $55,467.07 </td><td> $25.25 </td></tr>
+ <tr><td>Potts, Kent</td><td>Control Operator</td><td>Full-Time</td><td> $85,142.05 </td><td> $33.55 </td></tr>
+ <tr><td>Powell, Bradley</td><td>Water Sys Inst-2nd 6 mos</td><td>Full-Time</td><td> $2,947.41 </td><td> $21.72 </td></tr>
+ <tr><td>Powell, Lou</td><td>Dispatch Clerk-Thereafter (GF)</td><td>Full-Time</td><td> $46,411.21 </td><td> $23.16 </td></tr>
+ <tr><td>Prestidge, David</td><td>Control Operator</td><td>Full-Time</td><td> $83,680.67 </td><td> $33.55 </td></tr>
+ <tr><td>Preston, Sandra</td><td>CSR-Thereafter</td><td>Full-Time</td><td> $38,707.24 </td><td> $18.69 </td></tr>
+ <tr><td>Price, Dustin</td><td>Supervisor-Customer Services</td><td>Full-Time</td><td> $38,021.35 </td><td> $26.58 </td></tr>
+ <tr><td>Price, James</td><td>Crew Leader/Troubleshooter</td><td>Full-Time</td><td> $115,407.38 </td><td> $38.82 </td></tr>
+ <tr><td>Procell, Timothy</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $66,214.72 </td><td> $30.50 </td></tr>
+ <tr><td>Provance, Daniel</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $78,263.14 </td><td> $30.50 </td></tr>
+ <tr><td>Pruitt, Brian</td><td>Maint Mechanic-Cert Welder</td><td>Full-Time</td><td> $66,044.82 </td><td> $34.56 </td></tr>
+ <tr><td>Prust, Rebecca</td><td>Field Scheduler-TA</td><td>Full-Time</td><td> $62,901.15 </td><td> $25.31 </td></tr>
+ <tr><td>Pry, Zachary</td><td>GIS Technician-TA ~</td><td>Full-Time</td><td> $39,174.02 </td><td> $23.01 </td></tr>
+ <tr><td>Pursselley, John</td><td>Service Technician I-Thereaftr</td><td>Full-Time</td><td> $71,474.63 </td><td> $33.59 </td></tr>
+ <tr><td>Putman, Brenda</td><td>Assoc Gen Mgr-Chief Int Aud</td><td>Full-Time</td><td> $152,301.67 </td><td> $69.88 </td></tr>
+ <tr><td>Quinn, Kelli</td><td>Purchasing Coord-1st 6 mos</td><td>Full-Time</td><td> $34,925.42 </td><td> $17.92 </td></tr>
+ <tr><td>Quinn, Kelly</td><td>Master Journey Mechanic</td><td>Full-Time</td><td> $67,372.53 </td><td> $28.63 </td></tr>
+ <tr><td>Race, John</td><td>Control Operator</td><td>Full-Time</td><td> $78,315.97 </td><td> $33.55 </td></tr>
+ <tr><td>Rader, Shane</td><td>Accountant Co-op-Junior</td><td>Part-Time</td><td> $7,276.98 </td><td> $11.48 </td></tr>
+ <tr><td>Radtke, Michael</td><td>Supv-Power Station Operations</td><td>Full-Time</td><td> $108,791.16 </td><td> $45.62 </td></tr>
+ <tr><td>Rammer, Todd</td><td>Elec, Inst, & Control Tech</td><td>Full-Time</td><td> $76,748.69 </td><td> $38.59 </td></tr>
+ <tr><td>Raney, Sherry</td><td>Administrative Supervisor</td><td>Full-Time</td><td> $78,058.91 </td><td> $33.85 </td></tr>
+ <tr><td>Rapp, Randal</td><td>Service Technician I-Thereaftr</td><td>Full-Time</td><td> $83,962.69 </td><td> $33.59 </td></tr>
+ <tr><td>Rasey, Nicholas</td><td>Manager-Physical Security</td><td>Full-Time</td><td> $79,356.94 </td><td> $38.50 </td></tr>
+ <tr><td>Ratliff, Robert</td><td>Master Mechanic</td><td>Full-Time</td><td> $80,275.94 </td><td> $34.98 </td></tr>
+ <tr><td>Ray, Michael</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $67,864.56 </td><td> $30.50 </td></tr>
+ <tr><td>Ray, Thomas</td><td>Administrator-Safety Services</td><td>Full-Time</td><td> $70,644.21 </td><td> $34.43 </td></tr>
+ <tr><td>Reasoner, Kenneth</td><td>Director-Management Services</td><td>Full-Time</td><td> $153,071.48 </td><td> $71.19 </td></tr>
+ <tr><td>Rector, David</td><td>Power System Oper/Dispatcher</td><td>Full-Time</td><td> $76,482.13 </td><td> $35.79 </td></tr>
+ <tr><td>Reda, Christopher</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $65,404.67 </td><td> $30.50 </td></tr>
+ <tr><td>Reed, Kem</td><td>Asst Mgr-Water Treatment/Sup</td><td>Full-Time</td><td> $130,094.44 </td><td> $58.89 </td></tr>
+ <tr><td>Reed, Rebecca</td><td>Office Administrator</td><td>Full-Time</td><td> $47,525.59 </td><td> $21.33 </td></tr>
+ <tr><td>Regehr, Jason</td><td>Manager-Treasury Operations</td><td>Full-Time</td><td> $105,276.35 </td><td> $51.22 </td></tr>
+ <tr><td>Reid, Cullen</td><td>Control Operator</td><td>Full-Time</td><td> $75,106.50 </td><td> $33.55 </td></tr>
+ <tr><td>Reid, Mary</td><td>Asst Manager-Human Resources</td><td>Full-Time</td><td> $94,443.28 </td><td> $45.44 </td></tr>
+ <tr><td>Reid, Michael</td><td>Auxiliary Operator-Htr Floor</td><td>Full-Time</td><td> $78,597.14 </td><td> $32.28 </td></tr>
+ <tr><td>Renshaw, Andrew</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $59,412.55 </td><td> $21.76 </td></tr>
+ <tr><td>Revel, Russel</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $40,259.38 </td><td> $21.76 </td></tr>
+ <tr><td>Rice, Robert</td><td>Master Mechanic</td><td>Full-Time</td><td> $75,196.04 </td><td> $34.98 </td></tr>
+ <tr><td>Rice, William</td><td>Elec, Inst, & Control Tech</td><td>Full-Time</td><td> $76,905.37 </td><td> $38.59 </td></tr>
+ <tr><td>Rice, William</td><td>Gas System Installer</td><td>Full-Time</td><td> $60,689.60 </td><td> $26.35 </td></tr>
+ <tr><td>Richardson, Cory</td><td>Meter Reader City-Thereafter</td><td>Full-Time</td><td> $53,203.45 </td><td> $24.92 </td></tr>
+ <tr><td>Richardson, Daniel</td><td>Power System Oper/Dispatcher</td><td>Full-Time</td><td> $114,824.76 </td><td> $43.27 </td></tr>
+ <tr><td>Richardson, Sandra</td><td>Plant Custodian II-Thereafter</td><td>Full-Time</td><td> $32,794.91 </td><td> $17.89 </td></tr>
+ <tr><td>Richerson, Daniel</td><td>Mechanic-1st Year</td><td>Full-Time</td><td> $39,715.43 </td><td> $24.42 </td></tr>
+ <tr><td>Richerson, Donald</td><td>Custodian-Thereafter</td><td>Full-Time</td><td> $31,667.46 </td><td> $16.58 </td></tr>
+ <tr><td>Riddle, Jay</td><td>Water Sys Inst-2nd 6 mos</td><td>Full-Time</td><td> $4,217.69 </td><td> $21.72 </td></tr>
+ <tr><td>Rinehart, Darrell</td><td>Asst Mgr-IT Infra/Inf Security</td><td>Full-Time</td><td> $112,658.55 </td><td> $53.38 </td></tr>
+ <tr><td>Rinehart, Michael</td><td>Bus Service Coordinator</td><td>Full-Time</td><td> $53,895.67 </td><td> $24.42 </td></tr>
+ <tr><td>Roberts, Kelly</td><td>Developer Technician-1st yr</td><td>Full-Time</td><td> $43,000.04 </td><td> $21.03 </td></tr>
+ <tr><td>Robertson, Brian</td><td>Supv-Natural Gas Construction</td><td>Full-Time</td><td> $78,637.97 </td><td> $36.07 </td></tr>
+ <tr><td>Robertson, Donald</td><td>Supervisor-Payroll</td><td>Full-Time</td><td> $70,875.88 </td><td> $35.41 </td></tr>
+ <tr><td>Robertson, Mary</td><td>Laboratory Analyst II</td><td>Full-Time</td><td> $53,383.01 </td><td> $26.86 </td></tr>
+ <tr><td>Robinson, Andrew</td><td>Sr SpringNet Bus Consultant</td><td>Full-Time</td><td> $94,337.17 </td><td> $39.43 </td></tr>
+ <tr><td>Roby, Debra</td><td>CSR-Thereafter</td><td>Full-Time</td><td> $38,925.75 </td><td> $18.69 </td></tr>
+ <tr><td>Rogers, Roddy</td><td>Mgr-Water Treatment/Supply</td><td>Full-Time</td><td> $148,118.90 </td><td> $69.03 </td></tr>
+ <tr><td>Roods, Kevin</td><td>Admin-Developer Services</td><td>Full-Time</td><td> $74,315.32 </td><td> $33.15 </td></tr>
+ <tr><td>Rootz, Matthew</td><td>Accounting Analyst</td><td>Full-Time</td><td> $55,251.84 </td><td> $26.76 </td></tr>
+ <tr><td>Rose, Kody</td><td>Gas System Installer</td><td>Full-Time</td><td> $58,432.12 </td><td> $26.35 </td></tr>
+ <tr><td>Ross, Frankie</td><td>Material Tech-Thereafter</td><td>Full-Time</td><td> $51,368.40 </td><td> $25.31 </td></tr>
+ <tr><td>Ross, Ray</td><td>Dir-Pricing/Forecasting</td><td>Full-Time</td><td> $154,907.74 </td><td> $71.98 </td></tr>
+ <tr><td>Rost, Craig</td><td>Master Corrosion Technician +</td><td>Full-Time</td><td> $71,290.92 </td><td> $33.20 </td></tr>
+ <tr><td>Rost, Stephen</td><td>Plant Custodian I-Thereafter</td><td>Full-Time</td><td> $35,322.24 </td><td> $16.87 </td></tr>
+ <tr><td>Rothermel, Carol</td><td>Financial Analyst</td><td>Full-Time</td><td> $88,398.31 </td><td> $38.56 </td></tr>
+ <tr><td>Rousseau, Connie</td><td>Staff Assistant</td><td>Full-Time</td><td> $50,562.63 </td><td> $21.63 </td></tr>
+ <tr><td>Rowell, Adam</td><td>Engineering Tech Co-op</td><td>Part-Time</td><td> $15,011.00 </td><td> $10.28 </td></tr>
+ <tr><td>Rust, Tommy</td><td>Master Mechanic</td><td>Full-Time</td><td> $68,519.58 </td><td> $34.98 </td></tr>
+ <tr><td>Ruud, Andrew</td><td>Gas System Installer</td><td>Full-Time</td><td> $58,560.23 </td><td> $26.35 </td></tr>
+ <tr><td>Ruzicka, Robert</td><td>Senior Network Engineer</td><td>Full-Time</td><td> $106,800.78 </td><td> $47.12 </td></tr>
+ <tr><td>Ryan, Heather</td><td>Meter Reader City-Thereafter</td><td>Full-Time</td><td> $51,965.35 </td><td> $24.92 </td></tr>
+ <tr><td>Salcedo, Fernando</td><td>Bus Operator-2nd 6 mos</td><td>Full-Time</td><td> $31,433.76 </td><td> $15.82 </td></tr>
+ <tr><td>Salvador, Robert</td><td>Sr Elect Comm Tech-Wireless</td><td>Full-Time</td><td> $90,619.34 </td><td> $37.93 </td></tr>
+ <tr><td>Salveter, Arlene</td><td>Admin-Oper Business Processes</td><td>Full-Time</td><td> $70,905.93 </td><td> $30.96 </td></tr>
+ <tr><td>Salveter, Theodore</td><td>Senior Engineer-Environmental</td><td>Full-Time</td><td> $105,832.07 </td><td> $47.54 </td></tr>
+ <tr><td>Sanders, Jordan</td><td>Engineering Tech Co-op</td><td>Part-Time</td><td> $11,937.20 </td><td> $10.28 </td></tr>
+ <tr><td>Sanderson, Barry</td><td>Elec, Inst, & Control Tech</td><td>Full-Time</td><td> $79,289.42 </td><td> $38.59 </td></tr>
+ <tr><td>Sawyer, Ronnie</td><td>Crew Leader/Troubleshooter</td><td>Full-Time</td><td> $119,887.42 </td><td> $38.82 </td></tr>
+ <tr><td>Schatzer, Lyle</td><td>Material Tech-Thereafter</td><td>Full-Time</td><td> $49,761.77 </td><td> $25.31 </td></tr>
+ <tr><td>Scheid, Micheal</td><td>Custodian-3rd 6 months</td><td>Full-Time</td><td> $29,331.90 </td><td> $15.65 </td></tr>
+ <tr><td>Schindler, Angela</td><td>Administrator-Forecasting</td><td>Full-Time</td><td> $62,022.23 </td><td> $30.89 </td></tr>
+ <tr><td>Schleisman, Randall</td><td>Application Integrator</td><td>Full-Time</td><td> $87,492.19 </td><td> $42.41 </td></tr>
+ <tr><td>Schmitz, John</td><td>Service Technician I-Thereaftr</td><td>Full-Time</td><td> $80,095.07 </td><td> $33.59 </td></tr>
+ <tr><td>Schneider, Ryan</td><td>Multi-Media Specialist</td><td>Full-Time</td><td> $66,376.90 </td><td> $29.75 </td></tr>
+ <tr><td>Schoolcraft, David</td><td>SpringNet Business Consultant</td><td>Full-Time</td><td> $83,328.61 </td><td> $38.11 </td></tr>
+ <tr><td>Schroeder, Rudolph</td><td>Equipment Operator</td><td>Full-Time</td><td> $67,137.50 </td><td> $28.59 </td></tr>
+ <tr><td>Sealine, Andrew</td><td>Water Sys Inst-2nd 6 mos</td><td>Full-Time</td><td> $5,082.28 </td><td> $21.72 </td></tr>
+ <tr><td>Sellars, Elvin</td><td>Custodian-Thereafter</td><td>Full-Time</td><td> $31,467.81 </td><td> $16.58 </td></tr>
+ <tr><td>Shaefer, Cara</td><td>Dir-Energy Mgmt/Conservation</td><td>Full-Time</td><td> $103,348.89 </td><td> $46.17 </td></tr>
+ <tr><td>Shaw, James</td><td>Master Mechanic</td><td>Full-Time</td><td> $78,338.92 </td><td> $34.98 </td></tr>
+ <tr><td>Shearer, Randall</td><td>Electrician Crew Leader</td><td>Full-Time</td><td> $90,280.85 </td><td> $38.71 </td></tr>
+ <tr><td>Shepherd, Spencer</td><td>Supervisor-Electric T & D</td><td>Full-Time</td><td> $98,959.32 </td><td> $43.07 </td></tr>
+ <tr><td>Shinault, Eric</td><td>Director-Treasury</td><td>Full-Time</td><td> $135,130.97 </td><td> $62.33 </td></tr>
+ <tr><td>Shipe, Brian</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $44,975.44 </td><td> $21.76 </td></tr>
+ <tr><td>Shipley, Cynthia</td><td>Supervisor-Customer Services</td><td>Full-Time</td><td> $63,747.38 </td><td> $30.58 </td></tr>
+ <tr><td>Shirley, Ellen</td><td>Meter Reader City-Thereafter</td><td>Full-Time</td><td> $51,705.96 </td><td> $24.92 </td></tr>
+ <tr><td>Shurtz, Krista</td><td>Supervisor-Rates</td><td>Full-Time</td><td> $79,437.96 </td><td> $41.82 </td></tr>
+ <tr><td>Sieloff, Roger</td><td>Project Scheduling Specialist</td><td>Full-Time</td><td> $84,906.27 </td><td> $37.12 </td></tr>
+ <tr><td>Sieloff, Susan</td><td>Supervisor - Tree Management</td><td>Full-Time</td><td> $82,994.01 </td><td> $36.34 </td></tr>
+ <tr><td>Sikes, Stacey</td><td>Electric Line Worker +</td><td>Full-Time</td><td> $85,908.16 </td><td> $35.96 </td></tr>
+ <tr><td>Simmons, Joseph</td><td>Electrician Crew Leader</td><td>Full-Time</td><td> $77,920.15 </td><td> $38.71 </td></tr>
+ <tr><td>Skidmore, Jennifer</td><td>Meter Reader City-Thereafter</td><td>Full-Time</td><td> $54,783.24 </td><td> $24.92 </td></tr>
+ <tr><td>Slatten, Danny</td><td>Maintenance Tech-Crew Leader</td><td>Full-Time</td><td> $87,330.08 </td><td> $34.12 </td></tr>
+ <tr><td>Slavens, Tony</td><td>Group Leader-Svc Tech I</td><td>Full-Time</td><td> $86,930.37 </td><td> $36.68 </td></tr>
+ <tr><td>Small, Danny</td><td>Supv-Power Station Operations</td><td>Full-Time</td><td> $102,520.78 </td><td> $45.53 </td></tr>
+ <tr><td>Smith, Carol</td><td>Project Scheduling Specialist</td><td>Full-Time</td><td> $70,018.62 </td><td> $30.60 </td></tr>
+ <tr><td>Smith, Carolyn</td><td>Sr Developer Tech-TA</td><td>Full-Time</td><td> $58,044.86 </td><td> $27.87 </td></tr>
+ <tr><td>Smith, Charles</td><td>Director-Power Generation</td><td>Full-Time</td><td> $154,639.51 </td><td> $71.48 </td></tr>
+ <tr><td>Smith, Dawn</td><td>Admin-Fleet Mgmt System</td><td>Full-Time</td><td> $52,924.39 </td><td> $23.12 </td></tr>
+ <tr><td>Smith, Eric</td><td>Senior Control Operator</td><td>Full-Time</td><td> $90,048.54 </td><td> $38.85 </td></tr>
+ <tr><td>Smith, Gaylon</td><td>Admin-Natural Gas & Water Eng</td><td>Full-Time</td><td> $72,242.14 </td><td> $34.81 </td></tr>
+ <tr><td>Smith, J</td><td>Buyer</td><td>Full-Time</td><td> $71,024.75 </td><td> $31.83 </td></tr>
+ <tr><td>Smith, James</td><td>Bus Service Coordinator</td><td>Full-Time</td><td> $50,480.61 </td><td> $24.42 </td></tr>
+ <tr><td>Smith, Kevin</td><td>Custodian-Thereafter</td><td>Full-Time</td><td> $37,227.03 </td><td> $16.58 </td></tr>
+ <tr><td>Smith, Michael</td><td>Auxiliary Operator</td><td>Full-Time</td><td> $75,623.15 </td><td> $31.33 </td></tr>
+ <tr><td>Smith, Thomas</td><td>Senior Control Operator</td><td>Full-Time</td><td> $86,562.67 </td><td> $38.85 </td></tr>
+ <tr><td>Smith, Timothy</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $73,473.37 </td><td> $30.50 </td></tr>
+ <tr><td>Smith, Walter</td><td>Equipment Operator</td><td>Full-Time</td><td> $59,735.72 </td><td> $28.59 </td></tr>
+ <tr><td>Snider, Benaiah</td><td>Gas System Installer</td><td>Full-Time</td><td> $59,092.85 </td><td> $26.35 </td></tr>
+ <tr><td>Spears, Travis</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $65,370.04 </td><td> $30.50 </td></tr>
+ <tr><td>Speer, Mark</td><td>Supervisor-SpringNet Network</td><td>Full-Time</td><td> $106,797.14 </td><td> $48.49 </td></tr>
+ <tr><td>Spence, Rodney</td><td>Manager-Generation Projects</td><td>Full-Time</td><td> $146,517.84 </td><td> $67.04 </td></tr>
+ <tr><td>Spencer, John</td><td>Auxiliary Operator-Htr Floor</td><td>Full-Time</td><td> $77,166.17 </td><td> $32.28 </td></tr>
+ <tr><td>Spicer, Kathryn</td><td>Sr Eng Tech-SpringNet-TA</td><td>Full-Time</td><td> $60,125.05 </td><td> $27.87 </td></tr>
+ <tr><td>Sprinkle, Jamie</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $63,950.15 </td><td> $30.50 </td></tr>
+ <tr><td>Spurlock, Melissa</td><td>Supervisor-Bus Services</td><td>Full-Time</td><td> $58,194.79 </td><td> $27.38 </td></tr>
+ <tr><td>Squibb, Stephen</td><td>Supv-Natural Gas & Water Eng</td><td>Full-Time</td><td> $98,522.94 </td><td> $50.43 </td></tr>
+ <tr><td>Srader, Donna</td><td>CSR-Thereafter</td><td>Full-Time</td><td> $38,202.00 </td><td> $18.69 </td></tr>
+ <tr><td>Stacye, Steven</td><td>Manager-Transit Operations</td><td>Full-Time</td><td> $65,607.59 </td><td> $32.78 </td></tr>
+ <tr><td>Steele, Lori</td><td>Material Tech-Thereafter</td><td>Full-Time</td><td> $53,011.25 </td><td> $25.31 </td></tr>
+ <tr><td>Steeley, David</td><td>Disbursement Analyst</td><td>Full-Time</td><td> $65,213.76 </td><td> $30.06 </td></tr>
+ <tr><td>Stephens, Bryan</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $50,181.72 </td><td> $21.76 </td></tr>
+ <tr><td>Stephens, Ernest</td><td>Elec, Inst, & Control Tech</td><td>Full-Time</td><td> $91,619.62 </td><td> $38.59 </td></tr>
+ <tr><td>Stephens, John</td><td>Director-Power System Control</td><td>Full-Time</td><td> $134,281.95 </td><td> $62.68 </td></tr>
+ <tr><td>Stepp, Eddie</td><td>Sr. Water Technician</td><td>Full-Time</td><td> $60,692.58 </td><td> $28.60 </td></tr>
+ <tr><td>Steuber, Matthew</td><td>NG&W Engineer Co-op-Senior</td><td>Part-Time</td><td> $663.00 </td><td> $17.00 </td></tr>
+ <tr><td>Stevens, Pamela</td><td>Manager-Customer Services</td><td>Full-Time</td><td> $101,514.56 </td><td> $45.78 </td></tr>
+ <tr><td>Stewart, Willard</td><td>Senior Control Operator</td><td>Full-Time</td><td> $97,478.79 </td><td> $38.85 </td></tr>
+ <tr><td>Stinson, Anthony</td><td>Assoc Gen Mgr-Operations</td><td>Full-Time</td><td> $234,277.52 </td><td> $106.99 </td></tr>
+ <tr><td>Stockstill, Carol</td><td>Sr CSR</td><td>Full-Time</td><td> $44,296.40 </td><td> $21.57 </td></tr>
+ <tr><td>Stockwell, Crystal</td><td>CSR-Thereafter</td><td>Full-Time</td><td> $37,186.11 </td><td> $18.69 </td></tr>
+ <tr><td>Stodden, Steven</td><td>Assoc Gen Mgr-Electric Supply</td><td>Full-Time</td><td> $218,032.80 </td><td> $99.93 </td></tr>
+ <tr><td>Stokes, Kevin</td><td>Power System Oper/Dispatcher</td><td>Full-Time</td><td> $104,908.52 </td><td> $41.89 </td></tr>
+ <tr><td>Stoneman, Kevin</td><td>Electrician</td><td>Full-Time</td><td> $71,387.73 </td><td> $36.15 </td></tr>
+ <tr><td>Stowe, Cherryl</td><td>Measurement  Tech</td><td>Full-Time</td><td> $62,435.12 </td><td> $29.48 </td></tr>
+ <tr><td>Strauss, Amy</td><td>Senior Engineer-Power Station</td><td>Full-Time</td><td> $109,834.58 </td><td> $53.43 </td></tr>
+ <tr><td>Street, James</td><td>Information Security Analyst</td><td>Full-Time</td><td> $79,968.76 </td><td> $36.10 </td></tr>
+ <tr><td>Strickland, Jeremy</td><td>Measurement  Tech</td><td>Full-Time</td><td> $56,894.53 </td><td> $29.48 </td></tr>
+ <tr><td>Stueve, Gary</td><td>Supv-Power Station Maintenance</td><td>Full-Time</td><td> $113,404.74 </td><td> $49.53 </td></tr>
+ <tr><td>Sullins, Kathryn</td><td>Sr CSR</td><td>Full-Time</td><td> $42,352.85 </td><td> $21.57 </td></tr>
+ <tr><td>Sullins, Keith</td><td>Elec Tech/Elec Tech Crew Ldr</td><td>Full-Time</td><td> $86,789.46 </td><td> $40.77 </td></tr>
+ <tr><td>Sullivan, Bradley</td><td>Sr Elect Comm Tech-Voice</td><td>Full-Time</td><td> $85,056.55 </td><td> $37.93 </td></tr>
+ <tr><td>Summers, James</td><td>Material Tech-Thereafter</td><td>Full-Time</td><td> $52,920.49 </td><td> $25.31 </td></tr>
+ <tr><td>Sutton, Erica</td><td>CSR-1st 6 months</td><td>Full-Time</td><td> $3,530.44 </td><td> $15.22 </td></tr>
+ <tr><td>Swearengin, Albert</td><td>Master Journey Mechanic</td><td>Full-Time</td><td> $66,547.37 </td><td> $28.63 </td></tr>
+ <tr><td>Sweikar, Richard</td><td>Buyer</td><td>Full-Time</td><td> $78,234.96 </td><td> $33.51 </td></tr>
+ <tr><td>Szalkowski, David</td><td>Maintenance Tech-Thereafter</td><td>Full-Time</td><td> $65,098.02 </td><td> $31.59 </td></tr>
+ <tr><td>Tangora, Brandon</td><td>Pressure Technician</td><td>Full-Time</td><td> $62,201.03 </td><td> $29.80 </td></tr>
+ <tr><td>Tanner, Lisa</td><td>Admin-Claims & Investigations</td><td>Full-Time</td><td> $62,050.77 </td><td> $28.23 </td></tr>
+ <tr><td>Taylor, Brian</td><td>Maint Mechanic-Cert Welder</td><td>Full-Time</td><td> $67,845.96 </td><td> $34.56 </td></tr>
+ <tr><td>Taylor, Gavin</td><td>Plant Custodian I-Thereafter</td><td>Full-Time</td><td> $32,653.77 </td><td> $16.87 </td></tr>
+ <tr><td>Taylor, Ginger</td><td>Application Integrator</td><td>Full-Time</td><td> $95,661.68 </td><td> $41.99 </td></tr>
+ <tr><td>Taylor, Relina</td><td>CSR-Thereafter</td><td>Full-Time</td><td> $30,574.54 </td><td> $18.69 </td></tr>
+ <tr><td>Teifke, Thomas</td><td>Material Coordinator (GF)</td><td>Full-Time</td><td> $55,207.98 </td><td> $27.96 </td></tr>
+ <tr><td>Tennyson, Johnny</td><td>Manager-Power Scheduling</td><td>Full-Time</td><td> $97,920.05 </td><td> $45.60 </td></tr>
+ <tr><td>Terry, Mark</td><td>Laboratory Technician PP</td><td>Full-Time</td><td> $77,139.79 </td><td> $35.34 </td></tr>
+ <tr><td>Terry, William</td><td>Loader Operator-P.P.C.H.</td><td>Full-Time</td><td> $65,969.73 </td><td> $31.83 </td></tr>
+ <tr><td>Thavaran, Biju</td><td>Application Analyst</td><td>Full-Time</td><td> $72,384.42 </td><td> $35.48 </td></tr>
+ <tr><td>Thomas, David</td><td>Senior Laboratory Analyst</td><td>Full-Time</td><td> $90,996.47 </td><td> $40.92 </td></tr>
+ <tr><td>Thomas, Paul</td><td>Lakes Laborer-Thereafter</td><td>Full-Time</td><td> $46,835.90 </td><td> $22.52 </td></tr>
+ <tr><td>Thomas, Randy</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $58,966.71 </td><td> $21.76 </td></tr>
+ <tr><td>Thomas, Seth</td><td>Engineering Designer Co-op</td><td>Part-Time</td><td> $14,841.37 </td><td> $10.28 </td></tr>
+ <tr><td>Thompson, Benny</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $47,301.99 </td><td> $21.76 </td></tr>
+ <tr><td>Thompson, Dean</td><td>Assoc Gen Mgr-Bus/Econ Dev</td><td>Full-Time</td><td> $130,084.55 </td><td> $64.49 </td></tr>
+ <tr><td>Thompson, Nancy</td><td>Security Operations Specialist</td><td>Full-Time</td><td> $49,430.53 </td><td> $19.35 </td></tr>
+ <tr><td>Thornhill, Jeremy</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $68,849.50 </td><td> $30.50 </td></tr>
+ <tr><td>Thornton, Carolyn</td><td>Human Resources Assistant</td><td>Full-Time</td><td> $47,349.37 </td><td> $20.22 </td></tr>
+ <tr><td>Thummel, Jacqulyn</td><td>Application Integrator</td><td>Full-Time</td><td> $81,567.98 </td><td> $38.22 </td></tr>
+ <tr><td>Thurman, Michael</td><td>Custodian-Thereafter</td><td>Full-Time</td><td> $34,346.19 </td><td> $16.58 </td></tr>
+ <tr><td>Todd, Michelle</td><td>Office Administrator</td><td>Full-Time</td><td> $50,210.20 </td><td> $21.85 </td></tr>
+ <tr><td>Todd, Ronald</td><td>Loader Operator-P.P.C.H.</td><td>Full-Time</td><td> $69,550.46 </td><td> $31.83 </td></tr>
+ <tr><td>Todd, Teryl</td><td>Auxiliary Operator-Htr Floor</td><td>Full-Time</td><td> $78,724.73 </td><td> $32.28 </td></tr>
+ <tr><td>Toomey, Frederick</td><td>Senior Measurement Tech</td><td>Full-Time</td><td> $62,796.21 </td><td> $31.25 </td></tr>
+ <tr><td>Towle, Jason</td><td>Sr Fac Maint Des-TA</td><td>Full-Time</td><td> $57,611.45 </td><td> $27.87 </td></tr>
+ <tr><td>Tracy, Theresa</td><td>Accounting Analyst</td><td>Full-Time</td><td> $67,689.31 </td><td> $30.86 </td></tr>
+ <tr><td>Trantham, Ricky</td><td>Service Technician I-Thereaftr</td><td>Full-Time</td><td> $71,791.90 </td><td> $33.59 </td></tr>
+ <tr><td>Treece, Denise</td><td>Staff Assistant</td><td>Full-Time</td><td> $40,230.25 </td><td> $17.48 </td></tr>
+ <tr><td>Trent, Nicholas</td><td>Material Tech-Thereafter</td><td>Full-Time</td><td> $50,478.47 </td><td> $25.31 </td></tr>
+ <tr><td>Troop, Robert</td><td>Bus Operator-2nd 6 mos</td><td>Full-Time</td><td> $36,298.81 </td><td> $15.82 </td></tr>
+ <tr><td>Tucker, John</td><td>Lead Custodian I-Thereafter</td><td>Full-Time</td><td> $38,539.88 </td><td> $19.24 </td></tr>
+ <tr><td>Turner, Ryan</td><td>Buyer</td><td>Full-Time</td><td> $58,761.45 </td><td> $26.25 </td></tr>
+ <tr><td>Turner, Scott</td><td>Supervisor-Water Distribution</td><td>Full-Time</td><td> $79,275.83 </td><td> $34.17 </td></tr>
+ <tr><td>Turner, Steven</td><td>Material Tech-Thereafter</td><td>Full-Time</td><td> $47,184.31 </td><td> $25.31 </td></tr>
+ <tr><td>Turner, Susan</td><td>Manager-Transit Projects</td><td>Part-Time</td><td> $127,207.07 </td><td> $47.44 </td></tr>
+ <tr><td>Turner, Timothy</td><td>Supv-Power Station Maintenance</td><td>Full-Time</td><td> $105,719.50 </td><td> $45.93 </td></tr>
+ <tr><td>Tyler, Bradley</td><td>App Elec Meter Tech-3rd Year</td><td>Full-Time</td><td> $53,473.98 </td><td> $28.72 </td></tr>
+ <tr><td>Underwood, Dana</td><td>Pressure Technician</td><td>Full-Time</td><td> $64,120.03 </td><td> $29.80 </td></tr>
+ <tr><td>Ursino, Randall</td><td>Administrator-Safety Services</td><td>Part-Time</td><td> $49,464.90 </td><td> $32.76 </td></tr>
+ <tr><td>Ussery, Jamie</td><td>Heavy Equipment Operator</td><td>Full-Time</td><td> $67,571.44 </td><td> $28.60 </td></tr>
+ <tr><td>Vallejo, Colby</td><td>Gas Sys Inst-2nd 6 mos</td><td>Full-Time</td><td> $39,495.63 </td><td> $21.94 </td></tr>
+ <tr><td>Vallely, Christine</td><td>Office Administrator</td><td>Full-Time</td><td> $55,084.75 </td><td> $25.44 </td></tr>
+ <tr><td>Van Every, Mark</td><td>Sr Nat Gas & Water Des-TA</td><td>Full-Time</td><td> $57,055.97 </td><td> $27.87 </td></tr>
+ <tr><td>Vandaveer, Vincent</td><td>Power System Scheduler</td><td>Full-Time</td><td> $72,188.62 </td><td> $33.71 </td></tr>
+ <tr><td>Vasko, Julia</td><td>Legal Assistant</td><td>Full-Time</td><td> $56,837.43 </td><td> $26.29 </td></tr>
+ <tr><td>Vaughn, Dennis</td><td>Line/Substation Inspector</td><td>Full-Time</td><td> $86,691.24 </td><td> $38.82 </td></tr>
+ <tr><td>Vaughn, Shannon</td><td>Sr CSR</td><td>Full-Time</td><td> $39,253.58 </td><td> $21.57 </td></tr>
+ <tr><td>Vaugine, Thomas</td><td>Meter Reader City-Thereafter</td><td>Full-Time</td><td> $56,229.13 </td><td> $24.92 </td></tr>
+ <tr><td>Vernier, David</td><td>Instrument Control Tech/Oper</td><td>Full-Time</td><td> $72,439.45 </td><td> $35.61 </td></tr>
+ <tr><td>Vestal, Daniel</td><td>Electric Line Worker +</td><td>Full-Time</td><td> $93,113.61 </td><td> $35.96 </td></tr>
+ <tr><td>Veteto, Jeff</td><td>Senior Eng-Natural Gas & Water</td><td>Full-Time</td><td> $99,358.44 </td><td> $47.36 </td></tr>
+ <tr><td>Vines, Renee</td><td>Financial Analyst</td><td>Full-Time</td><td> $67,940.91 </td><td> $33.87 </td></tr>
+ <tr><td>Vinson, Vickie</td><td>Application Analyst-Materials</td><td>Full-Time</td><td> $65,755.04 </td><td> $31.44 </td></tr>
+ <tr><td>Vinyard, Russell</td><td>Electrician Crew Leader</td><td>Full-Time</td><td> $85,004.27 </td><td> $38.71 </td></tr>
+ <tr><td>Voelker, Ronald</td><td>HVAC Technician-Thereafter</td><td>Full-Time</td><td> $76,026.03 </td><td> $36.83 </td></tr>
+ <tr><td>Wagner, Thomas</td><td>Control Operator</td><td>Full-Time</td><td> $83,107.09 </td><td> $33.55 </td></tr>
+ <tr><td>Wahl, David</td><td>Elec, Inst, & Control Tech</td><td>Full-Time</td><td> $70,614.92 </td><td> $38.59 </td></tr>
+ <tr><td>Walker, Darrell</td><td>Crew Leader/Troubleshooter</td><td>Full-Time</td><td> $116,284.17 </td><td> $38.82 </td></tr>
+ <tr><td>Wall, Sandra</td><td>CSR-Thereafter</td><td>Full-Time</td><td> $37,358.95 </td><td> $18.69 </td></tr>
+ <tr><td>Walters, Amy</td><td>Plant Custodian I-Thereafter</td><td>Full-Time</td><td> $34,540.79 </td><td> $16.87 </td></tr>
+ <tr><td>Walters, Crystal</td><td>Material Coordinator (GF)</td><td>Full-Time</td><td> $60,312.25 </td><td> $27.96 </td></tr>
+ <tr><td>Warden, Dylan</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $68,205.55 </td><td> $30.50 </td></tr>
+ <tr><td>Ware, Theresa</td><td>Office Administrator</td><td>Full-Time</td><td> $46,570.82 </td><td> $20.07 </td></tr>
+ <tr><td>Waters, Leland</td><td>Master Lead Mechanic</td><td>Full-Time</td><td> $67,145.25 </td><td> $30.17 </td></tr>
+ <tr><td>Watwood, Charles</td><td>Supv-Power Station Operations</td><td>Full-Time</td><td> $118,797.09 </td><td> $47.91 </td></tr>
+ <tr><td>Weiss, Daniel</td><td>Senior Systems Integrator</td><td>Full-Time</td><td> $116,504.87 </td><td> $55.21 </td></tr>
+ <tr><td>Wester, Jamie</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $74,703.43 </td><td> $30.50 </td></tr>
+ <tr><td>White, Eric</td><td>Journey Body Technician</td><td>Full-Time</td><td> $60,494.91 </td><td> $28.63 </td></tr>
+ <tr><td>White, Linda</td><td>Sr CSR</td><td>Full-Time</td><td> $44,286.01 </td><td> $21.57 </td></tr>
+ <tr><td>White, William</td><td>Service Technician I-Thereaftr</td><td>Full-Time</td><td> $63,390.84 </td><td> $33.59 </td></tr>
+ <tr><td>Whitman, Daren</td><td>Sr Leak Surveyor-TA</td><td>Full-Time</td><td> $52,621.35 </td><td> $28.32 </td></tr>
+ <tr><td>Whitmer, Jordan</td><td>Plant Custodian I-Thereafter</td><td>Full-Time</td><td> $35,462.28 </td><td> $16.87 </td></tr>
+ <tr><td>Wilkins, Tracy</td><td>Senior Systems Integrator</td><td>Full-Time</td><td> $121,895.35 </td><td> $54.85 </td></tr>
+ <tr><td>Williams, Chad</td><td>Heavy Equipment Operator</td><td>Full-Time</td><td> $61,130.89 </td><td> $28.60 </td></tr>
+ <tr><td>Williams, Curtis</td><td>Instrument Technician</td><td>Full-Time</td><td> $70,626.78 </td><td> $32.77 </td></tr>
+ <tr><td>Williams, James</td><td>Reliability Compliance Spec</td><td>Full-Time</td><td> $69,182.84 </td><td> $34.53 </td></tr>
+ <tr><td>Williams, Jeffrey</td><td>Water Sys Inst-2nd 6 mos</td><td>Full-Time</td><td> $4,860.17 </td><td> $21.72 </td></tr>
+ <tr><td>Williams, Jeremiah</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $46,366.26 </td><td> $21.76 </td></tr>
+ <tr><td>Williams, Scott</td><td>Senior Network Engineer</td><td>Full-Time</td><td> $98,579.39 </td><td> $46.66 </td></tr>
+ <tr><td>Williams, Shane</td><td>Auxiliary Operator-Htr Floor</td><td>Full-Time</td><td> $76,600.61 </td><td> $32.28 </td></tr>
+ <tr><td>Williams, Toby</td><td>Lakes Crew Leader-Thereafter</td><td>Full-Time</td><td> $54,073.56 </td><td> $26.22 </td></tr>
+ <tr><td>Williamson, Kevin</td><td>Asst Mgr-Nat Gas Const/Con Ins</td><td>Full-Time</td><td> $112,446.53 </td><td> $52.50 </td></tr>
+ <tr><td>Wilslef, Tim</td><td>Forester</td><td>Full-Time</td><td> $67,833.13 </td><td> $33.58 </td></tr>
+ <tr><td>Wilson, Jeffery</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $67,419.23 </td><td> $30.50 </td></tr>
+ <tr><td>Wilson, Larry</td><td>Relief Operator</td><td>Full-Time</td><td> $72,693.71 </td><td> $32.32 </td></tr>
+ <tr><td>Wilson, Mark</td><td>Network Engineer-IT</td><td>Full-Time</td><td> $75,099.49 </td><td> $35.04 </td></tr>
+ <tr><td>Wilson, Randy</td><td>Pressure Controller</td><td>Full-Time</td><td> $81,369.02 </td><td> $30.81 </td></tr>
+ <tr><td>Wilson, Robert</td><td>Sr Supv-Water Treatment Maint</td><td>Full-Time</td><td> $108,501.18 </td><td> $45.57 </td></tr>
+ <tr><td>Wilson, William</td><td>Equipment Operator</td><td>Full-Time</td><td> $59,702.15 </td><td> $28.59 </td></tr>
+ <tr><td>Wilson, Zachary</td><td>Laboratory Asst Co-op-Bachelor</td><td>Part-Time</td><td> $12,568.45 </td><td> $9.03 </td></tr>
+ <tr><td>Wingender, Joy</td><td>Administrator-Human Resources</td><td>Full-Time</td><td> $84,171.25 </td><td> $37.20 </td></tr>
+ <tr><td>Winn, Christopher</td><td>Geospatial Design/Proc Analyst</td><td>Full-Time</td><td> $70,753.66 </td><td> $34.34 </td></tr>
+ <tr><td>Winslow, Terrance</td><td>Maint Mechanic II-TA PS</td><td>Full-Time</td><td> $70,224.03 </td><td> $30.50 </td></tr>
+ <tr><td>Winter, Michael</td><td>Supervisor-Electric T & D</td><td>Full-Time</td><td> $110,930.84 </td><td> $43.43 </td></tr>
+ <tr><td>Wise, Charles</td><td>Information Security Analyst</td><td>Full-Time</td><td> $106,173.22 </td><td> $45.80 </td></tr>
+ <tr><td>Wise, Kelly</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $46,671.24 </td><td> $21.76 </td></tr>
+ <tr><td>Wolken, Seth</td><td>Field Scheduler-2nd 6 months</td><td>Full-Time</td><td> $46,708.45 </td><td> $22.35 </td></tr>
+ <tr><td>Wood, Greg</td><td>Pressure Controller</td><td>Full-Time</td><td> $80,440.69 </td><td> $30.81 </td></tr>
+ <tr><td>Woods, Burl</td><td>Gas System Installer II</td><td>Full-Time</td><td> $62,429.32 </td><td> $28.59 </td></tr>
+ <tr><td>Woods, Tommy</td><td>Auxiliary Operator</td><td>Full-Time</td><td> $74,746.39 </td><td> $31.33 </td></tr>
+ <tr><td>Woolverton, Kelly</td><td>Electric Line Crew Leader</td><td>Full-Time</td><td> $85,632.92 </td><td> $38.82 </td></tr>
+ <tr><td>Woosley, Robert</td><td>Geospatial Design/Proc Analyst</td><td>Full-Time</td><td> $60,417.96 </td><td> $29.79 </td></tr>
+ <tr><td>Workman, Robert</td><td>Auxiliary Operator-Htr Floor</td><td>Full-Time</td><td> $73,405.21 </td><td> $32.28 </td></tr>
+ <tr><td>Wright, Joseph</td><td>Service Technician I-Thereaftr</td><td>Full-Time</td><td> $66,900.01 </td><td> $33.59 </td></tr>
+ <tr><td>Wright, Robert</td><td>Loader Operator-P.P.C.H.</td><td>Full-Time</td><td> $73,974.98 </td><td> $31.83 </td></tr>
+ <tr><td>Wright, Ronald</td><td>Master Lead Mechanic</td><td>Full-Time</td><td> $69,359.16 </td><td> $30.17 </td></tr>
+ <tr><td>Wright, Steven</td><td>Supv-Power Station Maintenance</td><td>Full-Time</td><td> $104,757.42 </td><td> $46.23 </td></tr>
+ <tr><td>Wynes, Bradley</td><td>Supv-Power Station Maintenance</td><td>Full-Time</td><td> $101,797.64 </td><td> $46.29 </td></tr>
+ <tr><td>Wynn, Deborah</td><td>Meter Reader Rural</td><td>Full-Time</td><td> $52,087.15 </td><td> $27.20 </td></tr>
+ <tr><td>Yates, Christopher</td><td>Asst Mgr-SpringNet Oper/Eng</td><td>Full-Time</td><td> $127,019.76 </td><td> $60.13 </td></tr>
+ <tr><td>York, Elisabeth</td><td>Web Producer</td><td>Full-Time</td><td> $90,026.96 </td><td> $39.93 </td></tr>
+ <tr><td>Young, Collene</td><td>Security Operations Specialist</td><td>Full-Time</td><td> $44,879.03 </td><td> $20.41 </td></tr>
+ <tr><td>Young, John</td><td>Supv-Natural Gas Construction</td><td>Full-Time</td><td> $86,764.03 </td><td> $37.46 </td></tr>
+ <tr><td>Young, Monroe</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $48,276.47 </td><td> $21.76 </td></tr>
+ <tr><td>Zellefrow, William</td><td>Supv-Substation Engineering</td><td>Full-Time</td><td> $132,164.58 </td><td> $61.90 </td></tr>
+ <tr><td>Zellmer, Kirk</td><td>Service Technician I-Thereaftr</td><td>Full-Time</td><td> $65,440.09 </td><td> $33.59 </td></tr>
+ <tr><td>Zellmer-Zey, Debra</td><td>Staff Assistant</td><td>Full-Time</td><td> $45,502.72 </td><td> $20.17 </td></tr>
+ <tr><td>Zerr, Mitzie</td><td>Admin-Business Retention/Exp</td><td>Full-Time</td><td> $85,160.35 </td><td> $38.82 </td></tr>
+ <tr><td>Zetty, Zachary</td><td>Bus Operator-Thereafter</td><td>Full-Time</td><td> $43,684.33 </td><td> $21.76 </td></tr>
+ <tr><td>Ziegler, Nathan</td><td>Appl Analyst Co-op-Senior</td><td>Part-Time</td><td> $11,806.63 </td><td> $12.52</td></tr>
+ </tbody>
+</table>
+</div>
+<div class="jumbotron">
+      <h1>City Utilities Salaries Data</h1>
+      <h3>About the data</h3>
+        <p><small>Each institution was asked to provide a list of all employees, with job titles and full- or part-time status, along with total compensation for the 2013 calendar year and hourly rate of pay as of Jan. 1.</small></p>
+        <p><small>Anyone who earned wages in 2013 or was an active employee in early 2014 should be included, but not all people listed in the databases remain active employees. Recent hires — including adjunct professors not on the payroll at the first of the year — may not be included.</small></p>
+        <p><small>Many full-time employees are paid an annual salary rather than an hourly wage. In those cases, either the public institution or the News-Leader calculated an hourly rate of pay assuming a 40-hour work week and 52 weeks of work (2,080 hours).</small></p>
+        <p><small>The reverse is not always true. In the case of Springfield Public Schools, many full-time workers, including teachers and elementary school principals, are paid for only nine or 10 months of work, so multiplying the hourly rate of pay by 2,080 is not accurate indication of the workers’s annual salary.</small></p>
+        <p><small>Compensation for 2013 includes the total amount an employee received during the year before taxes. In addition to regular wages, it includes any car allowances, stipends or deferred compensation; overtime payments; and payouts of accumulated leave time at retirement.</small></p>
+      <p><a class="btn btn-primary btn-lg" role="button">Read More</a></p>
+    </div>
+</div>
+<script type="text/javascript" language="JavaScript"> 
+    <!--
+    s_account="gpaper171,gntbcstglobal";
+    //--> 
+    </script> 
+    <!-- SiteCatalyst code version: H.3.
+    Copyright 1997-2005 Omniture, Inc. More info available at
+    http://www.omniture.com --> 
+    <script src="http://content.gannettonline.com/global/s_code/s_code.js"></script> 
+    <script><!--
+    /* You may give each page an identifying name, server, and channel on
+    the next lines. */
+    s.pageName="Data - CU Salaries"
+    s.server=""     // Do Not Alter
+    s.channel=""
+    s.pageType=""
+    s.pageValue=""
+    s.prop1=""
+    s.prop2="data"
+    s.prop3="data"
+    s.prop4=""
+    s.prop5=""
+    s.prop6="news"
+    s.prop7="local_news"
+    s.prop16="article"
+    s.prop25="Springfield:news-leader"
+    s.prop50="Newspaper";
+
+    var currentTime=new Date();
+    var gciYear = currentTime.getFullYear();
+    DM_addToLoc("zipcode", escape(s.prop30));
+    DM_addToLoc("age", escape((gciYear-s.prop31)));
+    DM_addToLoc("gender", escape(s.prop32));
+    var gci_ssts=OAS_sitepage;
+
+    gci_ssts=gci_ssts.replace(/\/article\.htm.*$/,'');
+    gci_ssts=gci_ssts.replace(/\/front\.htm.*$/,'');
+    gci_ssts=gci_ssts.replace(/\/index\.htm.*$/,'');
+    gci_ssts=gci_ssts.replace(/\@.*$/,'');
+    gci_ssts=gci_ssts.replace(/^.*\.com\//,'');
+
+    var gci_tempossts=gci_ssts; 
+    var gci_ossts=gci_tempossts.split("/")
+    gci_ssts=gci_ssts.replace(/\//g,' > ');
+    gci_ssts='newspaper > '+gci_ssts;
+
+    if
+    (  gci_ossts[0] == "life"
+    || gci_ossts[0] == "money"
+    || gci_ossts[0] == "news"
+    || gci_ossts[0] == "sports"
+    || gci_ossts[0] == "tech"
+    || gci_ossts[0] == "travel"
+    || gci_ossts[0] == "weather"
+    || gci_ossts[0] == "umbrella"
+    )
+
+    {
+      DM_cat(gci_ssts);
+    }
+    else
+    {
+      DM_cat('newspaper > other');
+    }
+
+    var gci_osstslen=gci_ossts.length;
+    for(var i=0; i<gci_osstslen; i++) {
+    if(i==0)
+    s.prop17=gci_ossts[i];   // section
+    if(i==1)
+    s.prop18=gci_ossts[i];   // subsection
+    if(i==2)
+    s.prop19=gci_ossts[i];   // topic
+    if(i==3)
+    s.prop20=gci_ossts[i];   // Subtopic
+    }
+    DM_tag();
+
+    // sets the RevSci cookie in GCION domain
+    if (rsinetsegs.length > 0)
+    {
+      if (!RevSci.HasSegmentCookie())
+      {
+        RevSci.Rpc.Send(RevSci.RequestUrl(rsinetsegs));
+        RevSci.Cookie.Set(revsci_Cookie, true);
+      }
+    }
+     if(typeof rsinetsegs!='undefined'){s.prop48=(rsinetsegs.join('|')).replace(/J06575_/g,'');}else{s.prop48='no segment';}
+
+    //-->
+    </script> 
+
+    <script><!--
+    /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+    var s_code=s.t();if(s_code)document.write(s_code)//--></script> 
+    <script><!--
+    if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+    //--></script><noscript><img src="http://gntbcstglobal.112.2O7.net/b/ss/gntbcstglobal,gpaper171/1/H.3--NS/0" height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/--> 
+    <!-- End SiteCatalyst code version: H.3. -->
+<!-- chartbeat -->
+<script type="text/javascript">
+var _sf_async_config={};
+/** CONFIGURATION START **/
+_sf_async_config.uid = 47635;
+_sf_async_config.domain = "news-leader.com"; /** CHANGE THIS **/
+/** CONFIGURATION END **/
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement("script");
+    e.setAttribute("language", "javascript");
+    e.setAttribute("type", "text/javascript");
+    e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != "function") ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+</script>
+</body>
+</html>

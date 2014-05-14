@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- chartbeat -->
+    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Salaries database for Library District">
+    <meta name="author" content="Tyler Lane">
+
+    <title>Salaries by News-Leader</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
+
+    <script type="text/javascript" src="js/jquery.js"> </script>
+    <!--<script type="text/javascript" src="js/jquery.dataTables.js"> </script>-->
+    <script type="text/javascript" src="//cdn.datatables.net/1.10.0/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"> </script>
+    <script type="text/javascript" src="js/dataTables.bootstrap.js"> </script>
+    <script type="text/javascript" src="js/dataTables.bootstrapPagination.js"> </script>
+
+    <!-- Add custom CSS here -->
+    <style>
+    body {
+        margin-top: 110px;
+    }
+    </style>
+
+
+
+    <script>
+		$(document).ready( function () {
+
+    			//$('#data_table').DataTable();
+    			// console.log("testing jquery loading");
+    			//$("#table").click(function(){ alert("table clicked!")});
+                // console.log( jQuery.fn.dataTable );
+          $("#table").DataTable({
+            "pageLength": 100,
+            "sDom": "<'row'<'col-xs-6'T><'col-xs-6'f>r>t<'row'<'col-xs-6'i><'col-xs-6'p>>",
+            "sPaginationType": "bootstrap",
+            "lengthChange": false,
+          });
+          $('#table').on( 'page.dt', function () {
+                if( typeof( s ) != "undefined" )
+                {
+                    s.pageName = "Data - Library Salaries";
+                    s.t();
+                }
+    		});
+      });
+    </script>
+</head>
+
+<body>
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="library.html">Library District</a>
+                <p class="navbar-text">Watchdog Database by the News-Leader</p>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                 <li>
+                        <a href="top100.html">Top 100</a>
+                    </li>
+                    <li>
+                        <a href="greenecounty.html">Greene County</a>
+                    </li>
+                    <li>
+                        <a href="cityofsgf.html">City of Springfield</a>
+                    </li>
+                    <li>
+                        <a href="cityutilities.html">City Utilities</a>
+                    </li>
+                    <li>
+                        <a href="msu.html">MSU</a>
+                    </li>
+                    <li>
+                        <a href="otc.html">OTC</a>
+                    </li>
+                    <li>
+                        <a href="sps.html">Springfield Public Schools</a>
+                    </li>
+                    <li class='active'>
+                        <a href="library.html">Library District</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div class="container">
+    <div class="page-header">
+        <h3>Library District Salaries
+        <small class="pull-right">By <a href="http://www.news-leader.com"><span class="glyphicon glyphicon-link"></span>News-Leader.com</a></small>
+        </h3>
+    </div>
+    
+<div class="table-responsive">
+<div class="alert alert-info alert-dismissable visible-xs visible-sm">
+  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+  <strong>Heads Up!</strong> <span class="glyphicon glyphicon-phone"></span>Viewing this database on a mobile device may not show all of the data at first so be sure to scroll side-to-side
+</div>
+<table id="table" class="table table-striped table-bordered" cellspacing="0" width="100%">
+  <thead>
+<tr><th>Name</th><th>Title</th><th>Status</th><th>2013 Compensation</th><th>2014 Hourly Wage</th></tr>
+</thead>
+<tbody>
+<tr><td>Cooper, Regina</td><td>Executive Director</td><td>Full Time Regular</td><td>$122,413.99 </td><td>$60.28 </td></tr>
+<tr><td>Schmidt, Jimmie</td><td>Assoc Director</td><td>Full Time Regular</td><td>$88,647.56 </td><td>$43.17 </td></tr>
+<tr><td>Patillo, David</td><td>Information Technology Manager</td><td>Full Time Regular</td><td>$84,977.77 </td><td>$40.11 </td></tr>
+<tr><td>Strawhun, Lori</td><td>Human Resources Director</td><td>Full Time Regular</td><td>$76,771.59 </td><td>$37.07 </td></tr>
+<tr><td>O'Dell, Kathleen</td><td>Community Relations Director</td><td>Full Time Regular</td><td>$68,061.40 </td><td>$33.94 </td></tr>
+<tr><td>Davis, Melissa</td><td>Branch Manager R</td><td>Full Time Regular</td><td>$66,684.18 </td><td>$32.79 </td></tr>
+<tr><td>Sampley, Delise</td><td>Collection Services Manager</td><td>Full Time Regular</td><td>$67,422.08 </td><td>$32.79 </td></tr>
+<tr><td>Love, Martha</td><td>Special Projects Coordinator</td><td>Full Time Regular</td><td>$67,248.95 </td><td>$32.29 </td></tr>
+<tr><td>Richardson, Valerie</td><td>Foundation & Development Director</td><td>Full Time Regular</td><td>$66,602.22 </td><td>$32.19 </td></tr>
+<tr><td>Dahms Stinson, Nancee</td><td>Youth Services Coordinator</td><td>Full Time Regular</td><td>$62,942.32 </td><td>$31.67 </td></tr>
+<tr><td>Blatter, Leland</td><td>Director of Buildings & Grounds</td><td>Full Time Regular</td><td>-</td><td>$30.61 </td></tr>
+<tr><td>Flores, Kimberly</td><td>Branch Manager Q</td><td>Full Time Regular</td><td>$59,857.60 </td><td>$29.57 </td></tr>
+<tr><td>Eckhardt, Allison</td><td>Outreach Manager</td><td>Full Time Regular</td><td>$61,741.72 </td><td>$28.70 </td></tr>
+<tr><td>Wilson, Gay</td><td>Planning/Dev Librarian</td><td>Full Time Regular</td><td>$53,707.44 </td><td>$26.16 </td></tr>
+<tr><td>Neely, Jack</td><td>Librarian 1st Level</td><td>Full Time Regular</td><td>$50,558.94 </td><td>$24.52 </td></tr>
+<tr><td>Brumett, Renee</td><td>Electronic Resources Librarian</td><td>Full Time Regular</td><td>$48,277.61 </td><td>$23.57 </td></tr>
+<tr><td>Harrison, Mary</td><td>Substitute Library Assistant</td><td>Part Time Temporary</td><td>$5,706.65 </td><td>$23.34 </td></tr>
+<tr><td>Shay, Tysha</td><td>Reference Manager N</td><td>Full Time Regular</td><td>$45,442.64 </td><td>$22.46 </td></tr>
+<tr><td>Eike, Nancy</td><td>Web Manager</td><td>Full Time Regular</td><td>$46,030.77 </td><td>$22.03 </td></tr>
+<tr><td>Pelkey, Eva</td><td>Branch Manager Q</td><td>Full Time Regular</td><td>$31,868.38 </td><td>$21.57 </td></tr>
+<tr><td>Flippen, Tammy</td><td>Librarian 1st Level</td><td>Full Time Regular</td><td>$43,957.74 </td><td>$21.28 </td></tr>
+<tr><td>Gray, Erin</td><td>Branch Manager M</td><td>Full Time Regular</td><td>$42,084.14 </td><td>$21.28 </td></tr>
+<tr><td>Alexander-East, Jessie</td><td>Youth Serv Mgr</td><td>Full Time Regular</td><td>$42,374.52 </td><td>$20.96 </td></tr>
+<tr><td>Chamberlain, Mary</td><td>Circulation Mgr J</td><td>Full Time Regular</td><td>$42,461.76 </td><td>$20.96 </td></tr>
+<tr><td>Dye, Daniel</td><td>Art Director</td><td>Full Time Regular</td><td>$43,050.92 </td><td>$20.96 </td></tr>
+<tr><td>Moore, Murphy</td><td>Web Application Developer</td><td>Full Time Regular</td><td>$42,457.05 </td><td>$20.96 </td></tr>
+<tr><td>Grubbs, Brian</td><td>Local History Mgr</td><td>Full Time Regular</td><td>$42,104.92 </td><td>$20.55 </td></tr>
+<tr><td>Woodward, Kathleen</td><td>Reference Manager N</td><td>Full Time Regular</td><td>$39,591.02 </td><td>$20.26 </td></tr>
+<tr><td>Weltha, Aleah</td><td>Reference Manager L</td><td>Full Time Regular</td><td>$39,517.16 </td><td>$19.19 </td></tr>
+<tr><td>Austin, Whitney</td><td>Branch Manager M</td><td>Full Time Regular</td><td>$38,975.55 </td><td>$18.90 </td></tr>
+<tr><td>Amos, Jimmy</td><td>Maintenance Lead</td><td>Full Time Regular</td><td>$40,088.34 </td><td>$18.82 </td></tr>
+<tr><td>Brown, Rhonda</td><td>ILL Services Coordinator</td><td>Full Time Regular</td><td>$38,815.01 </td><td>$18.82 </td></tr>
+<tr><td>Kaminski, Shelli</td><td>Gift Shop Manager</td><td>Full Time Regular</td><td>$38,803.20 </td><td>$18.82 </td></tr>
+<tr><td>Bohnenkamp, Ingrid</td><td>Reference Manager M</td><td>Full Time Regular</td><td>$25,280.60 </td><td>$18.27 </td></tr>
+<tr><td>Clarke, Rebecca</td><td>Librarian 1st Level</td><td>Full Time Regular</td><td>$36,750.56 </td><td>$18.27 </td></tr>
+<tr><td>Dimond, Jana</td><td>Business Librarian</td><td>Full Time Regular</td><td>$36,905.98 </td><td>$18.27 </td></tr>
+<tr><td>Thompson, Sarah</td><td>Youth Serv Mgr</td><td>Full Time Regular</td><td>$36,301.59 </td><td>$18.27 </td></tr>
+<tr><td>Justice, Jamie</td><td>Computer Support Specialist</td><td>Part Time Regular</td><td>$17,984.98 </td><td>$17.92 </td></tr>
+<tr><td>Marshall, Sarah</td><td>Web Developer</td><td>Part Time Regular</td><td>$26,172.89 </td><td>$17.65 </td></tr>
+<tr><td>Mihalik, Cory</td><td>Health Librarian</td><td>Full Time Regular</td><td>$35,587.22 </td><td>$17.65 </td></tr>
+<tr><td>Scudder, Vanessa</td><td>Librarian 1st Level</td><td>Part Time Regular</td><td>$19,304.68 </td><td>$17.65 </td></tr>
+<tr><td>Wyly, Shari</td><td>Director of Business Operations</td><td>Full Time Regular</td><td>$35,313.77 </td><td>$17.65 </td></tr>
+<tr><td>Stewart, Elizabeth</td><td>Youth Services Associate</td><td>Part Time Regular</td><td>$21,235.91 </td><td>$17.56 </td></tr>
+<tr><td>Gourley, Gail</td><td>Meeting Room Coordinator</td><td>Full Time Regular</td><td>$36,394.76 </td><td>$17.55 </td></tr>
+<tr><td>Danielsen, Nancy</td><td>Outreach Assistant</td><td>Full Time Regular</td><td>$36,107.78 </td><td>$17.51 </td></tr>
+<tr><td>Speer, Pamela</td><td>Lead Cataloger</td><td>Full Time Regular</td><td>$35,509.38 </td><td>$17.50 </td></tr>
+<tr><td>Rhodes, Julianne</td><td>Collection Services Associate</td><td>Full Time Regular</td><td>$35,861.99 </td><td>$17.39 </td></tr>
+<tr><td>Cottle Dillon, Heather</td><td>Librarian 1st Level</td><td>Full Time Regular</td><td>$35,269.14 </td><td>$17.30 </td></tr>
+<tr><td>Kohman, Catherine</td><td>Reference Associate</td><td>Full Time Regular</td><td>$34,882.13 </td><td>$17.05 </td></tr>
+<tr><td>Rutherford, John</td><td>Local History Associate</td><td>Full Time Regular</td><td>$34,571.09 </td><td>$17.05 </td></tr>
+<tr><td>Bentley, Madeline</td><td>Youth Serv Mgr</td><td>Full Time Regular</td><td>$34,818.02 </td><td>$16.72 </td></tr>
+<tr><td>Bradley, John</td><td>Youth Services Associate</td><td>Part Time Regular</td><td>$22,093.59 </td><td>$16.72 </td></tr>
+<tr><td>Kohman, Victor</td><td>Reference Associate</td><td>Full Time Regular</td><td>$34,077.94 </td><td>$16.72 </td></tr>
+<tr><td>Smallwood, Stephanie</td><td>Early Lit. Outreach Assoc. L</td><td>Full Time Regular</td><td>$34,543.79 </td><td>$16.72 </td></tr>
+<tr><td>Snow, Beth</td><td>Training Associate</td><td>Full Time Regular</td><td>$34,657.06 </td><td>$16.72 </td></tr>
+<tr><td>Adams, Judy</td><td>Substitute Library Assistant G</td><td>Part Time Temporary</td><td>$2,743.17 </td><td>$16.55 </td></tr>
+<tr><td>Agee, Linda</td><td>Walking Books Coordinator</td><td>Full Time Regular</td><td>$33,441.21 </td><td>$16.47 </td></tr>
+<tr><td>Gough, Rebekah</td><td>Cataloger/Database Maintenance</td><td>Full Time Regular</td><td>$32,996.25 </td><td>$16.47 </td></tr>
+<tr><td>Howard, Pamela</td><td>Library Assistant</td><td>Full Time Regular</td><td>$33,771.14 </td><td>$16.39 </td></tr>
+<tr><td>Bennett, Kristin</td><td>Branch Manager M</td><td>Full Time Regular</td><td>$4,965.60 </td><td>$16.38 </td></tr>
+<tr><td>Norman, Sherry</td><td>Youth Services Associate</td><td>Part Time Regular</td><td>$19,536.39 </td><td>$15.91 </td></tr>
+<tr><td>Sinor, Kristine</td><td>Training Coordinator</td><td>Full Time Regular</td><td>$32,434.68 </td><td>$15.91 </td></tr>
+<tr><td>Farr, Catherine</td><td>Youth Services Assistant</td><td>Full Time Regular</td><td>$24,844.30 </td><td>$15.63 </td></tr>
+<tr><td>Manning, Robert</td><td>Outreach Assistant</td><td>Full Time Regular</td><td>$32,208.75 </td><td>$15.63 </td></tr>
+<tr><td>Weikert, Pamela</td><td>Acquisitions Clerk</td><td>Full Time Regular</td><td>$32,223.66 </td><td>$15.63 </td></tr>
+<tr><td>Ballard, Michelle</td><td>Youth Services Associate</td><td>Full Time Regular</td><td>$25,621.90 </td><td>$15.60 </td></tr>
+<tr><td>Glass, Renee</td><td>Local History Associate</td><td>Full Time Regular</td><td>$31,836.03 </td><td>$15.60 </td></tr>
+<tr><td>Huechteman, Charity</td><td>Youth Services Associate</td><td>Full Time Regular</td><td>$31,791.38 </td><td>$15.60 </td></tr>
+<tr><td>Ross, Daniel</td><td>Lead Computer Technician</td><td>Full Time Regular</td><td>$36,068.88 </td><td>$15.60 </td></tr>
+<tr><td>Bowerman, Carol</td><td>Meeting Room Coordinator</td><td>Full Time Regular</td><td>$31,853.48 </td><td>$15.46 </td></tr>
+<tr><td>Carter, Steva</td><td>Circulation Mgr H</td><td>Full Time Regular</td><td>$32,197.10 </td><td>$15.45 </td></tr>
+<tr><td>Ertel, Jennifer</td><td>Reference Associate</td><td>Full Time Regular</td><td>$31,094.59 </td><td>$15.38 </td></tr>
+<tr><td>Rosendahl, Sarah</td><td>Copywriter</td><td>Full Time Regular</td><td>$31,096.28 </td><td>$15.38 </td></tr>
+<tr><td>Clemens, Rebecca</td><td>Substitute Library Assistant</td><td>Part Time Regular</td><td>$5,308.30 </td><td>$15.34 </td></tr>
+<tr><td>Bogert, Valerie</td><td>Youth Service Librarian</td><td>Full Time Regular</td><td>$45.90 </td><td>$15.30 </td></tr>
+<tr><td>Moore, Meggan</td><td>Librarian 1st Level</td><td>Part Time Regular</td><td>$12,851.52 </td><td>$15.30 </td></tr>
+<tr><td>Russo, Debra</td><td>Youth Serv Mgr</td><td>Full Time Regular</td><td>$19,403.28 </td><td>$15.30 </td></tr>
+<tr><td>Williams, Michelle</td><td>Collection Services Librarian</td><td>Full Time Regular</td><td>$18,801.63 </td><td>$15.30 </td></tr>
+<tr><td>Luebbe, Becky</td><td>Youth Services Assistant</td><td>Part Time Regular</td><td>$16,490.34 </td><td>$14.86 </td></tr>
+<tr><td>Shirley, Michelle</td><td>Substitute Library Assistant</td><td>Part Time Regular</td><td>$14,453.69 </td><td>$14.86 </td></tr>
+<tr><td>Smith, Anne</td><td>Library Assistant</td><td>Part Time Regular</td><td>$22,258.57 </td><td>$14.86 </td></tr>
+<tr><td>Chandler, Greg</td><td>Delivery Driver</td><td>Full Time Regular</td><td>$30,195.61 </td><td>$14.58 </td></tr>
+<tr><td>Wright, James</td><td>Maintenance Apprentice</td><td>Part Time Regular</td><td>$19,464.31 </td><td>$14.58 </td></tr>
+<tr><td>Walden, Gina</td><td>Cicrulation Mgr E</td><td>Full Time Regular</td><td>$30,363.26 </td><td>$14.57 </td></tr>
+<tr><td>House, John</td><td>Reference Associate</td><td>Part Time Regular</td><td>$14,052.40 </td><td>$14.35 </td></tr>
+<tr><td>Moore, Dianne</td><td>Library Assistant</td><td>Part Time Regular</td><td>$14,471.31 </td><td>$14.35 </td></tr>
+<tr><td>Price, Michael</td><td>Local History Associate</td><td>Full Time Regular</td><td>$29,328.11 </td><td>$14.07 </td></tr>
+<tr><td>Caruthers, Rochelle</td><td>Associate Historian</td><td>Part Time Regular</td><td>$17,902.46 </td><td>$13.86 </td></tr>
+<tr><td>Dill, Shonda</td><td>Training/Technology Assistant</td><td>Part Time Regular</td><td>$16,747.78 </td><td>$13.86 </td></tr>
+<tr><td>Heinzmann, Whitney</td><td>Associate Historian</td><td>Part Time Regular</td><td>$17,331.38 </td><td>$13.86 </td></tr>
+<tr><td>Larsen, Gary</td><td>Associate Historian</td><td>Part Time Regular</td><td>$17,587.81 </td><td>$13.86 </td></tr>
+<tr><td>Marks, Claire</td><td>Associate Historian</td><td>Part Time Regular</td><td>$17,475.41 </td><td>$13.86 </td></tr>
+<tr><td>Palmer, Jenny</td><td>Library Assistant</td><td>Part Time Regular</td><td>$19,855.94 </td><td>$13.86 </td></tr>
+<tr><td>Williams, Trinity</td><td>Computer/Periodical Assistant</td><td>Full Time Regular</td><td>$27,566.05 </td><td>$13.86 </td></tr>
+<tr><td>Gebhart, Sheryl</td><td>Page Supervisor</td><td>Full Time Regular</td><td>$28,559.05 </td><td>$13.85 </td></tr>
+<tr><td>Marsh, Rebecca</td><td>Circulation Assistant</td><td>Full Time Regular</td><td>$28,087.35 </td><td>$13.62 </td></tr>
+<tr><td>Merrill, Lisa</td><td>Quality Control/Processing Clk</td><td>Full Time Regular</td><td>$28,076.49 </td><td>$13.62 </td></tr>
+<tr><td>Poindexter, Rebecca</td><td>Receiving Clerk</td><td>Full Time Regular</td><td>$28,079.91 </td><td>$13.62 </td></tr>
+<tr><td>Birkenfeld, Jeannine</td><td>Library/Youth Serv Assistant</td><td>Full Time Regular</td><td>$28,118.77 </td><td>$13.59 </td></tr>
+<tr><td>Hanes, Margaret</td><td>Library Assistant</td><td>Full Time Regular</td><td>$35,913.37 </td><td>$13.59 </td></tr>
+<tr><td>Minard, Abigail</td><td>ILL Assistant</td><td>Part Time Regular</td><td>$17,671.43 </td><td>$13.59 </td></tr>
+<tr><td>Velasco-Cafagna, Jennifer</td><td>Youth Services Associate</td><td>Part Time Regular</td><td>$13,089.92 </td><td>$13.46 </td></tr>
+<tr><td>Hopkins, Anna</td><td>Reference Associate</td><td>Full Time Regular</td><td>$27,008.97 </td><td>$13.41 </td></tr>
+<tr><td>Matthews, Christine</td><td>Youth Services Associate</td><td>Part Time Regular</td><td>$18,182.16 </td><td>$13.41 </td></tr>
+<tr><td>Ruhe, Stephanie</td><td>Electronic Resources Associate</td><td>Part Time Regular</td><td>$13,542.82 </td><td>$13.41 </td></tr>
+<tr><td>Raney, Rebekah</td><td>Serials Standing Order Clerk</td><td>Full Time Regular</td><td>$27,507.65 </td><td>$13.34 </td></tr>
+<tr><td>Gloyd, Jordan</td><td>Circulation Mgr H</td><td>Full Time Regular</td><td>$26,805.38 </td><td>$13.14 </td></tr>
+<tr><td>Stone, Dustyrose</td><td>Outreach Circulation Assistant</td><td>Full Time Regular</td><td>$26,962.20 </td><td>$13.07 </td></tr>
+<tr><td>Ceron, Carolyn</td><td>Circulation Assistant</td><td>Full Time Regular</td><td>$26,522.25 </td><td>$12.94 </td></tr>
+<tr><td>Earwood, Troy</td><td>Circulation Assistant</td><td>Full Time Regular</td><td>$26,065.70 </td><td>$12.94 </td></tr>
+<tr><td>Ellis, Hollee</td><td>Reference Associate</td><td>Part Time Regular</td><td>$8,128.87 </td><td>$12.94 </td></tr>
+<tr><td>Eubanks, Pamela</td><td>Collection Services Database Clerk</td><td>Part Time Regular</td><td>$15,392.48 </td><td>$12.94 </td></tr>
+<tr><td>Hobbs, Patricia</td><td>Local History Associate</td><td>Part Time Regular</td><td>$15,521.08 </td><td>$12.94 </td></tr>
+<tr><td>McCall, Dana</td><td>Circulation Assistant</td><td>Full Time Regular</td><td>$26,038.85 </td><td>$12.94 </td></tr>
+<tr><td>McGaughey, Janice</td><td>Youth Services Associate</td><td>Part Time Regular</td><td>$14,124.81 </td><td>$12.94 </td></tr>
+<tr><td>Roggensees, Bonnie</td><td>Library Assistant</td><td>Part Time Regular</td><td>$15,150.79 </td><td>$12.94 </td></tr>
+<tr><td>Burgess, Leanne</td><td>Circulation Assistant</td><td>Full Time Regular</td><td>$25,892.82 </td><td>$12.69 </td></tr>
+<tr><td>Ruggiero, Giulianella</td><td>Circulation Assistant</td><td>Full Time Regular</td><td>$26,129.24 </td><td>$12.69 </td></tr>
+<tr><td>Herbert, Gail</td><td>Youth Services Associate</td><td>Part Time Regular</td><td>$3,633.70 </td><td>$12.51 </td></tr>
+<tr><td>Keltner, Jenny</td><td>Accounting Associate</td><td>Full Time Regular</td><td>$25,219.99 </td><td>$12.26 </td></tr>
+<tr><td>Moore, Joe</td><td>Maintenance</td><td>Full Time Regular</td><td>$23,274.49 </td><td>$12.26 </td></tr>
+<tr><td>Welsh, Justin</td><td>Youth Services Associate</td><td>Part Time Regular</td><td>$13,823.26 </td><td>$12.26 </td></tr>
+<tr><td>Brunner, Linda</td><td>Library Assistant</td><td>Part Time Regular</td><td>$14,532.49 </td><td>$12.10 </td></tr>
+<tr><td>Clinton, Esther</td><td>Youth Services Associate</td><td>Part Time Regular</td><td>$11,662.38 </td><td>$12.10 </td></tr>
+<tr><td>Duckworth, Emily</td><td>Library Assistant</td><td>Full Time Regular</td><td>$24,374.75 </td><td>$12.10 </td></tr>
+<tr><td>Fox, Cassie</td><td>Library Assistant</td><td>Part Time Regular</td><td>$15,567.95 </td><td>$12.10 </td></tr>
+<tr><td>Holman, Gregory</td><td>Reference Associate</td><td>Full Time Regular</td><td>$15,898.04 </td><td>$12.10 </td></tr>
+<tr><td>Pecoraro, Jessica</td><td>Youth Outreach Assistant</td><td>Part Time Regular</td><td>$17,260.41 </td><td>$12.10 </td></tr>
+<tr><td>Smither, Erin</td><td>Reference Associate</td><td>Part Time Regular</td><td>$14,419.79 </td><td>$12.10 </td></tr>
+<tr><td>Tabor, Alyssa</td><td>Youth Services Associate</td><td>Part Time Regular</td><td>$12,321.74 </td><td>$12.10 </td></tr>
+<tr><td>Boles, Julie</td><td>Youth Services Associate</td><td>Part Time Regular</td><td>$15,666.11 </td><td>$11.86 </td></tr>
+<tr><td>Church, Patricia</td><td>Business Office Clerk</td><td>Part Time Regular</td><td>$14,461.18 </td><td>$11.67 </td></tr>
+<tr><td>Poulson, Adrienne</td><td>Library Assistant</td><td>Full Time Regular</td><td>$23,853.68 </td><td>$11.67 </td></tr>
+<tr><td>Quinn, Nancy</td><td>Circulation Assistant</td><td>Full Time Regular</td><td>$23,460.88 </td><td>$11.67 </td></tr>
+<tr><td>Ward, Michelle</td><td>Library Assistant</td><td>Part Time Regular</td><td>$9,196.05 </td><td>$11.67 </td></tr>
+<tr><td>Norton, Heather</td><td>Human Resources/Payroll Associate</td><td>Full Time Regular</td><td>$10,719.11 </td><td>$11.62 </td></tr>
+<tr><td>Rasmussen, Susan</td><td>Computer Technician I</td><td>Full Time Regular</td><td>$24,714.60 </td><td>$11.44 </td></tr>
+<tr><td>Buxman, Kelly</td><td>Library Assistant</td><td>Part Time Regular</td><td>$14,803.96 </td><td>$11.29 </td></tr>
+<tr><td>Childs, Jennifer</td><td>Library Assistant</td><td>Part Time Regular</td><td>$15,267.40 </td><td>$11.29 </td></tr>
+<tr><td>Stone, Jon</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>$16,248.67 </td><td>$11.29 </td></tr>
+<tr><td>Underwood, Chawn</td><td>Substitute Library Assistant-Limited</td><td>Part Time Temporary</td><td>$8,281.23 </td><td>$11.29 </td></tr>
+<tr><td>Wilson, Kelli</td><td>Library Assistant</td><td>Part Time Regular</td><td>$13,849.22 </td><td>$11.29 </td></tr>
+<tr><td>Boyle, Deanna</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>$12,917.99 </td><td>$11.12 </td></tr>
+<tr><td>Duff, Charissa</td><td>Circulation Assistant</td><td>Full Time Regular</td><td>$23,114.88 </td><td>$11.07 </td></tr>
+<tr><td>Duly, Dionne</td><td>Circulation Assistant</td><td>Part Time Regular</td><td>$15,174.51 </td><td>$11.07 </td></tr>
+<tr><td>Burch, Julie</td><td>Library Assistant</td><td>Part Time Regular</td><td>$14,242.06 </td><td>$10.90 </td></tr>
+<tr><td>Francka-Jones, Sarah</td><td>Library Assistant</td><td>Part Time Regular</td><td>$15,688.06 </td><td>$10.90 </td></tr>
+<tr><td>Harrington, Janice</td><td>Outreach Assistant</td><td>Part Time Regular</td><td>$10,422.65 </td><td>$10.90 </td></tr>
+<tr><td>Hellmann, Samantha</td><td>Library Assistant</td><td>Part Time Regular</td><td>$10,325.89 </td><td>$10.90 </td></tr>
+<tr><td>Roberts, Dana</td><td>Library/Youth Serv Assistant</td><td>Part Time Regular</td><td>$14,711.28 </td><td>$10.90 </td></tr>
+<tr><td>Wood, Judith</td><td>Library Assistant</td><td>Part Time Regular</td><td>$12,020.12 </td><td>$10.90 </td></tr>
+<tr><td>Barnes, Charli</td><td>Graphic Artist Assoc.</td><td>Full Time Regular</td><td>$7,106.78 </td><td>$10.85 </td></tr>
+<tr><td>Duquette, Kimberly</td><td>Training Associate</td><td>Full Time Regular</td><td>$13,268.66 </td><td>$10.85 </td></tr>
+<tr><td>Gallion, Matthew</td><td>Training Associate</td><td>Part Time Regular</td><td>$1,329.12 </td><td>$10.85 </td></tr>
+<tr><td>Kalmbach, Adam</td><td>Reference Associate</td><td>Part Time Regular</td><td>$12,152.87 </td><td>$10.85 </td></tr>
+<tr><td>Lauderdale, Adam</td><td>Youth Services Associate</td><td>Part Time Regular</td><td>$4,500.50 </td><td>$10.85 </td></tr>
+<tr><td>Stringer, Miranda</td><td>Reference Associate</td><td>Part Time Regular</td><td>-</td><td>$10.85 </td></tr>
+<tr><td>Tucker, Jesse</td><td>Youth Services Associate</td><td>Part Time Regular</td><td>$3,781.53 </td><td>$10.85 </td></tr>
+<tr><td>Goodman, Kelly</td><td>Library Assistant</td><td>Part Time Regular</td><td>$14,893.86 </td><td>$10.69 </td></tr>
+<tr><td>Grinder, Bambi</td><td>Library Assistant</td><td>Full Time Regular</td><td>$17,179.81 </td><td>$10.69 </td></tr>
+<tr><td>Hill, David</td><td>Substitute Library Assistant</td><td>Part Time Regular</td><td>$12,733.73 </td><td>$10.69 </td></tr>
+<tr><td>Lapham, Mary</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>$11,771.93 </td><td>$10.69 </td></tr>
+<tr><td>Logan, Kayla</td><td>Library Assistant</td><td>Part Time Regular</td><td>$13,766.75 </td><td>$10.69 </td></tr>
+<tr><td>Cook, Heather</td><td>Reference Assistant</td><td>Part Time Regular</td><td>$13,731.15 </td><td>$10.53 </td></tr>
+<tr><td>Dawley, Elizabeth</td><td>Business Office Clerk</td><td>Part Time Regular</td><td>$13,259.79 </td><td>$10.53 </td></tr>
+<tr><td>Gaffke, Jennifer</td><td>Library Assistant</td><td>Part Time Regular</td><td>$12,195.97 </td><td>$10.53 </td></tr>
+<tr><td>Gray, Tiereney</td><td>Library Assistant</td><td>Part Time Regular</td><td>$12,879.26 </td><td>$10.53 </td></tr>
+<tr><td>Hemmert, Cheryl</td><td>Circulation Assistant</td><td>Full Time Regular</td><td>$21,059.93 </td><td>$10.53 </td></tr>
+<tr><td>Lopez, Jose</td><td>Computer Technician I</td><td>Full Time Regular</td><td>$22,398.51 </td><td>$10.53 </td></tr>
+<tr><td>Lumpkin, Jessica</td><td>Library Assistant</td><td>Part Time Regular</td><td>$12,483.92 </td><td>$10.53 </td></tr>
+<tr><td>Maracle, Michaela</td><td>Library Assistant</td><td>Part Time Regular</td><td>$13,817.00 </td><td>$10.53 </td></tr>
+<tr><td>Myler, Alana</td><td>Reference Assistant</td><td>Part Time Regular</td><td>$13,399.06 </td><td>$10.53 </td></tr>
+<tr><td>Ragain, Mary</td><td>Outreach Assistant</td><td>Full Time Regular</td><td>$20,516.47 </td><td>$10.53 </td></tr>
+<tr><td>Ralph, Linda</td><td>Library Assistant</td><td>Part Time Regular</td><td>$11,711.76 </td><td>$10.53 </td></tr>
+<tr><td>Crawford, Laura</td><td>Gift Shop Assistant Manager</td><td>Part Time Regular</td><td>$12,626.94 </td><td>$10.32 </td></tr>
+<tr><td>May, Christy</td><td>Youth Outreach Assistant</td><td>Part Time Regular</td><td>$13,686.56 </td><td>$10.32 </td></tr>
+<tr><td>Park, Cristina</td><td>Library Assistant</td><td>Part Time Regular</td><td>$14,206.16 </td><td>$10.32 </td></tr>
+<tr><td>Borovicka, Joseph</td><td>Circulation Assistant</td><td>Part Time Regular</td><td>$11,291.32 </td><td>$10.19 </td></tr>
+<tr><td>O'Dell, Hannah</td><td>ILL Assistant</td><td>Full Time Regular</td><td>$20,468.18 </td><td>$10.19 </td></tr>
+<tr><td>Shryer, Britney</td><td>Computer/Periodical Assistant</td><td>Part Time Regular</td><td>$12,093.39 </td><td>$10.19 </td></tr>
+<tr><td>Burns, Shawnna</td><td>Circulation Assistant</td><td>Part Time Regular</td><td>$11,506.30 </td><td>$9.99 </td></tr>
+<tr><td>Holder, Connie</td><td>Library Page Shelver</td><td>Full Time Regular</td><td>$20,312.91 </td><td>$9.99 </td></tr>
+<tr><td>Scriven, Michael</td><td>Circulation Assistant</td><td>Part Time Regular</td><td>$12,559.02 </td><td>$9.83 </td></tr>
+<tr><td>Senff, Rochelle</td><td>Circulation Assistant</td><td>Part Time Regular</td><td>$12,123.00 </td><td>$9.83 </td></tr>
+<tr><td>Adler, Melissa</td><td>Community Relations Assistant</td><td>Part Time Regular</td><td>$10,110.57 </td><td>$9.64 </td></tr>
+<tr><td>Breazeale, Michelle</td><td>Gift Shop Asst Mgr Vol Coord</td><td>Part Time Regular</td><td>$13,864.21 </td><td>$9.64 </td></tr>
+<tr><td>McMurtrey, Andrew</td><td>Circulation Assistant</td><td>Part Time Regular</td><td>$10,825.79 </td><td>$9.64 </td></tr>
+<tr><td>Stripling, Amber</td><td>Outreach Delivery Driver</td><td>Part Time Regular</td><td>$10,317.50 </td><td>$9.64 </td></tr>
+<tr><td>Tzaneva, Nikolina</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>$11,200.47 </td><td>$9.64 </td></tr>
+<tr><td>Crandall, Ron</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>$9,657.27 </td><td>$9.50 </td></tr>
+<tr><td>Summers, Brian</td><td>Circulation Assistant</td><td>Part Time Regular</td><td>$9,792.89 </td><td>$9.50 </td></tr>
+<tr><td>Carroll, Michael</td><td>Library Assistant</td><td>Part Time Regular</td><td>$2,776.61 </td><td>$9.45 </td></tr>
+<tr><td>Crane, Vanneshia</td><td>Library Assistant</td><td>Part Time Regular</td><td>-</td><td>$9.45 </td></tr>
+<tr><td>Dike, Katherine</td><td>Library Assistant</td><td>Part Time Regular</td><td>$524.76 </td><td>$9.45 </td></tr>
+<tr><td>Duckworth, Paul</td><td>Library Assistant</td><td>Part Time Regular</td><td>$3,823.19 </td><td>$9.45 </td></tr>
+<tr><td>Goforth, Megan</td><td>Library Assistant</td><td>Part Time Regular</td><td>$170.10 </td><td>$9.45 </td></tr>
+<tr><td>Gott, Alena</td><td>Youth Services Assistant</td><td>Part Time Regular</td><td>$10,515.99 </td><td>$9.45 </td></tr>
+<tr><td>Groseclose, Pamela</td><td>Youth Services Assistant</td><td>Part Time Regular</td><td>$10,869.45 </td><td>$9.45 </td></tr>
+<tr><td>Hembree, Tom</td><td>Substitute Library Assistant-Limited</td><td>Part Time Temporary</td><td>$6,467.32 </td><td>$9.45 </td></tr>
+<tr><td>Jefferis, Brian</td><td>Reference Assistant</td><td>Part Time Regular</td><td>$8,332.79 </td><td>$9.45 </td></tr>
+<tr><td>Mattox, Brandon</td><td>Computer Technician I</td><td>Part Time Regular</td><td>$9,905.07 </td><td>$9.45 </td></tr>
+<tr><td>Rhodes, Crystal</td><td>Library Assistant</td><td>Part Time Regular</td><td>-</td><td>$9.45 </td></tr>
+<tr><td>Roth, Mallory</td><td>Library Assistant</td><td>Part Time Regular</td><td>$2,983.19 </td><td>$9.45 </td></tr>
+<tr><td>Wortham, Shannon</td><td>Library Assistant</td><td>Part Time Regular</td><td>$9,547.11 </td><td>$9.45 </td></tr>
+<tr><td>Brittain, Robert</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>$9,687.93 </td><td>$9.31 </td></tr>
+<tr><td>Allen, Jordan</td><td>Circulation Assistant</td><td>Part Time Regular</td><td>$8,858.69 </td><td>$9.18 </td></tr>
+<tr><td>Jones, Miranda</td><td>Circulation Assistant</td><td>Part Time Regular</td><td>$9,123.91 </td><td>$9.18 </td></tr>
+<tr><td>Loftin, Jason</td><td>Circulation Assistant</td><td>Part Time Regular</td><td>$10,597.32 </td><td>$9.18 </td></tr>
+<tr><td>Mattonen, Anna</td><td>Circulation Assistant</td><td>Part Time Regular</td><td>$9,609.01 </td><td>$9.18 </td></tr>
+<tr><td>Norris, Cynthia</td><td>Substitute Library Assistant-Limited</td><td>Part Time Temporary</td><td>$477.37 </td><td>$9.18 </td></tr>
+<tr><td>Ogle, Aaron</td><td>Circulation Assistant</td><td>Part Time Regular</td><td>$11,090.35 </td><td>$9.18 </td></tr>
+<tr><td>Smith, Haley</td><td>Circulation Assistant</td><td>Part Time Regular</td><td>$10,499.20 </td><td>$9.00 </td></tr>
+<tr><td>Walker, Sarah</td><td>Circulation Assistant</td><td>Part Time Regular</td><td>$11,043.24 </td><td>$9.00 </td></tr>
+<tr><td>Divin, Benjamin</td><td>Digitization Technician</td><td>Part Time Regular</td><td>$4,410.02 </td><td>$8.82 </td></tr>
+<tr><td>Williams, Rachel</td><td>Collection Services Clerk I B</td><td>Part Time Regular</td><td>$7,325.02 </td><td>$8.71 </td></tr>
+<tr><td>Marsh, Tonya</td><td>Collection Services Clerk I A</td><td>Part Time Regular</td><td>$9,757.59 </td><td>$8.40 </td></tr>
+<tr><td>Brown, Solomon</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>$8,872.58 </td><td>$8.27 </td></tr>
+<tr><td>Orahood, Gaston</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>$10,533.06 </td><td>$8.27 </td></tr>
+<tr><td>Park, Katelynn</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>$8,624.48 </td><td>$8.27 </td></tr>
+<tr><td>Bennington, Erica</td><td>Circulation Assistant</td><td>Part Time Temporary</td><td>$6,671.51 </td><td>$8.23 </td></tr>
+<tr><td>Black, Michelle</td><td>Circulation Assistant</td><td>Part Time Regular</td><td>$10,801.20 </td><td>$8.23 </td></tr>
+<tr><td>Bratt, Pandice</td><td>Circulation Assistant</td><td>Part Time Regular</td><td>-</td><td>$8.23 </td></tr>
+<tr><td>Ham, Allison</td><td>Circulation Assistant</td><td>Part Time Regular</td><td>$1,779.74 </td><td>$8.23 </td></tr>
+<tr><td>Havens, Natalie</td><td>Circulation Assistant</td><td>Part Time Regular</td><td>$8,630.61 </td><td>$8.23 </td></tr>
+<tr><td>Iller, Robin</td><td>Circulation Assistant</td><td>Part Time Regular</td><td>-</td><td>$8.23 </td></tr>
+<tr><td>Medina, Cayleigh</td><td>Circulation Assistant</td><td>Part Time Regular</td><td>$10,132.85 </td><td>$8.23 </td></tr>
+<tr><td>Miller, Janice</td><td>Circulation Assistant</td><td>Part Time Regular</td><td>$3,433.67 </td><td>$8.23 </td></tr>
+<tr><td>Stump, Konrad</td><td>Circulation Assistant</td><td>Part Time Regular</td><td>$3,197.37 </td><td>$8.23 </td></tr>
+<tr><td>Wright, Taylor</td><td>Circulation Assistant</td><td>Part Time Regular</td><td>$2,113.06 </td><td>$8.23 </td></tr>
+<tr><td>Raney, Jill</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>$6,007.69 </td><td>$8.05 </td></tr>
+<tr><td>Holt, Allison</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>$11,505.11 </td><td>$7.89 </td></tr>
+<tr><td>Bartolotta, Thomas</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>$3,491.27 </td><td>$7.50 </td></tr>
+<tr><td>Collier, Lauren</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>$2,225.59 </td><td>$7.50 </td></tr>
+<tr><td>Davis, Kayla</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>$6,730.80 </td><td>$7.50 </td></tr>
+<tr><td>Dinwiddie, Sabriana</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>$2,061.69 </td><td>$7.50 </td></tr>
+<tr><td>Eddy, Colton</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>$6,622.75 </td><td>$7.50 </td></tr>
+<tr><td>Erickson, Megan</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>-</td><td>$7.50 </td></tr>
+<tr><td>Ford, Sadie</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>$2,432.85 </td><td>$7.50 </td></tr>
+<tr><td>Gum, Wendy</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>$3,081.49 </td><td>$7.50 </td></tr>
+<tr><td>Hart, Cheryl</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>$1,613.33 </td><td>$7.50 </td></tr>
+<tr><td>Logan, Mika</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>$5,813.87 </td><td>$7.50 </td></tr>
+<tr><td>Noennig, Matthew</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>$6,124.42 </td><td>$7.50 </td></tr>
+<tr><td>Pecoraro, Ty</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>$7,217.73 </td><td>$7.50 </td></tr>
+<tr><td>Purvis, Charity</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>$1,922.04 </td><td>$7.50 </td></tr>
+<tr><td>Ray, Debra</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>$5,790.00 </td><td>$7.50 </td></tr>
+<tr><td>Saiko, Allison</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>$2,499.02 </td><td>$7.50 </td></tr>
+<tr><td>Stone, Thomas</td><td>Library Page Shelver</td><td>Part Time Regular</td><td>$1,539.83 </td><td>$7.50</td></tr>
+ </tbody>
+</table>
+</div>
+<div class="jumbotron">
+      <!-- <h1>Library District Salary Data</h1> -->
+      <h3>About the data</h3>
+        <p><small>Each institution was asked to provide a list of all employees, with job titles and full- or part-time status, along with total compensation for the 2013 calendar year and hourly rate of pay as of Jan. 1.</small></p>
+        <p><small>Anyone who earned wages in 2013 or was an active employee in early 2014 should be included, but not all people listed in the databases remain active employees. Recent hires — including adjunct professors not on the payroll at the first of the year — may not be included.</small></p>
+        <p><small>Many full-time employees are paid an annual salary rather than an hourly wage. In those cases, either the public institution or the News-Leader calculated an hourly rate of pay assuming a 40-hour work week and 52 weeks of work (2,080 hours).</small></p>
+        <p><small>The reverse is not always true. In the case of Springfield Public Schools, many full-time workers, including teachers and elementary school principals, are paid for only nine or 10 months of work, so multiplying the hourly rate of pay by 2,080 is not accurate indication of the workers’s annual salary.</small></p>
+        <p><small>Compensation for 2013 includes the total amount an employee received during the year before taxes. In addition to regular wages, it includes any car allowances, stipends or deferred compensation; overtime payments; and payouts of accumulated leave time at retirement.</small></p>
+      <p><a class="btn btn-primary btn-lg" role="button">Read More</a></p>
+    </div>
+</div>
+<script type="text/javascript" language="JavaScript"> 
+    <!--
+    s_account="gpaper171,gntbcstglobal";
+    //--> 
+    </script> 
+    <!-- SiteCatalyst code version: H.3.
+    Copyright 1997-2005 Omniture, Inc. More info available at
+    http://www.omniture.com --> 
+    <script src="http://content.gannettonline.com/global/s_code/s_code.js"></script> 
+    <script><!--
+    /* You may give each page an identifying name, server, and channel on
+    the next lines. */
+    s.pageName="Data - Library Salaries"
+    s.server=""     // Do Not Alter
+    s.channel=""
+    s.pageType=""
+    s.pageValue=""
+    s.prop1=""
+    s.prop2="data"
+    s.prop3="data"
+    s.prop4=""
+    s.prop5=""
+    s.prop6="news"
+    s.prop7="local_news"
+    s.prop16="article"
+    s.prop25="Springfield:news-leader"
+    s.prop50="Newspaper";
+
+    var currentTime=new Date();
+    var gciYear = currentTime.getFullYear();
+    DM_addToLoc("zipcode", escape(s.prop30));
+    DM_addToLoc("age", escape((gciYear-s.prop31)));
+    DM_addToLoc("gender", escape(s.prop32));
+    var gci_ssts=OAS_sitepage;
+
+    gci_ssts=gci_ssts.replace(/\/article\.htm.*$/,'');
+    gci_ssts=gci_ssts.replace(/\/front\.htm.*$/,'');
+    gci_ssts=gci_ssts.replace(/\/index\.htm.*$/,'');
+    gci_ssts=gci_ssts.replace(/\@.*$/,'');
+    gci_ssts=gci_ssts.replace(/^.*\.com\//,'');
+
+    var gci_tempossts=gci_ssts; 
+    var gci_ossts=gci_tempossts.split("/")
+    gci_ssts=gci_ssts.replace(/\//g,' > ');
+    gci_ssts='newspaper > '+gci_ssts;
+
+    if
+    (  gci_ossts[0] == "life"
+    || gci_ossts[0] == "money"
+    || gci_ossts[0] == "news"
+    || gci_ossts[0] == "sports"
+    || gci_ossts[0] == "tech"
+    || gci_ossts[0] == "travel"
+    || gci_ossts[0] == "weather"
+    || gci_ossts[0] == "umbrella"
+    )
+
+    {
+      DM_cat(gci_ssts);
+    }
+    else
+    {
+      DM_cat('newspaper > other');
+    }
+
+    var gci_osstslen=gci_ossts.length;
+    for(var i=0; i<gci_osstslen; i++) {
+    if(i==0)
+    s.prop17=gci_ossts[i];   // section
+    if(i==1)
+    s.prop18=gci_ossts[i];   // subsection
+    if(i==2)
+    s.prop19=gci_ossts[i];   // topic
+    if(i==3)
+    s.prop20=gci_ossts[i];   // Subtopic
+    }
+    DM_tag();
+
+    // sets the RevSci cookie in GCION domain
+    if (rsinetsegs.length > 0)
+    {
+      if (!RevSci.HasSegmentCookie())
+      {
+        RevSci.Rpc.Send(RevSci.RequestUrl(rsinetsegs));
+        RevSci.Cookie.Set(revsci_Cookie, true);
+      }
+    }
+     if(typeof rsinetsegs!='undefined'){s.prop48=(rsinetsegs.join('|')).replace(/J06575_/g,'');}else{s.prop48='no segment';}
+
+    //-->
+    </script> 
+
+    <script><!--
+    /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+    var s_code=s.t();if(s_code)document.write(s_code)//--></script> 
+    <script><!--
+    if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+    //--></script><noscript><img src="http://gntbcstglobal.112.2O7.net/b/ss/gntbcstglobal,gpaper171/1/H.3--NS/0" height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/--> 
+    <!-- End SiteCatalyst code version: H.3. -->
+    <!-- chartbeat -->
+<script type="text/javascript">
+var _sf_async_config={};
+/** CONFIGURATION START **/
+_sf_async_config.uid = 47635;
+_sf_async_config.domain = "news-leader.com"; /** CHANGE THIS **/
+/** CONFIGURATION END **/
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement("script");
+    e.setAttribute("language", "javascript");
+    e.setAttribute("type", "text/javascript");
+    e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != "function") ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+</script>
+</body>
+</html>
